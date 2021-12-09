@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Nasalization";
+  src: url("../assets/fonts/nasalization-rg.otf");
+}
+
+body{
+  margin: 0;
+}
+
+h1{
+  font-family: "Nasalization";
+  color: white;
+  font-size: 100px;
+}
+.logo-react {
+  width: 35px;
+  margin-right: 25px;
+}
+
+.navbar {
+  font-weight: bold;
+  font-size: 15px;
+  background-color: grey;
+  padding: 10px;
+  & a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 2px 5px 2px;
+    margin: 0 2px 0 2px;
+    border: solid 1px black;
+  }
+  & a:hover{
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.subnavbar{
+  grid-area: subnavbar;
+  background-color: lightgrey;
+  padding: 10px 10px 50px 10px;
+  & a{
+    text-decoration: none;
+    font-weight: bold;
+    display: grid;
+    font-size: 18px;
+    color: black;
+    border: solid 1px black;
+    padding: 5px 2px 5px 20px;
+    margin: 20px 2px 20px 2px;
+  }
+  & a:hover{
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  grid-template-areas:
+    "subnavbar content"
+    "subnavbar content"
+    "subnavbar content";
+  min-height: 80vh;
+}
+
+.content { grid-area: content; }
+
+footer{
+  font-family: "Nasalization";
+  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
