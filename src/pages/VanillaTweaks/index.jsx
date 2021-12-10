@@ -5,7 +5,7 @@ return (
   <div class="container">
     <SubNavbar />
     <div class="content">
-      <p>Page concernant Vanilla Tweaks</p>
+      <p>Page concernant <a target="_blank" rel="noreferrer" href="https://vanillatweaks.net/">Vanilla Tweaks</a></p>
       <p>Armors Statues</p>
       <p>Cauldron Concrete</p>
       <p>Elevators</p>

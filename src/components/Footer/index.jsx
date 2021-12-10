@@ -1,6 +1,6 @@
 const Footer = () => (
   <footer>
-    <p>Silverfish Infesting Space</p>
+    <p>Silverfish Infesting Space ®</p>
   </footer>
 );
 

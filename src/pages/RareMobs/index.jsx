@@ -5,7 +5,7 @@ return (
   <div class="container">
     <SubNavbar />
     <div class="content">
-      <p>Page concernant Rare Mobs</p>
+      <p>Page concernant <a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/rare-mobs-5186029/">Rare Mobs</a></p>
     </div>
   </div>
   )
