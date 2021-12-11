@@ -1,19 +1,17 @@
 @font-face {
-  font-family: "Nasalization";
-  src: url("../assets/fonts/nasalization-rg.otf");
+  font-family: "BebasNeue";
+  src: url("../assets/fonts/BebasNeue-Regular.ttf");
 }
-
 @font-face {
   font-family: "MinecraftRegular";
   src: url("../assets/fonts/MinecraftRegular.otf");
 }
-
 @font-face {
   font-family: "MontserratRegular";
   src: url("../assets/fonts/Montserrat-Regular.ttf");
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: "MontserratRegular";
@@ -21,94 +19,151 @@ body{
   background-color: #36393f;
 }
 
-h1{
-  font-family: "Nasalization";
+h1 {
+  font-family: "BebasNeue";
   color: white;
   font-size: 100px;
+  margin: 0;
+  padding-top: 30vh;
+  padding-left: 30px;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
   font-weight: bold;
   cursor: pointer;
-  &:hover{
-    color: rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    color: #c6c6c6;
   }
 }
 
-.logo-react {
-  width: 35px;
-  margin-right: 25px;
+//########### HOME BANNER #############
+.home-banner {
+  background-image: url("../assets/images/sky-night-shader.jpg");
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.navbar {
-  border-bottom: solid 1px white;
-  font-size: 20px;
-  background-color: #292b2f;
-  padding: 10px;
-  & a{
-    text-decoration: none;
-    color: white;
-    padding: 5px 2px 5px 2px;
-    margin: 0 2px 0 2px;
-    border: solid 1px white;
-  }
-  & a:hover{
-    color: rgba(255, 255, 255, 0.5);
-  }
+.details-btn{
+  margin: 100px;
+  font-size: 25px;
 }
 
-.subnavbar{
+//############ BANNER #################
+.banner{
+  background-image: url("../assets/images/sky-night-shader.jpg");
+  background-position: bottom center;
+}
+
+//############ NAVBAR #################
+.subnavbar {
   font-family: "MinecraftRegular";
   grid-area: subnavbar;
-  background-color: #292b2f;
-  padding: 10px 10px 50px 10px;
-  & a{
+  background-color: white;
+  padding: 2px 0 0 0;
+  background-color: rgba(#080c0f, 0.85);
+  & a {
+    background-color: #c6c6c6;
     text-decoration: none;
     font-weight: bold;
     display: grid;
     font-size: 18px;
-    color: white;
-    border: solid 1px white;
-    padding: 5px 2px 5px 20px;
-    margin: 20px 2px 20px 2px;
+    color: #3b3b3b;
+    border-top: solid 2px #282828;
+    border-left: solid 2px #282828;
+    border-bottom: solid 2px #282828;
+    padding: 15px 0 15px 30px;
+    margin: -2px 0 0 0;
+    transition: 0.8s;
   }
-  & a:hover{
-    color: rgba(255, 255, 255, 0.5);
+  & a:hover, .active {
+    background-color: #080c0f;
+    color: #c6c6c6;
+    padding-left: 20%;
   }
 }
 
-.container{
+//############ NAVBAR #################
+.container {
   display: grid;
-  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-columns: 0.4fr 1.6fr;
   grid-template-rows: 1fr;
   gap: 0;
-  grid-template-areas:
-    "subnavbar content"
-    "subnavbar content"
-    "subnavbar content";
+  grid-template-areas: "subnavbar content" "subnavbar content" "subnavbar content";
   min-height: 80vh;
 }
 
 .content {
   grid-area: content;
   text-align: center;
-  background-color: #36393f;
+  background-color: #080c0f;
+  padding: 50px 135px;
 }
 
-footer{
+//############ FOOTER #################
+footer {
   font-family: "Nasalization";
-  background-color: #40444B;
+  background-color: #222e3c;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: black;
+  color: white;
   text-align: center;
   border: solid 1px black;
+  font-family: "MontserratRegular";
 }
 
-img{
+//############ DIVERS #################
+img {
   margin: 10px;
+}
+
+.btn-download {
+  color: #c6c6c6;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  font-size: 15px;
+  border: solid 2px #3b3b3b;
+  background-color: #080c0f;
+  padding: 15px 10px 10px 10px;
+  transition: 0.3s;
+  &:hover{
+    border: solid 2px rgb(142, 142, 142);
+    color: white;
+  }
+}
+
+.link{
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(253deg) brightness(104%) contrast(101%);
+  margin: 0 0 0 5px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.sub-title{
+  font-weight: bold;
+  color: white;
+  margin: -30px 0px 0px 625px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.copy-hud-cmd{
+  background-color: #0e1215;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  cursor: copy;
+}
+
+//######## COPY #########
+.isCopy{
+  background-color: rgba(#8bff73, 0.41);
 }

@@ -38,10 +38,10 @@ import string from '../../assets/images/MissingVanillaRecipes/string.png';
 
 const MissionVanillaRecipes = () => {
 return (
-  <div class="container">
+  <div className="container">
     <SubNavbar />
-    <div class="content">
-      <p>Page concernant Mission Vanilla Recipes (fait par Sacha ♥)</p>
+    <div className="content">
+      <h2>Page concernant Mission Vanilla Recipes (fait par Sacha ♥)</h2>
       <img src={leather} alt="leather" />
       <img src={rawIron} alt="raw Iron" />
       <img src={rawCopper} alt="raw Copper" />

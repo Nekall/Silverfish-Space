@@ -13,14 +13,15 @@ import oakBonsaiPot from '../../assets/images/BonsaiPots/oak-bonsai-pot.png';
 import redMushroomBonsaiPot from '../../assets/images/BonsaiPots/red-mushroom-bonsai-pot.png';
 import spruceBonsaiPot from '../../assets/images/BonsaiPots/spruce-bonsai-pot.png';
 import warpedFungusPot from '../../assets/images/BonsaiPots/warped-fungus-pot.png';
+import link from '../../assets/images/link.svg';
 
 
 const BonsaiPots = () => {
 return (
-  <div class="container">
+  <div className="container">
     <SubNavbar />
-    <div class="content">
-      <p>Page concernant <a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/bonsai-pots-for-1-17-and-above/">Bonsai Pots</a></p>
+    <div className="content">
+      <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/bonsai-pots-for-1-17-and-above/">Bonsai Pots<img className="link" src={link} alt="lien" /></a></h2>
       <img src={acaciaBonsaiPot} alt="acacia Bonsai Pot" />
       <img src={azaleaBonsaiPot} alt="azalea Bonsai Pot" />
       <img src={bambooBonsaiPot} alt="bamboo Bonsai Pot" />

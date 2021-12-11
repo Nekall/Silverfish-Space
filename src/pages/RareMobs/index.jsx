@@ -1,11 +1,12 @@
 import SubNavbar from 'components/SubNavbar';
+import link from '../../assets/images/link.svg';
 
 const RareMobs = () => {
 return (
-  <div class="container">
+  <div className="container">
     <SubNavbar />
-    <div class="content">
-      <p>Page concernant <a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/rare-mobs-5186029/">Rare Mobs</a></p>
+    <div className="content">
+      <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/rare-mobs-5186029/">Rare Mobs<img className="link" src={link} alt="lien" /></a></h2>
     </div>
   </div>
   )

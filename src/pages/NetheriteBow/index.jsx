@@ -8,13 +8,14 @@ import soulStealerUpgrade from '../../assets/images/NetheriteBow/soul-stealer-up
 import telekinesisUpgrade from '../../assets/images/NetheriteBow/telekinesis-upgrade.png';
 import teleportUpgrade from '../../assets/images/NetheriteBow/teleport-upgrade.png';
 import thunderUpgrade from '../../assets/images/NetheriteBow/thunder-upgrade.png';
+import link from '../../assets/images/link.svg';
 
 const NetheriteBow = () => {
 return (
-  <div class="container">
+  <div className="container">
     <SubNavbar />
-    <div class="content">
-      <p>Page concernant <a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/netherite-bow/">Netherite Bow</a></p>
+    <div className="content">
+      <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/netherite-bow/">Netherite Bow<img className="link" src={link} alt="lien" /></a></h2>
       <img src={obsidianForge} alt="obsidian Forge" /> <br/>
       <p>La forge</p>
       <img src={diamondStick} alt="diamond Stick" />

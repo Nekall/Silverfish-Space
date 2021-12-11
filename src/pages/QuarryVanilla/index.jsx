@@ -6,13 +6,14 @@ import upgrade7x7 from '../../assets/images/QuarryVanilla/upgrade-7x7.png';
 import upgrade9x9 from '../../assets/images/QuarryVanilla/upgrade-9x9.png';
 import upgrade11x11 from '../../assets/images/QuarryVanilla/upgrade-11x11.png';
 import wrench from '../../assets/images/QuarryVanilla/wrench.png';
+import link from '../../assets/images/link.svg';
 
 const QuarryVanilla = () => {
 return (
-  <div class="container">
+  <div className="container">
     <SubNavbar />
-    <div class="content">
-      <p>Page concernant <a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/vanilla-quarry/">Quarry Vanilla</a></p>
+    <div className="content">
+      <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/vanilla-quarry/">Quarry Vanilla<img className="link" src={link} alt="lien" /></a></h2>
       <img src={quarryBuilderCraft} alt="quarryBuilderCraft" />
       <img src={quarryBuilderInside} alt="quarryBuilderInside" />
       <img src={upgrade5x5} alt="upgrade5x5" />

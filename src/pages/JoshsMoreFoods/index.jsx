@@ -1,12 +1,13 @@
 import SubNavbar from 'components/SubNavbar';
 import cookingBook from '../../assets/images/JoshsMoreFoods/cooking-book.png';
+import link from '../../assets/images/link.svg';
 
 const JoshsMoreFoods = () => {
 return (
-  <div class="container">
+  <div className="container">
     <SubNavbar />
-    <div class="content">
-      <p>Page concernant <a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/josh-s-more-foods-20-new-recipes/">Josh's More Foods</a></p>
+    <div className="content">
+      <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/josh-s-more-foods-20-new-recipes/">Josh's More Foods<img className="link" src={link} alt="lien" /></a></h2>
       <img src={cookingBook} alt="cooking book" />
     </div>
     </div>

@@ -2,10 +2,8 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import './style/main.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
-import Home from 'pages/Home'
-import Datapacks from 'pages/Datapacks'
+import Datapacks from 'pages/Datapacks';
 import IronFurnaces from 'pages/IronFurnaces';
 import BetterBeacons from 'pages/BetterBeacons';
 import BetterElytra from 'pages/BetterElytra';
@@ -19,6 +17,8 @@ import NetheriteBow from 'pages/NetheriteBow';
 import QuarryVanilla from 'pages/QuarryVanilla';
 import RareMobs from 'pages/RareMobs';
 import VanillaTweaks from 'pages/VanillaTweaks';
+import HomeBanner from 'components/HomeBanner';
+import Banner from 'components/Banner';
 
 const App = () => {
   console.log(`
@@ -42,52 +42,68 @@ YMMMUP^
   return (
     <div>
       <Router>
-        <Navbar />
         <main>
+          <a className="btn-download" href="/ressource-pack.zip" download rel="noopener noreferrer" target="_blank">
+           Télécharger le ressource pack
+          </a>
           <Switch>
             <Route path="/" exact>
-              <Home />
+              <HomeBanner />
             </Route>
             <Route path="/datapacks" exact>
+              <Banner />
               <Datapacks />
             </Route>
             <Route path="/datapacks/iron-furnaces">
+              <Banner />
               <IronFurnaces />
             </Route>
             <Route path="/datapacks/better-beacons">
+              <Banner />
               <BetterBeacons />
             </Route>
             <Route path="/datapacks/better-elytra">
+              <Banner />
               <BetterElytra />
             </Route>
             <Route path="/datapacks/blaze-and-caves-advancements">
+              <Banner />
               <BlazeAndCavesAdvancements />
             </Route>
             <Route path="/datapacks/bonsai-pots">
+              <Banner />
               <BonsaiPots />
             </Route>
             <Route path="/datapacks/invisible-frames">
+              <Banner />
               <InvisibleFrames />
             </Route>
             <Route path="/datapacks/joshs-more-foods">
+              <Banner />
               <JoshsMoreFoods />
             </Route>
             <Route path="/datapacks/miniblock-traders">
+              <Banner />
               <MiniblockTraders />
             </Route>
             <Route path="/datapacks/missing-vanilla-recipes">
+              <Banner />
               <MissingVanillaRecipes />
             </Route>
             <Route path="/datapacks/netherite-bow">
+              <Banner />
               <NetheriteBow />
             </Route>
             <Route path="/datapacks/quarry-vanilla">
+              <Banner />
               <QuarryVanilla />
             </Route>
             <Route path="/datapacks/rare-mobs">
+              <Banner />
               <RareMobs />
             </Route>
             <Route path="/datapacks/vanilla-tweaks">
+              <Banner />
               <VanillaTweaks />
             </Route>
           </Switch>
