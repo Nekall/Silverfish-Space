@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import './style/main.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Footer from 'components/Footer';
 import Datapacks from 'pages/Datapacks';
 import IronFurnaces from 'pages/IronFurnaces';
 import BetterBeacons from 'pages/BetterBeacons';
@@ -109,7 +108,7 @@ YMMMUP^
           </Switch>
         </main>
       </Router>
-      <Footer />
+
     </div>
   )
 };

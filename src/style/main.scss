@@ -16,7 +16,6 @@ body {
   padding: 0;
   font-family: "MontserratRegular";
   color: white;
-  background-color: #36393f;
 }
 
 h1 {
@@ -41,8 +40,6 @@ a {
 
 //########### HOME BANNER #############
 .home-banner {
-  background-image: url("../assets/images/sky-night-shader.jpg");
-  background-position: center center;
   width: 100vw;
   height: 100vh;
 }
@@ -59,6 +56,23 @@ a {
 }
 
 //############ NAVBAR #################
+.navbar{
+  display: none;
+  font-family: "BebasNeue";
+  background-image: url("../assets/images/sky-night-shader.jpg");
+  background-position: top center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  border-bottom: 1px solid #c6c6c6;
+  z-index: 999;
+  & p{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
 .subnavbar {
   font-family: "MinecraftRegular";
   grid-area: subnavbar;
@@ -86,7 +100,7 @@ a {
   }
 }
 
-//############ NAVBAR #################
+//############ CONTENT #################
 .container {
   display: grid;
   grid-template-columns: 0.4fr 1.6fr;
@@ -101,20 +115,6 @@ a {
   text-align: center;
   background-color: #080c0f;
   padding: 50px 135px;
-}
-
-//############ FOOTER #################
-footer {
-  font-family: "Nasalization";
-  background-color: #222e3c;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-  border: solid 1px black;
-  font-family: "MontserratRegular";
 }
 
 //############ DIVERS #################
@@ -166,4 +166,29 @@ img {
 //######## COPY #########
 .isCopy{
   background-color: rgba(#8bff73, 0.41);
+}
+
+//########### VIDEO BANNER #############
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+#bg-video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
 }

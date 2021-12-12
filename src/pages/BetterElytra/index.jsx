@@ -10,7 +10,7 @@ return (
     <div className="content">
       <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/new-and-improved-elytra/">Better Elytra<img className="link" src={link} alt="lien" /></a></h2>
       <p>
-        Better Elytra vous permet de combiner un Elytra avec un plastron.
+        Better Elytra vous permet de combiner des Elytra avec un plastron.
         Normalement, vous ne pouvez pas porter de plastron si vous utilisez des Elytra.
         Cela signifie que vous devrez sacrifier la pièce d'armure la plus solide pour porter des Elytra,
         ce qui vous rendra beaucoup plus vulnérable aux dommages. Avec ce datapack,
