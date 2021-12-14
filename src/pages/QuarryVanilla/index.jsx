@@ -14,6 +14,7 @@ return (
     <SubNavbar />
     <div className="content">
       <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/vanilla-quarry/">Quarry Vanilla<img className="link" src={link} alt="lien" /></a></h2>
+      <p>Fan d’industrial craft, non ce n’est pas le filler mais bien évidemment la quarry. La mise en place est légèrement différente mais le fonctionnement reste le même. Vous pouvez ajouter des upgrades afin d’agrandir sa taille.</p>
       <img src={quarryBuilderCraft} alt="quarryBuilderCraft" />
       <img src={quarryBuilderInside} alt="quarryBuilderInside" />
       <img src={upgrade5x5} alt="upgrade5x5" />

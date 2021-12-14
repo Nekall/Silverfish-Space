@@ -15,6 +15,7 @@ import MissingVanillaRecipes from 'pages/MissingVanillaRecipes';
 import NetheriteBow from 'pages/NetheriteBow';
 import QuarryVanilla from 'pages/QuarryVanilla';
 import RareMobs from 'pages/RareMobs';
+import Error from 'pages/Error';
 import VanillaTweaks from 'pages/VanillaTweaks';
 import HomeBanner from 'components/HomeBanner';
 import Banner from 'components/Banner';
@@ -104,6 +105,9 @@ YMMMUP^
             <Route path="/datapacks/vanilla-tweaks">
               <Banner />
               <VanillaTweaks />
+            </Route>
+            <Route>
+              <Error />
             </Route>
           </Switch>
         </main>

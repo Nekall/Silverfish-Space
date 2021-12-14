@@ -47,6 +47,16 @@ a {
 .details-btn{
   margin: 100px;
   font-size: 25px;
+  transition: 0.4s;
+  & #chevron2{
+    margin-left: -25px;
+  }
+  &:hover{
+    padding-left: 10px;
+    & #chevron2{
+      margin-left: -15px;
+    }
+  }
 }
 
 //############ BANNER #################
@@ -114,7 +124,7 @@ a {
   grid-area: content;
   text-align: center;
   background-color: #080c0f;
-  padding: 50px 135px;
+  padding: 50px 18%;
 }
 
 //############ DIVERS #################
@@ -152,7 +162,7 @@ img {
   color: white;
   margin: -30px 0px 0px 625px;
   padding: 0;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .copy-hud-cmd{
@@ -191,4 +201,68 @@ img {
   height: auto;
   z-index: -1000;
   overflow: hidden;
+}
+
+//######### PAGES ############
+.miniblocks{
+  & .listing{
+    text-align: left;
+    margin: auto;
+    text-align: center;
+    & table{
+      margin: auto;
+    }
+    & td{
+      background-color: rgba(#2c3032, 0.49);
+      padding: 0 10px 0 10px;
+    }
+    & li{
+      margin-bottom: 5px;
+      list-style: none;
+    }
+  }
+}
+.miniblocks-img{
+  width: 500px;
+}
+
+.error{
+  display: table-cell;
+  vertical-align: middle;
+  & p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    opacity: 0.5;
+  }
+  & .boat{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+  }
+  & .e404{
+    font-family: "MinecraftRegular";
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  background-image: url("../assets/images/error.png");
+  background-position: bottom center;
+  width: 100vw;
+  height: 100vh;
+}
+
+//######### Floating Effect ############
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
 }

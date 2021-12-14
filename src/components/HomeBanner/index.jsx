@@ -12,7 +12,7 @@ const HomeBanner = () => (
 
     <h1>Silverfish Infesting Space</h1>
     <p className="sub-title">Serveur 1.18 vanilla - Edition DataPack</p>
-    <NavLink className="details-btn" to="/datapacks">Wiki Datapack＞</NavLink>
+    <NavLink className="details-btn" to="/datapacks">Wiki Datapack<span id="chevron1">＞</span><span id="chevron2">＞</span></NavLink>
 
   </div>
 );
