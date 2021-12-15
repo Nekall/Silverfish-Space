@@ -48,15 +48,40 @@ a {
   margin: 100px;
   font-size: 25px;
   transition: 0.4s;
-  & #chevron2{
-    margin-left: -25px;
-  }
   &:hover{
     padding-left: 10px;
-    & #chevron2{
-      margin-left: -15px;
-    }
   }
+}
+
+.book{
+  width: 35px;
+  margin-bottom: -10px;
+  pointer-events: none;
+}
+
+//########### VIDEO BANNER #############
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+#bg-video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
 }
 
 //############ BANNER #################
@@ -178,31 +203,6 @@ img {
   background-color: rgba(#8bff73, 0.41);
 }
 
-//########### VIDEO BANNER #############
-.fullscreen-bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-}
-
-#bg-video{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1000;
-  overflow: hidden;
-}
-
 //######### PAGES ############
 .miniblocks{
   & .listing{
@@ -275,12 +275,4 @@ img {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }
-}
-
-//####  TEST  ####
-
-.book{
-  width: 35px;
-  margin-bottom: -10px;
-  pointer-events: none;
 }
