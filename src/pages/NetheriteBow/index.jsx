@@ -26,6 +26,10 @@ return (
       <img src={telekinesisUpgrade} alt="telekinesis Upgrade" />
       <img src={teleportUpgrade} alt="teleport Upgrade" />
       <img src={thunderUpgrade} alt="thunder Upgrade" />
+      <p>
+        N’avez vous jamais remarqué que vous pouviez améliorer vos armes & outils mais pas votre arc ? Sacrilège ! Voilà de quoi réaligner vos chakras et réparer cette injustice !
+        Avec Netherite Bow, vous allez pouvoir acquérir un arc en netherite agrémenté de quelques effets pas piqué des hannetons.
+      </p>
     </div>
   </div>
   )

@@ -13,6 +13,7 @@ import oakBonsaiPot from '../../assets/images/BonsaiPots/oak-bonsai-pot.png';
 import redMushroomBonsaiPot from '../../assets/images/BonsaiPots/red-mushroom-bonsai-pot.png';
 import spruceBonsaiPot from '../../assets/images/BonsaiPots/spruce-bonsai-pot.png';
 import warpedFungusPot from '../../assets/images/BonsaiPots/warped-fungus-pot.png';
+import bonsaipot from '../../assets/images/BonsaiPots/bonsaipot.png';
 import link from '../../assets/images/link.svg';
 
 
@@ -22,6 +23,7 @@ return (
     <SubNavbar />
     <div className="content">
       <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/bonsai-pots-for-1-17-and-above/">Bonsai Pots<img className="link" src={link} alt="lien" /></a></h2>
+      <img src={bonsaipot} className="bonsaipot-img" alt="bonsai pot" />
       <p>Amoureux du moddé avec l’envie de procrastiner, Bonsaï pots ajoute des fermes à bois automatiques qui vous éviteront de passer 6h à ramasser du bois, il suffit simplement de crafter ce pot mystérieux, de le poser sur un coffre et laisser la magie opérer.</p>
       <img src={acaciaBonsaiPot} alt="acacia Bonsai Pot" />
       <img src={azaleaBonsaiPot} alt="azalea Bonsai Pot" />
@@ -29,7 +31,6 @@ return (
       <img src={birchBonsaiPot} alt="birch Bonsai Pot" />
       <img src={brownMushroomBonsaiPot} alt="brown Mushroom Bonsai Pot" />
       <img src={cactusBonsaiPot} alt="cactus Bonsai Pot" />
-      <img src={crimsonFungusPot} alt="crimson Fungus Pot" />
       <img src={darkOakBonsaiPot} alt="dark Oak Bonsai Pot" />
       <img src={deadBushBonsaiPot} alt="dead Bush Bonsai Pot" />
       <img src={jungleBonsaiPot} alt="jungle Bonsai Pot" />
@@ -37,6 +38,7 @@ return (
       <img src={redMushroomBonsaiPot} alt="redMushroomBonsaiPot" />
       <img src={spruceBonsaiPot} alt="spruceBonsaiPot" />
       <img src={warpedFungusPot} alt="warpedFungusPot" />
+      <img src={crimsonFungusPot} alt="crimson Fungus Pot" />
     </div>
   </div>
   )

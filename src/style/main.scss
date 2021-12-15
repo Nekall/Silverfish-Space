@@ -222,8 +222,18 @@ img {
     }
   }
 }
-.miniblocks-img{
+
+.raremobs-img, .bonsaipot-img, .miniblocks-img, .ifurnace-img, .invisiframe-img, .belytra-img{
   width: 500px;
+}
+
+
+.bbeacon-img, .morefood-img{
+  width: 600px
+}
+
+.belytra-img-details{
+  width: 200px;
 }
 
 .error{
@@ -265,4 +275,12 @@ img {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }
+}
+
+//####  TEST  ####
+
+.book{
+  width: 35px;
+  margin-bottom: -10px;
+  pointer-events: none;
 }

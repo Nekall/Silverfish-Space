@@ -1,6 +1,7 @@
 import SubNavbar from 'components/SubNavbar';
 import diamondElytra from '../../assets/images/BetterElytra/diamond-elytra.png';
 import netheriteElytra from '../../assets/images/BetterElytra/netherite-elytra.png';
+import fly from '../../assets/images/BetterElytra/fly.png';
 import link from '../../assets/images/link.svg';
 
 const BetterElytra = () => {
@@ -9,6 +10,7 @@ return (
     <SubNavbar />
     <div className="content">
       <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/new-and-improved-elytra/">Better Elytra<img className="link" src={link} alt="lien" /></a></h2>
+      <img className="belytra-img" src={fly} alt="fly" />
       <p>
         Better Elytra vous permet de combiner des Elytra avec un plastron.
         Normalement, vous ne pouvez pas porter de plastron si vous utilisez des Elytra.
@@ -17,8 +19,8 @@ return (
         vous pouvez combiner votre Elytra avec un plastron et vous pouvez même l'enchanter pour plus de protection !
       </p>
       <p className="bold">Better Elytra ne fonctionne qu'avec le plastron de diamand et de netherite.</p>
-      <img src={diamondElytra} alt="diamond elytra" />
-      <img src={netheriteElytra} alt="netherite elytra" />
+      <img className="belytra-img-details" src={diamondElytra} alt="diamond elytra" />
+      <img className="belytra-img-details" src={netheriteElytra} alt="netherite elytra" />
     </div>
   </div>
   )

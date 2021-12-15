@@ -29,7 +29,7 @@ return (
         optio, eaque rerum!
       </p>
       <div className="copy-hud-cmd" onClick={() => copyCmd()}>/trigger ch_toggle<img className="link" src={copy} alt="copie commande" /></div>
-      <p>Cliqué pour copié ;)</p>
+      <p>Cliquer pour copier ;)</p>
       ―
       <p className="bold">Armors Statues</p>
       <p>

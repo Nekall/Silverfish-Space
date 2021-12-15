@@ -43,41 +43,47 @@ return (
     <div className="content">
       <h2>Page concernant Mission Vanilla Recipes (fait par Sacha ♥)</h2>
       <p>Minecraft n’est pas logique, on y remédie. 39 nouvelles recettes logiques et comme dirait un vieux sage “ Ça devrait être dans le jeu de base ”.</p>
+      <p>Cuissons :</p>
       <img src={leather} alt="leather" />
       <img src={rawIron} alt="raw Iron" />
       <img src={rawCopper} alt="raw Copper" />
       <img src={rawGold} alt="raw Gold" /> <br />
-      <img src={amethyst} alt="amethyst" />
-      <img src={brick} alt="brick" />
-      <img src={brownBushroomBlock} alt="brown Bushroom Block" />
-      <img src={brownMushroom} alt="brownMushroom" />
-      <img src={clay} alt="clay" />
-      <img src={cobweb} alt="cobweb" />
-      <img src={glowstone} alt="glowstone" />
-      <img src={honeycomb} alt="honeycomb" />
+      <p>Crafts simplifiés :</p>
+      <img src={simpleDispenser} alt="simpleDispenser" />
+      <img src={simpleRepeater} alt="simpleRepeater" />
       <img src={logChest} alt="log Chest" />
       <img src={logStick} alt="log Stick" />
-      <img src={melonSlice} alt="melonSlice" />
-      <img src={mushroomStemBrown} alt="mushroom Stem Brown" />
-      <img src={mushroomStemRed} alt="mushroom Stem Red" />
-      <img src={mushroomStem} alt="mushroomStem" />
-      <img src={netherBrick} alt="nether Brick" />
-      <img src={netherWart} alt="nether Wart" />
+      <p>Crafts supplémentaires :</p>
+      <img src={saddle} alt="saddle" />
       <img src={paper} alt="paper" />
-      <img src={prismarine} alt="prismarine" />
-      <img src={quartz} alt="quartz" />
-      <img src={redMushroomBlock} alt="red Mushroom Block" />
-      <img src={redMushroom} alt="red Mushroom" />
-      <img src={redSandstone} alt="red Sandstone" />
+      <img src={cobweb} alt="cobweb" />
+      <p>Décoloration :</p>
       <img src={resetGlassPane} alt="reset Glass Pane" />
       <img src={resetGlass} alt="reset Glass" />
       <img src={resetTerracotta} alt="reset Terracotta" />
       <img src={resetWool} alt="reset Wool" />
+      <p>Transformations champignons :</p>
+      <img src={redMushroom} alt="red Mushroom" />
+      <img src={brownBushroomBlock} alt="brown Bushroom Block" />
+      <img src={brownMushroom} alt="brownMushroom" />
+      <img src={mushroomStemRed} alt="mushroom Stem Red" />
+      <img src={mushroomStem} alt="mushroomStem" />
+      <img src={mushroomStemBrown} alt="mushroom Stem Brown" />
+      <img src={redMushroomBlock} alt="red Mushroom Block" />
+      <p>Déconstructions de blocs :</p>
+      <img src={redSandstone} alt="red Sandstone" />
+      <img src={amethyst} alt="amethyst" />
+      <img src={brick} alt="brick" />
+      <img src={clay} alt="clay" />
+      <img src={glowstone} alt="glowstone" />
+      <img src={honeycomb} alt="honeycomb" />
+      <img src={melonSlice} alt="melonSlice" />
+      <img src={netherBrick} alt="nether Brick" />
+      <img src={netherWart} alt="nether Wart" />
+      <img src={prismarine} alt="prismarine" />
+      <img src={quartz} alt="quartz" />
       <img src={saddleToLeather} alt="saddle To Leather" />
-      <img src={saddle} alt="saddle" />
       <img src={sandstone} alt="sandstone" />
-      <img src={simpleDispenser} alt="simpleDispenser" />
-      <img src={simpleRepeater} alt="simpleRepeater" />
       <img src={string} alt="string" />
     </div>
   </div>

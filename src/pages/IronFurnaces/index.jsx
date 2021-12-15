@@ -4,13 +4,15 @@ import upgradeGoldDiamond from '../../assets/images/IronFurnaces/upgrade-gold-to
 import upgradeIronGold from '../../assets/images/IronFurnaces/upgrade-iron-to-gold.png';
 import upgradeStoneIron from '../../assets/images/IronFurnaces/upgrade-stone-to-iron.png';
 import link from '../../assets/images/link.svg';
-
+import ironfurnace from '../../assets/images/IronFurnaces/ironfurnace.png';
+//src/assets/images/IronFurnaces/ironfurnace.png
 const IronFurnaces = () => {
 return (
     <div className="container">
       <SubNavbar />
       <div className="content">
         <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/iron-furnaces/">Iron Furnaces<img className="link" src={link} alt="lien" /></a></h2>
+        <img className="ifurnace-img" src={ironfurnace} alt="iron furnace" />
         <p>
           IronFurnace ajoute 4 nouveaux types de fours.
           Plusieurs niveau d'amélioration entre Fer, Or, Diamant et enfin Netherite pour une vitesse supplémentaire.
