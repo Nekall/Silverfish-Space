@@ -6,9 +6,9 @@ const MiniblockTraders = () => {
 return (
   <div className="container">
     <SubNavbar />
-    <div className="content miniblocks">
+    <div className="content">
       <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/miniblock-traders/">Miniblock Traders<img className="link" src={link} alt="lien" /></a></h2>
-      <img className="miniblocks-img" src={miniblocks} alt="miniblocs" />
+      <img className="dp-img" src={miniblocks} alt="miniblocs" />
       <p>
         Envie d’avoir des possibilités de décoration en plus ? C’est maintenant possible grâce à Miniblock traders, 25 nouveaux traders et plus de 500 mini–blocs différents.
       </p>

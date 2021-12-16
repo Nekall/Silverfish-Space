@@ -1,45 +1,54 @@
-@font-face {
+$light-grey: #c6c6c6;
+$white-color: #ffffff;
+$dark-grey: #282828;
+$black-color: #080c0f;
+
+
+@font-face{
   font-family: "BebasNeue";
   src: url("../assets/fonts/BebasNeue-Regular.ttf");
 }
-@font-face {
+@font-face{
   font-family: "MinecraftRegular";
   src: url("../assets/fonts/MinecraftRegular.otf");
 }
-@font-face {
+@font-face{
   font-family: "MontserratRegular";
   src: url("../assets/fonts/Montserrat-Regular.ttf");
 }
 
-body {
+body{
   margin: 0;
   padding: 0;
   font-family: "MontserratRegular";
-  color: white;
+  color: $white-color;
 }
 
-h1 {
+h1{
   font-family: "BebasNeue";
-  color: white;
+  color: $white-color;
   font-size: 100px;
   margin: 0;
   padding-top: 30vh;
   padding-left: 30px;
 }
 
-a {
+a{
   text-decoration: none;
-  color: white;
+  color: $white-color;
   font-weight: bold;
   cursor: pointer;
-
-  &:hover {
-    color: #c6c6c6;
+  &:hover{
+    color: $light-grey;
   }
 }
 
+img{
+  margin: 10px;
+}
+
 //########### HOME BANNER #############
-.home-banner {
+.home-banner{
   width: 100vw;
   height: 100vh;
 }
@@ -60,7 +69,7 @@ a {
 }
 
 //########### VIDEO BANNER #############
-.fullscreen-bg {
+.fullscreen-bg{
   position: fixed;
   top: 0;
   right: 0;
@@ -99,7 +108,7 @@ a {
   position: fixed;
   width: 100vw;
   top: 0;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid $light-grey;
   z-index: 999;
   & p{
     margin: 0;
@@ -108,35 +117,35 @@ a {
   }
 }
 
-.subnavbar {
+.subnavbar{
   font-family: "MinecraftRegular";
   grid-area: subnavbar;
-  background-color: white;
+  background-color: $white-color;
   padding: 2px 0 0 0;
-  background-color: rgba(#080c0f, 0.85);
-  & a {
-    background-color: #c6c6c6;
+  background-color: rgba($black-color, 0.85);
+  & a{
+    background-color: $light-grey;
     text-decoration: none;
     font-weight: bold;
     display: grid;
     font-size: 18px;
     color: #3b3b3b;
-    border-top: solid 2px #282828;
-    border-left: solid 2px #282828;
-    border-bottom: solid 2px #282828;
+    border-top: solid 2px $dark-grey;
+    border-left: solid 2px $dark-grey;
+    border-bottom: solid 2px $dark-grey;
     padding: 15px 0 15px 30px;
     margin: -2px 0 0 0;
     transition: 0.8s;
   }
-  & a:hover, .active {
-    background-color: #080c0f;
-    color: #c6c6c6;
+  & a:hover, .active{
+    background-color: $black-color;
+    color: $light-grey;
     padding-left: 20%;
   }
 }
 
 //############ CONTENT #################
-.container {
+.container{
   display: grid;
   grid-template-columns: 0.4fr 1.6fr;
   grid-template-rows: 1fr;
@@ -145,31 +154,28 @@ a {
   min-height: 80vh;
 }
 
-.content {
+.content{
   grid-area: content;
   text-align: center;
-  background-color: #080c0f;
+  background-color: $black-color;
   padding: 50px 18%;
 }
 
 //############ DIVERS #################
-img {
-  margin: 10px;
-}
 
-.btn-download {
-  color: #c6c6c6;
+.btn-download{
+  color: $light-grey;
   position: absolute;
   top: -5px;
   right: 10px;
   font-size: 15px;
   border: solid 2px #3b3b3b;
-  background-color: #080c0f;
+  background-color: $black-color;
   padding: 15px 10px 10px 10px;
   transition: 0.3s;
   &:hover{
     border: solid 2px rgb(142, 142, 142);
-    color: white;
+    color: $white-color;
   }
 }
 
@@ -182,9 +188,13 @@ img {
   font-weight: bold;
 }
 
+.underline{
+  text-decoration: underline;
+}
+
 .sub-title{
   font-weight: bold;
-  color: white;
+  color: $white-color;
   margin: -30px 0px 0px 625px;
   padding: 0;
   color: rgba(255, 255, 255, 0.5);
@@ -199,40 +209,34 @@ img {
 }
 
 //######## COPY #########
-.isCopy{
+.copied{
   background-color: rgba(#8bff73, 0.41);
 }
 
 //######### PAGES ############
-.miniblocks{
-  & .listing{
-    text-align: left;
+
+.listing{
+  text-align: left;
+  margin: auto;
+  text-align: center;
+  & table{
     margin: auto;
-    text-align: center;
-    & table{
-      margin: auto;
-    }
-    & td{
-      background-color: rgba(#2c3032, 0.49);
-      padding: 0 10px 0 10px;
-    }
-    & li{
-      margin-bottom: 5px;
-      list-style: none;
-    }
+  }
+  & td{
+    background-color: rgba(#2c3032, 0.49);
+    padding: 0 10px 0 10px;
+  }
+  & li{
+    margin-bottom: 5px;
+    list-style: none;
   }
 }
 
-.raremobs-img, .bonsaipot-img, .miniblocks-img, .ifurnace-img, .invisiframe-img, .belytra-img{
-  width: 500px;
+.dp-img{
+  width: 575px;
 }
 
-
-.bbeacon-img, .morefood-img{
-  width: 600px
-}
-
-.belytra-img-details{
+.dp-img-details{
   width: 200px;
 }
 
@@ -268,12 +272,31 @@ img {
   position: relative
 }
 
-.hudpos-img{
+.forge{
+  width: 150px;
+}
 
+.food-tabs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  & p{
+    margin-bottom: 30px;
+  }
+  & div{
+    padding: 20px 10px;
+    margin: 30px 10px 10px 10px;
+    background-color: rgba(#2c3032, 0.49);
+  }
+  & li{
+    margin-left: 50px;
+    padding: 5px;
+    list-style: square;
+    text-align: left;
+  }
 }
 
 //######### Floating Effect ############
-.floating {
+.floating{
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -282,7 +305,7 @@ img {
     margin-top: 5px;
 }
 
-@keyframes floating {
+@keyframes floating{
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }

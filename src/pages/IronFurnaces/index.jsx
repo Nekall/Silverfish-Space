@@ -12,13 +12,13 @@ return (
       <SubNavbar />
       <div className="content">
         <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/iron-furnaces/">Iron Furnaces<img className="link" src={link} alt="lien" /></a></h2>
-        <img className="ifurnace-img" src={ironfurnace} alt="iron furnace" />
+        <img className="dp-img" src={ironfurnace} alt="iron furnace" />
         <p>
           IronFurnace ajoute 4 nouveaux types de fours.
           Plusieurs niveau d'amélioration entre Fer, Or, Diamant et enfin Netherite pour une vitesse supplémentaire.
         </p>
         <h3>Utilisation :</h3>
-        <p>Il suffit de crafter l'upgrade et de faire un sneak + clique droit sur un fours du niveau précédent.</p>
+        <p>Il suffit de crafter l'upgrade et de faire un sneak + clique droit sur un four du niveau précédent.</p>
         <p>―</p>
         <p>Four Classique: 1 item en 10 secondes.</p>
         <img src={upgradeStoneIron} alt="upgrade stone to iron" />

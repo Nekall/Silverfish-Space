@@ -23,8 +23,8 @@ return (
     <SubNavbar />
     <div className="content">
       <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/bonsai-pots-for-1-17-and-above/">Bonsai Pots<img className="link" src={link} alt="lien" /></a></h2>
-      <img src={bonsaipot} className="bonsaipot-img" alt="bonsai pot" />
-      <p>Amoureux du moddé avec l’envie de procrastiner, Bonsaï pots ajoute des fermes à bois automatiques qui vous éviteront de passer 6h à ramasser du bois, il suffit simplement de crafter ce pot mystérieux, de le poser sur un coffre et laisser la magie opérer.</p>
+      <img src={bonsaipot} className="dp-img" alt="bonsai pot" />
+      <p>Amoureux du moddé avec l’envie de procrastiner, Bonsaï pots ajoute des fermes à bois automatiques qui t'éviterons de passer 6h à ramasser du bois, il suffit simplement de crafter ce pot mystérieux, de le poser sur un coffre et laisser la magie opérer.</p>
       <img src={acaciaBonsaiPot} alt="acacia Bonsai Pot" />
       <img src={azaleaBonsaiPot} alt="azalea Bonsai Pot" />
       <img src={bambooBonsaiPot} alt="bamboo Bonsai Pot" />

@@ -14,22 +14,106 @@ const NetheriteBow = () => {
 return (
   <div className="container">
     <SubNavbar />
-    <div className="content">
+    <div className="content listing">
       <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/netherite-bow/">Netherite Bow<img className="link" src={link} alt="lien" /></a></h2>
-      <img src={obsidianForge} alt="obsidian Forge" /> <br/>
-      <p>La forge</p>
+      <p>
+      N’avez vous jamais remarqué que vous pouviez améliorer vos armes & outils mais pas votre arc ? Sacrilège ! Voilà de quoi réaligner vos chakras et réparer cette injustice !
+      Avec Netherite Bow, vous allez pouvoir acquérir un arc en netherite agrémenté de quelques effets pas piqué des hannetons.
+      </p>
+      ―
+      <p>Pour utiliser ce datapack il te faudra la 'Forge d'Obsidienne' :</p>
+      <p>(4x Polished Deepslate Stairs, 1x Magma block, 1x Dispenser & une bouteille de souffle du dragon.)</p>
+      <img className="forge" src={obsidianForge} alt="obsidian Forge" /> <br/>
+      <p>Matériaux de craft :</p>
+      <p>(Pas besoins de la forge)</p>
       <img src={diamondStick} alt="diamond Stick" />
       <img src={goldenString} alt="golden String" /><br/>
+      <p>Craft & améliorations de l'Arc :</p>
       <img src={diamondBow} alt="diamond Bow" />
       <img src={netheriteBow} alt="netherite Bow" />
       <img src={soulStealerUpgrade} alt="soul Stealer Upgrade" />
       <img src={telekinesisUpgrade} alt="telekinesis Upgrade" />
       <img src={teleportUpgrade} alt="teleport Upgrade" />
       <img src={thunderUpgrade} alt="thunder Upgrade" />
-      <p>
-        N’avez vous jamais remarqué que vous pouviez améliorer vos armes & outils mais pas votre arc ? Sacrilège ! Voilà de quoi réaligner vos chakras et réparer cette injustice !
-        Avec Netherite Bow, vous allez pouvoir acquérir un arc en netherite agrémenté de quelques effets pas piqué des hannetons.
-      </p>
+
+
+      <p>Capacités</p>
+    <table>
+      <tbody>
+        <tr>
+          <td className="bold">Feu </td><td> Allume le feu là où la flèche atterrit.</td>
+        </tr>
+        <tr>
+          <td className="bold">Givre </td><td> Gèle les ennemis et l'eau là où la flèche atterrit.</td>
+        </tr>
+        <tr>
+          <td className="bold">Poison </td><td> Empoisonne les ennemis près de l'endroit où la flèche atterrit.</td>
+        </tr>
+        <tr>
+          <td className="bold">Nuage de fumée </td><td> Crée un nuage de fumée là où la flèche atterrit, donnant de la lenteur III et de la cécité III pendant 5 secondes aux ennemis proches.</td>
+        </tr>
+        <tr>
+          <td className="bold">Spectre </td><td> Vous donne l'invisibilité III pendant 8 secondes.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Capacités à débloquer</p>
+    <table>
+      <tbody>
+        <tr>
+          <td className="bold">Téléportation </td><td> Vous téléporte à l'endroit où la flèche atterrit (distance maximale : 200 blocs).</td>
+        </tr>
+        <tr>
+          <td className="bold">Télékinésie </td><td> Fait léviter tous les monstres dans la zone où la flèche atterrit pendant 5 secondes.</td>
+        </tr>
+        <tr>
+          <td className="bold">Tonnerre </td><td> Invoque des éclairs autour de vous et là où la flèche atterrit.</td>
+        </tr>
+        <tr>
+          <td className="bold">Voleur d'âme </td><td> Donne un effet de flétrissement aux monstres proches de la zone où la flèche atterrit pendant 5 secondes.</td>
+        </tr>
+      </tbody>
+    </table>
+
+		<p>Sélectionner une aptitude</p>
+		<p>
+		Placez d'abord l'arc Nétherite dans votre main gauche. Une interface graphique apparaît au-dessus de votre barre de raccourcis. Faites défiler votre barre de raccourcis pour sélectionner une capacité et appuyez sur shift pour confirmer votre choix. Après cela, votre barre chaude pourra se déplacer librement sans modifier la capacité.
+		</p>
+		<p>Comment utiliser une capacité</p>
+
+		<p>Il y a deux façons d'utiliser les capacités : Soit en tirant une flèche et en sneakant.</p>
+    <table>
+      <tbody>
+        <tr>
+          <td className="bold">Feu </td><td> sneakant/tirer - sneakant pour obtenir une résistance au feu II pendant 10 secondes. Tirez pour mettre le feu à l'endroit où la flèche atterrit.</td>
+        </tr>
+        <tr>
+          <td className="bold">Givre </td><td> Tirer/sneakant sur un bloc spécifique - Tirez pour bloquer les monstres proches de l'endroit où la flèche atterrit et geler l'eau à proximité. Déplacez-vous en vous tenant sur la glace ou la neige pour obtenir la vitesse II pendant 10 secondes.</td>
+        </tr>
+        <tr>
+          <td className="bold">Poison </td><td> Tirer - Tirez pour donner du poison I à tous les monstres proches de l'endroit où la flèche atterrit.</td>
+        </tr>
+        <tr>
+          <td className="bold">Nuage de fumée </td><td> Tir - Tirez pour créer un nuage de fumée qui donne de la lenteur III et de la cécité III pendant 5 secondes à tous les monstres proches de l'endroit où la flèche atterrit.</td>
+        </tr>
+        <tr>
+          <td className="bold">Spectre </td><td> sneakant/tirer - Se faufiler pour devenir invisible pendant 8 secondes et tirer pour créer le même effet que Nuage de fumée.</td>
+        </tr>
+        <tr>
+          <td className="bold">Téléportation </td><td> Tirer et sneakant - Tirez une flèche puis faufilez-vous pour vous téléporter à l'endroit où la flèche a atterri (portée maximale : 200 blocs).</td>
+        </tr>
+        <tr>
+          <td className="bold">Télékinésie </td><td> Tirer et sneakant - Tirez une flèche pour donner la lévitation II pendant 5 secondes à toutes les entités proches de l'endroit où la flèche atterrit, et faufilez-vous pour obtenir la chute lente pendant 10 secondes.</td>
+        </tr>
+        <tr>
+          <td className="bold">Tonnerre </td><td> sneakant/tirage - sneak pour invoquer des éclairs près de vous, tir pour invoquer un éclair là où la flèche atterrit.</td>
+        </tr>
+        <tr>
+          <td className="bold">Voleur d'âme </td><td> Tirer - Tirez une flèche pour donner de la flétrissure à tous les monstres près de l'endroit où la flèche a atterri.</td>
+        </tr>
+      </tbody>
+    </table>
     </div>
   </div>
   )

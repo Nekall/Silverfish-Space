@@ -42,7 +42,8 @@ return (
     <SubNavbar />
     <div className="content">
       <h2>Page concernant Mission Vanilla Recipes (fait par Sacha ♥)</h2>
-      <p>Minecraft n’est pas logique, on y remédie. 39 nouvelles recettes logiques et comme dirait un vieux sage “ Ça devrait être dans le jeu de base ”.</p>
+      <p>Minecraft n’est pas logique, on y remédie.</p>
+      <p>39 nouvelles recettes INÉDITES logiques et comme dirait un vieux sage “ Ça devrait être dans le jeu de base ”.</p>
       <p>Cuissons :</p>
       <img src={leather} alt="leather" />
       <img src={rawIron} alt="raw Iron" />

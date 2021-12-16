@@ -6,11 +6,11 @@ import hudposition from '../../assets/images/VanillaTweaks/hudposition.png';
 
 const VanillaTweaks = () => {
 
-  let [x, setX] = useState(0);
-  let [y, setY] = useState(0);
-  let [z, setZ] = useState(0);
-  let [hours, setHours] = useState("06:45")
+  let [x, setX] = useState(1000);
+  let [y, setY] = useState(85);
+  let [z, setZ] = useState(500);
   let [direction, setDirection] = useState("N")
+  let hours = "06:45";
 
   let handleMousemove = (event) => {
   setX(event.x);
@@ -30,8 +30,8 @@ const VanillaTweaks = () => {
       navigator.clipboard.writeText("/trigger ch_toggle")
       .then(_=> {
           let confirm = document.getElementsByClassName("copy-hud-cmd")[0];
-          confirm.classList.add("isCopy")
-          setInterval(function(){ confirm.classList.remove("isCopy"); }, 1700);
+          confirm.classList.add("copied")
+          setInterval(function(){ confirm.classList.remove("copied"); }, 1700);
       })
     }
   }
@@ -52,10 +52,8 @@ return (
       ―
       <p className="bold">Armors Statues</p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-        optio, eaque rerum.
+		Amateur de marionnette et tu désires modifier un armor stand à ta sauce ? Signe un livre avec le titre "Statues" puis laisse ta créativité opérer !
+		Le rendre invisible, changer l'orientation de sa tête et de ses bras, lui donner la possibilité de voler ... Bref des centaines de possibilités s'offre à toi pour donner vie à tes mannequins.
       </p>
       ―
       <p className="bold">Cauldron Concrete</p>

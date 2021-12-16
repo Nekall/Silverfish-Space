@@ -10,17 +10,20 @@ return (
     <SubNavbar />
     <div className="content">
       <h2><a target="_blank" rel="noreferrer" href="https://www.planetminecraft.com/data-pack/new-and-improved-elytra/">Better Elytra<img className="link" src={link} alt="lien" /></a></h2>
-      <img className="belytra-img" src={fly} alt="fly" />
+      <img className="dp-img" src={fly} alt="fly" />
       <p>
-        Better Elytra vous permet de combiner des Elytra avec un plastron.
-        Normalement, vous ne pouvez pas porter de plastron si vous utilisez des Elytra.
-        Cela signifie que vous devrez sacrifier la pièce d'armure la plus solide pour porter des Elytra,
-        ce qui vous rendra beaucoup plus vulnérable aux dommages. Avec ce datapack,
-        vous pouvez combiner votre Elytra avec un plastron et vous pouvez même l'enchanter pour plus de protection !
+        Better Elytra te permet de combiner des Elytra avec un plastron.
+        Normalement, tu ne peux pas porter de plastron si tu utilises des Elytra.
+        Cela signifie que tu devais sacrifier ta pièce d'armure la plus solide pour porter des Elytra. Avec ce datapack,
+        tu peux combiner tes Elytra avec un plastron et tu peux même l'enchanter pour plus de protection !
+      </p>
+      <p>
+        Pour désassembler tes Elytra et ton plastron, jetes les sur un blast furnace, tu récupereras tes Elytra et ton plastron énchanté, s'il l'était.
+        Tu peux tout à fait combiner un plastron déjà enchanté avec des Elytra, tu gardera les enchantements.
       </p>
       <p className="bold">Better Elytra ne fonctionne qu'avec le plastron de diamand et de netherite.</p>
-      <img className="belytra-img-details" src={diamondElytra} alt="diamond elytra" />
-      <img className="belytra-img-details" src={netheriteElytra} alt="netherite elytra" />
+      <img className="dp-img-details" src={diamondElytra} alt="diamond elytra" />
+      <img className="dp-img-details" src={netheriteElytra} alt="netherite elytra" />
     </div>
   </div>
   )
