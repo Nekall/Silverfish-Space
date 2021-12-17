@@ -12,7 +12,6 @@ const HomeBanner = () => {
               <source src={videoBanner} type="video/webm" />
           </video>
       </div>
-
       <h1>Silverfish Infesting Space</h1>
       <p className="sub-title">Serveur 1.18 vanilla - Edition DataPack</p>
 

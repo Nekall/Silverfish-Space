@@ -1,4 +1,6 @@
-import Navbar from "../Navbar"
+import { NavLink } from 'react-router-dom';
+import Navbar from "../Navbar";
+
 const Banner = () => {
 
     window.addEventListener("scroll", function(event){
@@ -18,7 +20,7 @@ const Banner = () => {
     <>
       <Navbar />
       <div className="banner" id="banner">
-        <h1>Silverfish Infesting Space</h1>
+        <h1><NavLink to="/">Silverfish Infesting Space</NavLink></h1>
       </div>
     </>
 )};
