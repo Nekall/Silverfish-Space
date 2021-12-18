@@ -11,7 +11,7 @@ const Datapacks = () => {
       ―
       <p>Le ressource pack est <span className="bold">OBLIGATOIRE</span>, autrement tu n'auras pas les textures de certain blocs ajoutés par les datapacks.</p>
       <p>Ce sera du coup, forcement moins bien.</p>
-      <a className="" href="/ressource-pack.zip" download rel="noopener noreferrer" target="_blank">
+      <a className="" href="/Silverfish-infesting-space-ressourcepack.zip" download rel="noopener noreferrer" target="_blank">
         Télécharger le ressource pack
       </a>
       <p>―</p>
