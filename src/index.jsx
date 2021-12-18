@@ -43,7 +43,7 @@ YMMMUP^
     <div>
       <Router>
         <main>
-          <a className="btn-download" href="/ressource-pack.zip" download rel="noopener noreferrer" target="_blank">
+          <a className="btn-download" href="/Silverfish-infesting-space-ressourcepack.zip" download rel="noopener noreferrer" target="_blank">
            Télécharger le ressource pack
           </a>
           <Switch>
