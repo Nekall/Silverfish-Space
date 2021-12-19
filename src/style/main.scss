@@ -1,8 +1,4 @@
-$light-grey: #c6c6c6;
-$white-color: #ffffff;
-$dark-grey: #282828;
-$black-color: #080c0f;
-
+@import "colors.scss";
 
 @font-face{
   font-family: "BebasNeue";
@@ -309,4 +305,17 @@ img{
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }
+}
+
+//############ RESPONSIVE ##############
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 600px){
+
+}
+@media only screen and (max-width: 350px){
+  h1{
+    font-size: 50px;
+  }
 }
