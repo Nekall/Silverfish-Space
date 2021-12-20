@@ -7,28 +7,24 @@ const RareMobs = () => {
 
   const images = [
     {
-      original: 'https://silverfish.infesting.space/static/media/drowned.8f3294d9fc064699fe0a.webp',
-      thumbnail: 'https://silverfish.infesting.space/static/media/drowned.8f3294d9fc064699fe0a.webp',
+      original: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/drowned.webp',
+      thumbnail: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/drowned.webp',
     },
     {
-      original: 'https://silverfish.infesting.space/static/media/zombies.2470ff53709b4f866756.webp',
-      thumbnail: 'https://silverfish.infesting.space/static/media/zombies.2470ff53709b4f866756.webp',
+      original: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/husk.webp',
+      thumbnail: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/husk.webp',
     },
     {
-      original: 'https://silverfish.infesting.space/static/media/husk.a1881f646a64b6a93359.webp',
-      thumbnail: 'https://silverfish.infesting.space/static/media/husk.a1881f646a64b6a93359.webp',
+      original: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/skeleton.webp',
+      thumbnail: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/skeleton.webp',
     },
     {
-      original: 'https://silverfish.infesting.space/static/media/zombies.2470ff53709b4f866756.webp',
-      thumbnail: 'https://silverfish.infesting.space/static/media/zombies.2470ff53709b4f866756.webp',
+      original: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/witherskeleton.webp',
+      thumbnail: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/witherskeleton.webp',
     },
     {
-      original: 'https://silverfish.infesting.space/static/media/witherskeleton.aaa1f6e6212164566948.webp',
-      thumbnail: 'https://silverfish.infesting.space/static/media/witherskeleton.aaa1f6e6212164566948.webp',
-    },
-    {
-      original: 'https://silverfish.infesting.space/static/media/skeleton.8204fe89c2ca9c9c55b2.webp',
-      thumbnail: 'https://silverfish.infesting.space/static/media/skeleton.8204fe89c2ca9c9c55b2.webp',
+      original: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/zombies.webp',
+      thumbnail: 'https://raw.githubusercontent.com/Nekall/Silverfish-Space/main/src/assets/images/RareMobs/zombies.webp',
     },
   ];
 
