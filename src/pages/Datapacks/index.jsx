@@ -8,7 +8,8 @@ const Datapacks = () => {
       <h2>Bienvenue pour cette saison datapack edition.</h2>
       <p>Pour la première fois nous faisons un serveur minecraft vanilla agrémenté de quelques datapacks, 17 pour être précis.</p>
       <p>En plus, quelques Easter eggs se sont glissés sur le serveur ! ;)</p>
-      ―
+      <p>Tous les mobs drops leurs têtes (via un pourcentage de chance), pourquoi pas les collectionner ?! ;D</p>
+      <p>―</p>
       <p>Le ressource pack est <span className="bold">OBLIGATOIRE</span>, autrement tu n'auras pas les textures de certain blocs ajoutés par les datapacks.</p>
       <p>Ce sera du coup, forcement moins bien.</p>
       <a className="" href="/Silverfish-infesting-space-ressourcepack.zip" download rel="noopener noreferrer" target="_blank">
