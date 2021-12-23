@@ -13,7 +13,7 @@ const HomeBanner = () => {
           </video>
       </div>
       <h1>Silverfish Infesting Space</h1>
-      <p className="sub-title">Serveur 1.18 vanilla - Edition DataPack</p>
+      <p className="sub-title">Serveur 1.18.1 vanilla - Edition DataPack</p>
 
       <NavLink onMouseOver={e => e.target.children[0].src = enchantedBook} onMouseOut={e => e.target.children[0].src = book} className="details-btn" to="/datapacks">Wiki Datapack
         <img className="book" src={book} alt="livre basique de minecraft" />
