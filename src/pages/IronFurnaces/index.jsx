@@ -15,7 +15,7 @@ return (
         <img className="dp-img" src={ironfurnace} alt="iron furnace" />
         <p>
           IronFurnace ajoute 4 nouveaux types de fours.
-          Plusieurs niveau d'amélioration entre Fer, Or, Diamant et enfin Netherite pour une vitesse supplémentaire.
+          Plusieurs niveaux d'amélioration entre Fer, Or, Diamant et enfin Netherite pour une vitesse supplémentaire.
         </p>
         <h3>Utilisation :</h3>
         <p>Il suffit de crafter l'upgrade et de faire un sneak + clique droit sur un four du niveau précédent.</p>

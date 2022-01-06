@@ -18,10 +18,10 @@ return (
         tu peux combiner tes Elytra avec un plastron et tu peux même l'enchanter pour plus de protection !
       </p>
       <p>
-        Pour désassembler tes Elytra et ton plastron, jetes les sur un blast furnace, tu récupereras tes Elytra et ton plastron énchanté, s'il l'était.
+        Pour désassembler tes Elytra et ton plastron, jetes les sur un blast furnace, tu récupereras tes Elytra et ton plastron enchanté, s'il l'était.
         Tu peux tout à fait combiner un plastron déjà enchanté avec des Elytra, tu gardera les enchantements.
       </p>
-      <p className="bold">Better Elytra ne fonctionne qu'avec le plastron de diamand et de netherite.</p>
+      <p className="bold">Better Elytra ne fonctionne qu'avec le plastron de diamant et de netherite.</p>
       <img className="dp-img-details" src={diamondElytra} alt="diamond elytra" />
       <img className="dp-img-details" src={netheriteElytra} alt="netherite elytra" />
     </div>

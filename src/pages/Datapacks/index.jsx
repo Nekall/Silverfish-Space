@@ -6,11 +6,11 @@ const Datapacks = () => {
     <SubNavbar />
     <div className="content">
       <h2>Bienvenue pour cette saison datapack edition.</h2>
-      <p>Pour la première fois nous faisons un serveur minecraft vanilla agrémenté de quelques datapacks, 17 pour être précis.</p>
+      <p>Pour la première fois nous faisons un serveur minecraft vanilla agrémenté d'une vingtaine de datapacks.</p>
       <p>En plus, quelques Easter eggs se sont glissés sur le serveur ! ;)</p>
       <p>Tous les mobs drops leurs têtes (via un pourcentage de chance), pourquoi pas les collectionner ?! ;D</p>
       <p>―</p>
-      <p>Le ressource pack est <span className="bold">OBLIGATOIRE</span>, autrement tu n'auras pas les textures de certain blocs ajoutés par les datapacks.</p>
+      <p>Le ressource pack est <span className="bold">OBLIGATOIRE</span>, autrement tu n'auras pas les textures de certains blocs ajoutés par les datapacks.</p>
       <p>Ce sera du coup, forcement moins bien.</p>
       <a className="" href="/Silverfish-infesting-space-ressourcepack.zip" download rel="noopener noreferrer" target="_blank">
         Télécharger le ressource pack
@@ -18,7 +18,7 @@ const Datapacks = () => {
       <p>―</p>
       <p>Mais c'est quoi un datapack ?</p>
       <p>
-        Le système de datapack permet aux joueurs de personnaliser davantage leur expérience dans Minecraft. Les data packs peuvent être utilisés pour remplacer ou ajouter de nouveaux progrès, dimensions, fonctions, recettes, structures, tags, paramètres de génération de monde et biomes sans aucune modification du code.
+        Le système de datapack permet aux joueurs de personnaliser davantage leur expérience dans Minecraft. Les datapacks peuvent être utilisés pour remplacer ou ajouter de nouveaux progrès, dimensions, fonctions, recettes, structures, tags, paramètres de génération de monde et biomes sans aucune modification du code.
       </p>
     </div>
   </div>

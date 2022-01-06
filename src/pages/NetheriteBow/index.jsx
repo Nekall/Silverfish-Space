@@ -78,39 +78,37 @@ return (
 
 		<p>Sélectionner une aptitude</p>
 		<p>
-		Placez d'abord l'arc Nétherite dans votre main gauche. Une interface graphique apparaît au-dessus de votre barre de raccourcis. Faites défiler votre barre de raccourcis pour sélectionner une capacité et appuyez sur shift pour confirmer votre choix. Après cela, votre barre chaude pourra se déplacer librement sans modifier la capacité.
+		Placez d'abord l'arc Netherite dans votre main gauche. Une interface graphique apparaît au-dessus de votre barre de raccourcis. Faites défiler votre barre de raccourcis pour sélectionner une capacité et appuyez sur votre touche pour vous accroupir pour confirmer votre choix.
 		</p>
 		<p>Comment utiliser une capacité</p>
-
-		<p>Il y a deux façons d'utiliser les capacités : Soit en tirant une flèche et en sneakant.</p>
     <table>
       <tbody>
         <tr>
-          <td className="bold">Feu </td><td> sneakant/tirer - sneakant pour obtenir une résistance au feu II pendant 10 secondes. Tirez pour mettre le feu à l'endroit où la flèche atterrit.</td>
+          <td className="bold">Feu </td><td>S'accroupir pour obtenir une résistance au feu II pendant 10 secondes. Tirer pour mettre le feu à l'endroit où la flèche atterrit.</td>
         </tr>
         <tr>
-          <td className="bold">Givre </td><td> Tirer/sneakant sur un bloc spécifique - Tirez pour bloquer les monstres proches de l'endroit où la flèche atterrit et geler l'eau à proximité. Déplacez-vous en vous tenant sur la glace ou la neige pour obtenir la vitesse II pendant 10 secondes.</td>
+          <td className="bold">Givre </td><td>Tirez pour bloquer les monstres proches de l'endroit où la flèche atterrit et geler l'eau à proximité. Déplacez-vous sur la glace ou la neige pour obtenir la vitesse II pendant 10 secondes.</td>
         </tr>
         <tr>
-          <td className="bold">Poison </td><td> Tirer - Tirez pour donner du poison I à tous les monstres proches de l'endroit où la flèche atterrit.</td>
+          <td className="bold">Poison </td><td>Tirer pour donner du poison I à tous les monstres proches de l'endroit où la flèche atterrit.</td>
         </tr>
         <tr>
-          <td className="bold">Nuage de fumée </td><td> Tir - Tirez pour créer un nuage de fumée qui donne de la lenteur III et de la cécité III pendant 5 secondes à tous les monstres proches de l'endroit où la flèche atterrit.</td>
+          <td className="bold">Nuage de fumée </td><td>Tirer pour créer un nuage de fumée qui donne de la lenteur III et de la cécité III pendant 5 secondes à tous les monstres proches de l'endroit où la flèche atterrit.</td>
         </tr>
         <tr>
-          <td className="bold">Spectre </td><td> sneakant/tirer - Se faufiler pour devenir invisible pendant 8 secondes et tirer pour créer le même effet que Nuage de fumée.</td>
+          <td className="bold">Spectre </td><td>S'accroupir pour devenir invisible pendant 8 secondes. Tirer pour créer le même effet que Nuage de fumée.</td>
         </tr>
         <tr>
-          <td className="bold">Téléportation </td><td> Tirer et sneakant - Tirez une flèche puis faufilez-vous pour vous téléporter à l'endroit où la flèche a atterri (portée maximale : 200 blocs).</td>
+          <td className="bold">Téléportation </td><td>Tirer une flèche puis s'accroupir pour vous téléporter à l'endroit où la flèche a atterri (portée maximale : 200 blocs).</td>
         </tr>
         <tr>
-          <td className="bold">Télékinésie </td><td> Tirer et sneakant - Tirez une flèche pour donner la lévitation II pendant 5 secondes à toutes les entités proches de l'endroit où la flèche atterrit, et faufilez-vous pour obtenir la chute lente pendant 10 secondes.</td>
+          <td className="bold">Télékinésie </td><td>Tirer une flèche pour donner lévitation II pendant 5 secondes à toutes les entités proches de l'endroit où la flèche atterrit, et s'accroupir pour obtenir chute lente pendant 10 secondes.</td>
         </tr>
         <tr>
-          <td className="bold">Tonnerre </td><td> sneakant/tirage - sneak pour invoquer des éclairs près de vous, tir pour invoquer un éclair là où la flèche atterrit.</td>
+          <td className="bold">Tonnerre </td><td>S'accroupir pour invoquer des éclairs près de vous. Tirer pour invoquer un éclair là où la flèche atterrit.</td>
         </tr>
         <tr>
-          <td className="bold">Voleur d'âme </td><td> Tirer - Tirez une flèche pour donner de la flétrissure à tous les monstres près de l'endroit où la flèche a atterri.</td>
+          <td className="bold">Voleur d'âme </td><td> Tirer une flèche pour donner de l'effet wither à tous les monstres près de l'endroit où la flèche a atterri.</td>
         </tr>
       </tbody>
     </table>

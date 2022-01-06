@@ -33,7 +33,7 @@ const TopAdvancements = () => {
     <div className="top-advancements content">
       <h2>WORK IN PROGRESS. . . </h2>
       <p>Page Classements des joueurs dans la réalisation des haut-faits !</p>
-      <p>(Mise à jour des données : 06/01/2022)</p>
+      <p>(Mise à jour des données : 06/01/2022 - 19h17)</p>
       <hr/>
       {players && players.map((player, index)=>{
         console.log(player.name);
