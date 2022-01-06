@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './style/main.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Datapacks from 'pages/Datapacks';
+import TopAdvancements from 'pages/TopAdvancements';
 import IronFurnaces from 'pages/IronFurnaces';
 import BetterBeacons from 'pages/BetterBeacons';
 import BetterElytra from 'pages/BetterElytra';
@@ -106,13 +107,16 @@ YMMMUP^
               <Banner />
               <VanillaTweaks />
             </Route>
+            <Route path="/top">
+              <Banner />
+              <TopAdvancements />
+            </Route>
             <Route>
               <Error />
             </Route>
           </Switch>
         </main>
       </Router>
-
     </div>
   )
 };

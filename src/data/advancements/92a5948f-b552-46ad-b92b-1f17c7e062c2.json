@@ -1,0 +1,1075 @@
+{
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2021-12-15 18:43:23 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2021-12-15 18:42:50 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:challenges/all_the_items": {
+    "criteria": {
+      "writable_book": "2021-12-16 09:40:43 +0100",
+      "glow_item_frame": "2021-12-15 19:20:53 +0100",
+      "netherite_ingot": "2021-12-15 19:20:53 +0100",
+      "wheat": "2021-12-15 19:20:23 +0100",
+      "gold_ingot": "2021-12-15 19:20:53 +0100",
+      "armor_stand": "2021-12-16 09:40:59 +0100",
+      "wheat_seeds": "2021-12-15 19:20:23 +0100",
+      "iron_ingot": "2021-12-15 19:20:53 +0100",
+      "bread": "2021-12-15 19:20:55 +0100",
+      "written_book": "2021-12-16 09:40:52 +0100",
+      "diamond": "2021-12-15 19:20:53 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/redstone/lever": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_sword": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:mining/diamond_miner": {
+    "criteria": {
+      "diamond": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:building/rock_collection": {
+    "criteria": {
+      "cobblestone": "2021-12-15 19:20:53 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/combat/golden_chestplate": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "iron_furnaces:advancements/diamond_upgrade": {
+    "criteria": {
+      "tick": "2021-12-15 19:17:38 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:bacap/root": {
+    "criteria": {
+      "location": "2021-12-15 19:20:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2021-12-15 18:43:28 +0100"
+    },
+    "done": true
+  },
+  "iron_furnaces:advancements/gold_upgrade": {
+    "criteria": {
+      "tick": "2021-12-15 19:17:38 +0100"
+    },
+    "done": true
+  },
+  "iron_furnaces:advancements/netherite_upgrade": {
+    "criteria": {
+      "tick": "2021-12-15 19:17:38 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:mining/gold_rush": {
+    "criteria": {
+      "gold_ingot": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_pickaxe": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_shovel_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:statistics/root": {
+    "criteria": {
+      "diamond": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:biomes/one_with_the_forest": {
+    "criteria": {
+      "plains": "2021-12-15 19:20:13 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_stick": "2021-12-15 18:42:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_hoe": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:adventure/do_you_want_to_trade": {
+    "criteria": {
+      "village": "2021-12-15 19:20:18 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2021-12-15 19:20:23 +0100"
+    },
+    "done": true
+  },
+  "armor_statues:enable": {
+    "criteria": {
+      "tick": "2021-12-16 09:59:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_leggings_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2021-12-15 18:42:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_sword": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2021-12-15 19:18:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_ancient_debris": {
+    "criteria": {
+      "ancient_debris": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/iron_block": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:building/mannequin": {
+    "criteria": {
+      "armor_stand": "2021-12-16 09:40:59 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:bacap/mining_milestone": {
+    "criteria": {
+      "stone_age": "2021-12-15 19:20:53 +0100",
+      "gold_rush": "2021-12-15 19:20:53 +0100",
+      "getting_an_upgrade": "2021-12-15 19:20:13 +0100",
+      "diamond_miner": "2021-12-15 19:20:53 +0100",
+      "diamonds": "2021-12-15 19:20:13 +0100",
+      "acquire_hardware": "2021-12-15 19:20:13 +0100",
+      "hot_topic": "2021-12-15 19:20:53 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2021-12-15 18:42:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/torch": {
+    "criteria": {
+      "has_stone_pickaxe": "2021-12-15 18:43:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/netherite_scrap_from_blasting": {
+    "criteria": {
+      "has_ancient_debris": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_chestplate_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/shears": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/light_weighted_pressure_plate": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2021-12-15 19:20:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2021-12-15 18:42:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_shovel": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2021-12-15 18:42:44 +0100"
+    },
+    "done": true
+  },
+  "iron_furnaces:advancements/iron_upgrade": {
+    "criteria": {
+      "tick": "2021-12-15 19:17:38 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:bacap/nether_milestone": {
+    "criteria": {
+      "nether_say_die": "2021-12-15 19:20:53 +0100",
+      "diamonds_are_not_forever": "2021-12-15 19:20:53 +0100"
+    },
+    "done": false
+  },
+  "blazeandcave:farming/write_your_thoughts": {
+    "criteria": {
+      "writable_book": "2021-12-16 09:40:43 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_hoe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:biomes/high_feet": {
+    "criteria": {
+      "meadow": "2021-12-15 19:20:18 +0100"
+    },
+    "done": false
+  },
+  "blazeandcave:bacap/biomes_milestone": {
+    "criteria": {
+      "just_keep_swimming": "2021-12-15 19:20:25 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/tools/netherite_axe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_iron_ore": {
+    "criteria": {
+      "has_iron_ore": "2021-12-15 18:43:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_leggings": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_axe": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_axe": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "bread": "2021-12-15 19:21:02 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2021-12-15 18:42:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/shield": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_helmet": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:farming/vegetarian": {
+    "criteria": {
+      "bread": "2021-12-15 19:21:02 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/tools/netherite_pickaxe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bucket": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_boots": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/hopper": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:farming/come_to_the_countryside": {
+    "criteria": {
+      "wheat": "2021-12-15 19:20:27 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2021-12-15 18:42:44 +0100"
+    },
+    "done": true
+  },
+  "global:miniblock_traders": {
+    "criteria": {
+      "trigger": "2021-12-15 19:20:46 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:potion/a_much_more_doable_challenge": {
+    "criteria": {
+      "strength": "2021-12-15 19:20:29 +0100",
+      "regeneration": "2021-12-15 19:20:29 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_stick": "2021-12-15 18:42:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_chestplate": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "joshmats:morefoods/story/start": {
+    "criteria": {
+      "start": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "iron_furnaces:advancements/gold_furnace": {
+    "criteria": {
+      "tick": "2021-12-15 19:17:38 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lodestone": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/coal": {
+    "criteria": {
+      "has_coal_block": "2021-12-15 18:43:16 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_sign": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "iron_furnaces:advancements/iron_furnace": {
+    "criteria": {
+      "tick": "2021-12-15 19:17:38 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:bacap/adventure_milestone": {
+    "criteria": {
+      "do_you_want_to_trade": "2021-12-15 19:20:20 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2021-12-15 19:20:23 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_helmet": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_shovel": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "iron_furnaces:advancements/root": {
+    "criteria": {
+      "tick": "2021-12-15 19:17:38 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:challenges/explorer_of_worlds": {
+    "criteria": {
+      "plains": "2021-12-15 19:20:13 +0100",
+      "meadow": "2021-12-15 19:20:18 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/redstone/oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:technical/fail_dragon_vs": {
+    "criteria": {
+      "enter_water": "2021-12-15 19:20:25 +0100"
+    },
+    "done": true
+  },
+  "iron_furnaces:advancements/diamond_furnace": {
+    "criteria": {
+      "tick": "2021-12-15 19:17:38 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:challenges/all_the_blocks": {
+    "criteria": {
+      "furnace": "2021-12-15 19:20:53 +0100",
+      "cobblestone": "2021-12-15 19:20:53 +0100",
+      "ancient_debris": "2021-12-15 19:20:53 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/iron_bars": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_pickaxe": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gold_block": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:bacap/building_milestone": {
+    "criteria": {
+      "mannequin": "2021-12-16 09:41:00 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/stone": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "cobblestone": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/furnace": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/minecart": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:farming/an_amazing_story": {
+    "criteria": {
+      "written_book": "2021-12-16 09:40:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_door": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2021-12-15 19:20:13 +0100",
+      "meadow": "2021-12-15 19:20:18 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2021-12-15 18:42:44 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2021-12-15 18:42:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_hoe": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "iron_furnaces:advancements/netherite_furnace": {
+    "criteria": {
+      "tick": "2021-12-15 19:17:38 +0100"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2021-12-15 19:21:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/netherite_block": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2021-12-15 19:20:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/golden_apple": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:mining/hot_topic": {
+    "criteria": {
+      "furnace": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/stone_sword": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:statistics/spring_in_your_step": {
+    "criteria": {
+      "trigger": "2021-12-15 19:20:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:nether/diamonds_are_not_forever": {
+    "criteria": {
+      "netherite_ingot": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2021-12-15 18:43:28 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_shovel": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:bacap/statistics_milestone": {
+    "criteria": {
+      "spring_in_your_step": "2021-12-15 19:20:14 +0100",
+      "root": "2021-12-15 19:20:53 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2021-12-15 19:20:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_pickaxe": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smithing_table": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_trapdoor": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_door": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/plant_seed": {
+    "criteria": {
+      "wheat": "2021-12-15 19:20:27 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2021-12-15 19:20:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:challenges/stack_all_the_items": {
+    "criteria": {
+      "writable_book": "2021-12-16 09:40:43 +0100",
+      "diamond": "2021-12-15 19:20:53 +0100"
+    },
+    "done": false
+  },
+  "blazeandcave:adventure/raidin_master": {
+    "criteria": {
+      "village": "2021-12-15 19:20:18 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_hoe": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:bacap/advancement_legend": {
+    "criteria": {
+      "stone_age": "2021-12-15 19:20:53 +0100",
+      "write_your_thoughts": "2021-12-16 09:40:44 +0100",
+      "bake_bread": "2021-12-15 19:20:55 +0100",
+      "acquire_hardware": "2021-12-15 19:20:13 +0100",
+      "do_you_want_to_trade": "2021-12-15 19:20:20 +0100",
+      "spring_in_your_step": "2021-12-15 19:20:14 +0100",
+      "hot_topic": "2021-12-15 19:20:53 +0100",
+      "a_seedy_place": "2021-12-15 19:20:27 +0100",
+      "diamonds": "2021-12-15 19:20:13 +0100",
+      "statistics_root": "2021-12-15 19:20:53 +0100",
+      "diamond_miner": "2021-12-15 19:20:53 +0100",
+      "nether_say_die": "2021-12-15 19:20:53 +0100",
+      "just_keep_swimming": "2021-12-15 19:20:25 +0100",
+      "gold_rush": "2021-12-15 19:20:53 +0100",
+      "getting_an_upgrade": "2021-12-15 19:20:13 +0100",
+      "animal_root": "2021-12-15 19:21:02 +0100",
+      "bacap_root": "2021-12-15 19:20:14 +0100",
+      "mannequin": "2021-12-16 09:41:00 +0100",
+      "diamonds_are_not_forever": "2021-12-15 19:20:53 +0100",
+      "an_amazing_story": "2021-12-16 09:40:53 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2021-12-15 19:20:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_sword_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/netherite_scrap": {
+    "criteria": {
+      "has_ancient_debris": "2021-12-15 19:20:53 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:bacap/animal_milestone": {
+    "criteria": {
+      "root": "2021-12-15 19:21:02 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_iron_ore": {
+    "criteria": {
+      "has_iron_ore": "2021-12-15 18:43:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_leggings": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_helmet_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lantern": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:farming/bake_bread": {
+    "criteria": {
+      "bread": "2021-12-15 19:20:55 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chain": {
+    "criteria": {
+      "has_iron_ingot": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2021-12-15 18:43:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_boots_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2021-12-15 19:18:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_fence": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_campfire": {
+    "criteria": {
+      "has_stick": "2021-12-15 18:42:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2021-12-15 19:20:25 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:bacap/farming_milestone": {
+    "criteria": {
+      "bake_bread": "2021-12-15 19:20:55 +0100",
+      "a_seedy_place": "2021-12-15 19:20:27 +0100",
+      "write_your_thoughts": "2021-12-16 09:40:44 +0100",
+      "an_amazing_story": "2021-12-16 09:40:53 +0100"
+    },
+    "done": false
+  },
+  "minecraft:story/smelt_iron": {
+    "criteria": {
+      "iron": "2021-12-15 18:44:52 +0100"
+    },
+    "done": true
+  },
+  "better_elytra:root": {
+    "criteria": {
+      "elytra": "2021-12-15 19:20:23 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_axe": {
+    "criteria": {
+      "has_cobblestone": "2021-12-15 18:42:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_iron_block": {
+    "criteria": {
+      "has_raw_iron": "2021-12-15 18:43:28 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab": {
+    "criteria": {
+      "has_planks": "2021-12-15 18:42:49 +0100"
+    },
+    "done": true
+  },
+  "blazeandcave:biomes/just_keep_swimming": {
+    "criteria": {
+      "enter_water": "2021-12-15 19:20:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_boots": {
+    "criteria": {
+      "has_gold_ingot": "2021-12-15 18:47:40 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 2865
+}
