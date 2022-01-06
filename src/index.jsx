@@ -20,6 +20,7 @@ import Error from 'pages/Error';
 import VanillaTweaks from 'pages/VanillaTweaks';
 import HomeBanner from 'components/HomeBanner';
 import Banner from 'components/Banner';
+import download from 'assets/images/download.svg';
 
 const App = () => {
   console.log(`
@@ -44,9 +45,11 @@ YMMMUP^
     <div>
       <Router>
         <main>
-          <a className="btn-download" href="/Silverfish-infesting-space-ressourcepack.zip" download rel="noopener noreferrer" target="_blank">
-           Télécharger le ressource pack
-          </a>
+          <div className="btn-download">
+            <p className="dwnld">Télécharger le ressource pack <img className="download" src={download} alt="lien" /></p>
+            <p className="resolution"><a href="/Silverfish-Infesting-Space_x16ressourcepack.zip" download rel="noopener noreferrer" target="_blank">Résolution 16 pixels</a></p>
+            <p className="resolution"><a href="/Silverfish-Infesting-Space_x32ressourcepack.zip" download rel="noopener noreferrer" target="_blank">Résolution 32 pixels</a></p>
+          </div>
           <Switch>
             <Route path="/" exact>
               <HomeBanner />

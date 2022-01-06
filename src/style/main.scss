@@ -159,8 +159,11 @@ img{
 //############ DIVERS #################
 
 .btn-download{
+  overflow: hidden;
   color: $light-grey;
   position: absolute;
+  width: 250px;
+  height: 15px;
   top: -5px;
   right: 10px;
   font-size: 15px;
@@ -168,14 +171,25 @@ img{
   background-color: $black-color;
   padding: 15px 10px 10px 10px;
   transition: 0.3s;
+  & p{
+    cursor: default;
+  }
   &:hover{
     border: solid 2px rgb(142, 142, 142);
     color: $white-color;
+    height: 100px;
+  }
+  & .dwnld{
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  & .resolution{
+    padding-left: 35px;
   }
 }
 
-.link{
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(253deg) brightness(104%) contrast(101%);
+.download, .link{
+  filter: invert(94%) sepia(1%) saturate(459%) hue-rotate(350deg) brightness(90%) contrast(80%);
   margin: 0 0 0 5px;
 }
 
