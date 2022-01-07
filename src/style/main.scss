@@ -140,7 +140,7 @@ img{
 }
 
 .intro{
-  color: #7194b2 !important;
+  color: $sky-blue !important;
 }
 
 //############ CONTENT #################
@@ -196,6 +196,44 @@ img{
   filter: invert(94%) sepia(1%) saturate(459%) hue-rotate(350deg) brightness(90%) contrast(80%);
   margin: 0 0 0 5px;
 }
+
+.btn-podium{
+  padding: 4px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50%;
+  background-color: $light-grey;
+  border: 2px solid $dark-grey;
+  transition: 0.3s;
+
+  &:hover{
+    background-color: $dark-grey;
+    border: 2px solid $light-grey;
+    & img{
+      filter: invert(94%) sepia(1%) saturate(459%) hue-rotate(350deg) brightness(90%) contrast(80%);
+    }
+  }
+
+  & .podium{
+    width: 35px;
+    height: 30px;
+  }
+}
+.top-advancements{
+  & .playername{
+    font-family: "MinecraftRegular";
+    font-size: 20px;
+    color: $sky-blue;
+  }
+  .card-player{
+    padding: 10px 0;
+  }
+  & .unlocked-advancements{
+    color: $light-grey;
+  }
+}
+
 
 .bold{
   font-weight: bold;

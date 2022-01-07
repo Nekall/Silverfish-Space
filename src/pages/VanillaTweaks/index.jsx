@@ -53,7 +53,7 @@ return (
       <p>―</p>
       <p className="bold">Redstone Rotation Wrench</p>
       <p>
-        Une petit datapack qui ajoute le craft du wrench pour pouvoir tourner repeater, comparator, observer, dispenser, dropper, hopper, sticky-piston & piston.
+        Un petit datapack qui ajoute le craft du wrench pour pouvoir tourner repeater, comparator, observer, dispenser, dropper, hopper, sticky-piston & piston.
         Une simple sneak + clique droit sur le bloc souhaité et tu pourras le faire tourner dans tous les sens rapidement et facilement.
         Attention, tu ne pourras pas faire tourner un dispenser plein par exemple, il faut que le bloc ayant un inventaire soit vide.
       </p>

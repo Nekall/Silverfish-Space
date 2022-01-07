@@ -110,7 +110,7 @@ YMMMUP^
               <Banner />
               <VanillaTweaks />
             </Route>
-            <Route path="/top">
+            <Route path="/top-advancements">
               <Banner />
               <TopAdvancements />
             </Route>
