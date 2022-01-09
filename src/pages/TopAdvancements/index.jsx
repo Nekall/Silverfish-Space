@@ -59,7 +59,7 @@ const TopAdvancements = () => {
   return(
     <div className="top-advancements content">
       <h2>Classements des joueurs dans la réalisation des haut-faits :</h2>
-      <p>(Mise à jour des données : 07/01/2022 - 12h30)</p>
+      <p>(Mise à jour des données : 09/01/2022 - 14h00)</p>
       <hr/>
       {players && players.map((player, index)=>{
         console.log(player.name);
