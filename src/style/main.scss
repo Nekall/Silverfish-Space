@@ -208,7 +208,7 @@ img{
   transition: 0.3s;
 
   &:hover{
-    background-color: $dark-grey;
+    background-color: $black-color;
     border: 2px solid $light-grey;
     & img{
       filter: invert(94%) sepia(1%) saturate(459%) hue-rotate(350deg) brightness(90%) contrast(80%);
@@ -234,6 +234,25 @@ img{
   }
 }
 
+.title-news{
+  font-family: "MinecraftRegular";
+  color: #ffff00;
+  text-shadow: 3px 2px #777701;
+  font-size: 25px;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 
 .bold{
   font-weight: bold;

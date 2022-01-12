@@ -36,6 +36,18 @@ import simpleDispenser from '../../assets/images/MissingVanillaRecipes/simple-di
 import simpleRepeater from '../../assets/images/MissingVanillaRecipes/simple-repeater.png';
 import string from '../../assets/images/MissingVanillaRecipes/string.png';
 
+import blackDye from '../../assets/images/MissingVanillaRecipes/black-dye.png';
+import copperBlock from '../../assets/images/MissingVanillaRecipes/copper-block.png';
+import ice from '../../assets/images/MissingVanillaRecipes/ice.png';
+import packedIce from '../../assets/images/MissingVanillaRecipes/packed-ice.png';
+import redDye from '../../assets/images/MissingVanillaRecipes/red-dye.png';
+import rootedDirt from '../../assets/images/MissingVanillaRecipes/rooted-dirt.png';
+import slabToBlock from '../../assets/images/MissingVanillaRecipes/slab-to-block.gif';
+import stickyPiston from '../../assets/images/MissingVanillaRecipes/sticky-piston.png';
+import yellowDye from '../../assets/images/MissingVanillaRecipes/yellow-dye.png';
+import lead from '../../assets/images/MissingVanillaRecipes/lead.png';
+
+
 const MissionVanillaRecipes = () => {
 return (
   <div className="container">
@@ -44,6 +56,19 @@ return (
       <h2>Missing Vanilla Recipes (fait par Sacha ♥)</h2>
       <p>Minecraft n’est pas logique, on y remédie.</p>
       <p>39 nouvelles recettes INÉDITES logiques et comme dirait un vieux sage “ Ça devrait être dans le jeu de base ”.</p>
+      <hr/>
+      <p className="title-news bold">Nouveaux crafts !</p>
+      <img src={slabToBlock} alt="slab to block" />
+      <img src={ice} alt="ice" />
+      <img src={packedIce} alt="packed ice" />
+      <img src={copperBlock} alt="copper block" />
+      <img src={rootedDirt} alt="rooted dirt" />
+      <img src={stickyPiston} alt="sticky piston" />
+      <img src={blackDye} alt="black dye" />
+      <img src={redDye} alt="red dye" />
+      <img src={yellowDye} alt="yellow dye" />
+      <img src={lead} alt="lead" />
+
       <p>Cuissons :</p>
       <img src={leather} alt="leather" />
       <img src={rawIron} alt="raw Iron" />
