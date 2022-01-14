@@ -3,6 +3,7 @@ import jok from "../../data/advancements/92a5948f-b552-46ad-b92b-1f17c7e062c2.js
 import oni from "../../data/advancements/e76a0df3-34e9-4a65-a2c4-68846c130d54.json";
 import meri from "../../data/advancements/bbd3df60-4062-46fe-8837-8ab02402971a.json";
 import leone from "../../data/advancements/9d60c4d3-b472-4420-8215-60621cabdfc1.json";
+import lb from "../../data/advancements/0da1efca-9577-4cd3-95db-bab5f4b2fdb8.json";
 
 const TopAdvancements = () => {
 
@@ -25,6 +26,10 @@ const TopAdvancements = () => {
   let leoneSize = Object.keys(leone).length;
   let leoneCheckComplet = 0;
   for(let i = 0; i < leoneSize ;i++){if(leone[Object.keys(leone)[i]].done){leoneCheckComplet++;}}
+
+  let lbSize = Object.keys(lb).length;
+  let lbCheckComplet = 0;
+  for(let i = 0; i < lbSize ;i++){if(lb[Object.keys(lb)[i]].done){lbCheckComplet++;}}
 
   const players = [
     {
@@ -51,6 +56,11 @@ const TopAdvancements = () => {
       name : "Leone_e",
       size : leoneSize,
       check : leoneCheckComplet
+    },
+    {
+      name : "Los_Bedos",
+      size : lbSize,
+      check : lbCheckComplet
     }
   ];
 
@@ -59,7 +69,7 @@ const TopAdvancements = () => {
   return(
     <div className="top-advancements content">
       <h2>Classements des joueurs dans la réalisation des haut-faits :</h2>
-      <p>(Mise à jour des données : 12/01/2022 - 19h30)</p>
+      <p>(Mise à jour des données : 14/01/2022 - 22h30)</p>
       <hr/>
       {players && players.map((player, index)=>{
         console.log(player.name);
