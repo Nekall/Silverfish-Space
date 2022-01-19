@@ -227,11 +227,15 @@ img{
     color: $sky-blue;
   }
   .card-player{
-    padding: 10px 0;
+    padding: 5px 0;
   }
   & .unlocked-advancements{
     color: $light-grey;
   }
+}
+
+.back-btn{
+  float: left;
 }
 
 .title-news{

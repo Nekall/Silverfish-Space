@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import neka from "../../data/advancements/405f1f09-4c9e-49d0-992b-7bddb8d19e16.json";
 import jok from "../../data/advancements/92a5948f-b552-46ad-b92b-1f17c7e062c2.json";
 import oni from "../../data/advancements/e76a0df3-34e9-4a65-a2c4-68846c130d54.json";
@@ -69,6 +70,7 @@ const TopAdvancements = () => {
 
   return(
     <div className="top-advancements content">
+    <NavLink className="back-btn" to="/">◀ Retour</NavLink>
       <h2>Classements des joueurs dans la réalisation des haut-faits :</h2>
       <p>(Mise à jour des données : {timestamp.time_stamp})</p>
       <hr/>
