@@ -5,6 +5,7 @@ import oni from "../../data/advancements/e76a0df3-34e9-4a65-a2c4-68846c130d54.js
 import meri from "../../data/advancements/bbd3df60-4062-46fe-8837-8ab02402971a.json";
 import leone from "../../data/advancements/9d60c4d3-b472-4420-8215-60621cabdfc1.json";
 import lb from "../../data/advancements/0da1efca-9577-4cd3-95db-bab5f4b2fdb8.json";
+import ewi from "../../data/advancements/d4ebaebf-8cc0-4319-bea0-22a4397a498c.json";
 import timestamp from "../../data/advancements/timestamp.json";
 
 const TopAdvancements = () => {
@@ -32,6 +33,10 @@ const TopAdvancements = () => {
   let lbSize = Object.keys(lb).length;
   let lbCheckComplet = 0;
   for(let i = 0; i < lbSize ;i++){if(lb[Object.keys(lb)[i]].done){lbCheckComplet++;}}
+
+  let ewiSize = Object.keys(ewi).length;
+  let ewiCheckComplet = 0;
+  for(let i = 0; i < ewiSize ;i++){if(ewi[Object.keys(ewi)[i]].done){ewiCheckComplet++;}}
 
   const players = [
     {
@@ -63,6 +68,11 @@ const TopAdvancements = () => {
       name : "Los_Bedos",
       size : lbSize,
       check : lbCheckComplet
+    },
+    {
+      name : "Ewigael",
+      size : ewiSize,
+      check : ewiCheckComplet
     }
   ];
 
