@@ -80,7 +80,7 @@ const TopAdvancements = () => {
 
   return(
     <div className="top-advancements content">
-    <NavLink className="back-btn" to="/">◀ Retour</NavLink>
+    <div><NavLink className="back-btn" to="/">◀ Retour</NavLink></div>
       <h2>Classements des joueurs dans la réalisation des haut-faits :</h2>
       <p>(Mise à jour des données : {timestamp.time_stamp})</p>
       <hr/>

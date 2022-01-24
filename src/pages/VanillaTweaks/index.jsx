@@ -47,7 +47,7 @@ return (
       <p>Ce petit datapack vous permet d'avoir toujours les coordonnées, la direction et l'heure du jeu toujours à porté de mains.</p>
       <div>
         <p className="hudposition">XYZ: <span className="x">{x}</span>  <span className="y">{y}</span>  <span className="z">{z}</span>       <span className="dir">{direction}</span>                      <span className="hours">{hours}</span></p>
-        <img className="hudpos-img" src={hudposition} alt="hudposition" />
+        <img className="dp-img hudpos-img" src={hudposition} alt="hudposition" />
       </div>
       <div className="copy-hud-cmd" onClick={() => copyCmd()}>/trigger ch_toggle<img className="link" src={copy} alt="copie commande" /></div>
       <p>―</p>

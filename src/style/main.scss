@@ -1,4 +1,5 @@
 @import "colors.scss";
+@import "pages.scss";
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 @font-face{
   font-family: "BebasNeue";
@@ -200,8 +201,8 @@ img{
 .btn-podium{
   padding: 4px;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 40px;
+  right: 40px;
   border-radius: 50%;
   background-color: $light-grey;
   border: 2px solid $dark-grey;
@@ -220,11 +221,15 @@ img{
     height: 30px;
   }
 }
+
 .top-advancements{
   & .playername{
     font-family: "MinecraftRegular";
     font-size: 20px;
     color: $sky-blue;
+  }
+  & h2{
+    margin-top: 50px;
   }
   .card-player{
     padding: 5px 0;
@@ -235,6 +240,7 @@ img{
 }
 
 .back-btn{
+  margin: 10px;
   float: left;
 }
 
@@ -287,87 +293,6 @@ img{
   background-color: rgba(#8bff73, 0.41);
 }
 
-//######### PAGES ############
-
-.listing{
-  text-align: left;
-  margin: auto;
-  text-align: center;
-  & table{
-    margin: auto;
-  }
-  & td{
-    background-color: rgba(#2c3032, 0.49);
-    padding: 0 10px 0 10px;
-  }
-  & li{
-    margin-bottom: 5px;
-    list-style: none;
-  }
-}
-
-.dp-img{
-  width: 575px;
-}
-
-.dp-img-details{
-  width: 200px;
-}
-
-.error{
-  display: table-cell;
-  vertical-align: middle;
-  & p{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    opacity: 0.5;
-  }
-  & .boat{
-    position: absolute;
-    top: 15%;
-    left: 40%;
-  }
-  & .e404{
-    font-family: "MinecraftRegular";
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  background-image: url("../assets/images/error.png");
-  background-position: bottom center;
-  width: 100vw;
-  height: 100vh;
-}
-
-.hudposition{
-  font-family: "MinecraftRegular";
-  font-size: 20px;
-  margin-bottom: -50px;
-  position: relative
-}
-
-.forge{
-  width: 150px;
-}
-
-.food-tabs{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  & p{
-    margin-bottom: 30px;
-  }
-  & div{
-    padding: 20px 10px;
-    margin: 30px 10px 10px 10px;
-    background-color: rgba(#2c3032, 0.49);
-  }
-  & li{
-    margin-left: 50px;
-    padding: 5px;
-    list-style: square;
-    text-align: left;
-  }
-}
 
 //######### Floating Effect ############
 .floating{
@@ -406,6 +331,31 @@ img{
   }
 }
 
+@media only screen and (max-width: 1200px){
+  .btn-podium{
+    padding: 1px;
+    position: fixed;
+    top: 65px;
+    bottom: inherit;
+    right: inherit;
+    left: -2px;
+    border-radius: 0 50% 50% 0;
+    background-color: $light-grey;
+    border: 1px solid $dark-grey;
+
+    & .podium{
+      width: 33px;
+      height: 28px;
+    }
+  }
+
+  .food-tabs{
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+
+
 @media only screen and (max-width: 900px){
   //Home page
   h1{
@@ -442,8 +392,30 @@ img{
     padding: 5px 0;
   }
 
-  .dp-img{
-    width: 100vw;
+  .btn-podium{
+    padding: 1px;
+    position: fixed;
+    top: 65px;
+    bottom: inherit;
+    right: inherit;
+    left: -2px;
+    border-radius: 0 50% 50% 0;
+    background-color: $light-grey;
+    border: 1px solid $dark-grey;
+
+    & .podium{
+      width: 33px;
+      height: 28px;
+    }
+  }
+
+  .title-news{
+    animation: none;
+  }
+
+  .food-tabs{
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 
 }
@@ -493,9 +465,36 @@ img{
     padding: 5px 0;
   }
 
-  .dp-img{
-    width: 100vw;
+  .btn-podium{
+    padding: 1px;
+    position: fixed;
+    top: 65px;
+    bottom: inherit;
+    right: inherit;
+    left: -2px;
+    border-radius: 0 50% 50% 0;
+    background-color: $light-grey;
+    border: 1px solid $dark-grey;
+
+    & .podium{
+      width: 33px;
+      height: 28px;
+    }
   }
+
+  .title-news{
+    animation: none;
+  }
+
+  .image-gallery{
+    display: none;
+  }
+
+  .boat{
+    top: 15% !important;
+    left: 20% !important;
+  }
+
 }
 
 @media only screen and (max-width: 350px){
@@ -542,13 +541,34 @@ img{
     padding: 5px 0;
   }
 
-  .dp-img{
-    width: 100vw;
+  .btn-podium{
+    padding: 1px;
+    position: fixed;
+    top: 65px;
+    bottom: inherit;
+    right: inherit;
+    left: -2px;
+    border-radius: 0 50% 50% 0;
+    background-color: $light-grey;
+    border: 1px solid $dark-grey;
+
+    & .podium{
+      width: 33px;
+      height: 28px;
+    }
+  }
+
+  .title-news{
+    animation: none;
+  }
+
+  .image-gallery{
+    display: none;
   }
 
 }
 
-//########## Image gallery ############
+//######## Gallery #########
 .image-gallery-slide .image-gallery-image {
     width: 98%;
 }

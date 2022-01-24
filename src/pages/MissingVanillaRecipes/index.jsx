@@ -55,7 +55,7 @@ return (
     <div className="content">
       <h2>Missing Vanilla Recipes (fait par Sacha ♥)</h2>
       <p>Minecraft n’est pas logique, on y remédie.</p>
-      <p>39 nouvelles recettes INÉDITES logiques et comme dirait un vieux sage “ Ça devrait être dans le jeu de base ”.</p>
+      <p>Plus de 50 nouvelles recettes INÉDITES logiques et comme dirait un vieux sage “ Ça devrait être dans le jeu de base ”.</p>
       <hr/>
       <p className="title-news bold">Nouveaux crafts !</p>
       <img src={slabToBlock} alt="slab to block" />

@@ -23,7 +23,7 @@ return (
       </p>
       <img src={craftInvisibleFrame} alt="invisible frame" />
       <img src={craftInvisibleGlowFrame} alt="invisible glowing frame" />
-      <img src={invisibleframes} alt="explication en gif" />
+      <img className="dp-img" src={invisibleframes} alt="explication en gif" />
     </div>
   </div>
   )

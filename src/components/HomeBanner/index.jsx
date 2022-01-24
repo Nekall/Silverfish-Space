@@ -3,10 +3,14 @@ import videoBanner from "../../assets/videos/Mc-video-banner.webm";
 import book from "../../assets/images/book.png";
 import enchantedBook from "../../assets/images/enchantedbook.webp";
 
+import podium from 'assets/images/podium.svg';
+
 const HomeBanner = () => {
   return(
     <div className="home-banner">
-
+      <div className="btn-podium">
+        <NavLink activeClassName="active" to="/top-advancements"><img className="podium" src={podium} alt="podium achievements" /></NavLink>
+      </div>
       <div className="fullscreen-bg">
           <video muted autoPlay id="#bg-video">
               <source src={videoBanner} type="video/webm" />
