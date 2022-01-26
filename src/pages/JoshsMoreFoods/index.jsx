@@ -1,10 +1,9 @@
-import SubNavbar from 'components/SubNavbar';
-import cookingBook from '../../assets/images/JoshsMoreFoods/cooking-book.png';
-import link from '../../assets/images/link.svg';
-import morefood from '../../assets/images/JoshsMoreFoods/morefood.png';
+import SubNavbar from "components/SubNavbar";
+import cookingBook from "../../assets/images/JoshsMoreFoods/cooking-book.png";
+import link from "../../assets/images/link.svg";
+import morefood from "../../assets/images/JoshsMoreFoods/morefood.png";
 
-const JoshsMoreFoods = () => {
-return (
+const JoshsMoreFoods = () => (
   <div className="container">
     <SubNavbar />
     <div className="content">
@@ -57,6 +56,5 @@ return (
       </ul>
     </div>
     </div>
-  )
-};
+  );
 export default JoshsMoreFoods;

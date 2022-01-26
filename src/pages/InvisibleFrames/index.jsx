@@ -1,12 +1,11 @@
-import SubNavbar from 'components/SubNavbar';
-import craftInvisibleFrame from '../../assets/images/InvisibleFrames/invisible-frame.png';
-import craftInvisibleGlowFrame from '../../assets/images/InvisibleFrames/invisible-glowing-frame.png';
-import link from '../../assets/images/link.svg';
-import invisibleframe from '../../assets/images/InvisibleFrames/invisibleframe.png';
-import invisibleframes from '../../assets/images/InvisibleFrames/invisibleframes.gif';
+import SubNavbar from "components/SubNavbar";
+import craftInvisibleFrame from "../../assets/images/InvisibleFrames/invisible-frame.png";
+import craftInvisibleGlowFrame from "../../assets/images/InvisibleFrames/invisible-glowing-frame.png";
+import link from "../../assets/images/link.svg";
+import invisibleframe from "../../assets/images/InvisibleFrames/invisibleframe.png";
+import invisibleframes from "../../assets/images/InvisibleFrames/invisibleframes.gif";
 
-const InvisibleFrames = () => {
-return (
+const InvisibleFrames = () => (
   <div className="container">
     <SubNavbar />
     <div className="content">
@@ -26,6 +25,5 @@ return (
       <img className="dp-img" src={invisibleframes} alt="explication en gif" />
     </div>
   </div>
-  )
-};
+  );
 export default InvisibleFrames;

@@ -1,24 +1,22 @@
-import SubNavbar from 'components/SubNavbar';
-import acaciaBonsaiPot from '../../assets/images/BonsaiPots/acacia-bonsai-pot.png';
-import azaleaBonsaiPot from '../../assets/images/BonsaiPots/azalea-bonsai-pot.png';
-import bambooBonsaiPot from '../../assets/images/BonsaiPots/bamboo-bonsai-pot.png';
-import birchBonsaiPot from '../../assets/images/BonsaiPots/birch-bonsai-pot.png';
-import brownMushroomBonsaiPot from '../../assets/images/BonsaiPots/brown-mushroom-bonsai-pot.png';
-import cactusBonsaiPot from '../../assets/images/BonsaiPots/cactus-bonsai-pot.png';
-import crimsonFungusPot from '../../assets/images/BonsaiPots/crimson-fungus-pot.png';
-import darkOakBonsaiPot from '../../assets/images/BonsaiPots/dark-oak-bonsai-pot.png';
-import deadBushBonsaiPot from '../../assets/images/BonsaiPots/dead-bush-bonsai-pot.png';
-import jungleBonsaiPot from '../../assets/images/BonsaiPots/jungle-bonsai-pot.png';
-import oakBonsaiPot from '../../assets/images/BonsaiPots/oak-bonsai-pot.png';
-import redMushroomBonsaiPot from '../../assets/images/BonsaiPots/red-mushroom-bonsai-pot.png';
-import spruceBonsaiPot from '../../assets/images/BonsaiPots/spruce-bonsai-pot.png';
-import warpedFungusPot from '../../assets/images/BonsaiPots/warped-fungus-pot.png';
-import bonsaipot from '../../assets/images/BonsaiPots/bonsaipot.png';
-import link from '../../assets/images/link.svg';
+import SubNavbar from "components/SubNavbar";
+import acaciaBonsaiPot from "../../assets/images/BonsaiPots/acacia-bonsai-pot.png";
+import azaleaBonsaiPot from "../../assets/images/BonsaiPots/azalea-bonsai-pot.png";
+import bambooBonsaiPot from "../../assets/images/BonsaiPots/bamboo-bonsai-pot.png";
+import birchBonsaiPot from "../../assets/images/BonsaiPots/birch-bonsai-pot.png";
+import brownMushroomBonsaiPot from "../../assets/images/BonsaiPots/brown-mushroom-bonsai-pot.png";
+import cactusBonsaiPot from "../../assets/images/BonsaiPots/cactus-bonsai-pot.png";
+import crimsonFungusPot from "../../assets/images/BonsaiPots/crimson-fungus-pot.png";
+import darkOakBonsaiPot from "../../assets/images/BonsaiPots/dark-oak-bonsai-pot.png";
+import deadBushBonsaiPot from "../../assets/images/BonsaiPots/dead-bush-bonsai-pot.png";
+import jungleBonsaiPot from "../../assets/images/BonsaiPots/jungle-bonsai-pot.png";
+import oakBonsaiPot from "../../assets/images/BonsaiPots/oak-bonsai-pot.png";
+import redMushroomBonsaiPot from "../../assets/images/BonsaiPots/red-mushroom-bonsai-pot.png";
+import spruceBonsaiPot from "../../assets/images/BonsaiPots/spruce-bonsai-pot.png";
+import warpedFungusPot from "../../assets/images/BonsaiPots/warped-fungus-pot.png";
+import bonsaipot from "../../assets/images/BonsaiPots/bonsaipot.png";
+import link from "../../assets/images/link.svg";
 
-
-const BonsaiPots = () => {
-return (
+const BonsaiPots = () => (
   <div className="container">
     <SubNavbar />
     <div className="content">
@@ -41,6 +39,5 @@ return (
       <img src={crimsonFungusPot} alt="crimson Fungus Pot" />
     </div>
   </div>
-  )
-};
+  );
 export default BonsaiPots;

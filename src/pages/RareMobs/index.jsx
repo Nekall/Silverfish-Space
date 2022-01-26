@@ -1,7 +1,7 @@
-import SubNavbar from 'components/SubNavbar';
-import link from '../../assets/images/link.svg';
-import raremobs from '../../assets/images/RareMobs/raremobs.png';
-import ImageGallery from 'react-image-gallery';
+import SubNavbar from "components/SubNavbar";
+import link from "../../assets/images/link.svg";
+import raremobs from "../../assets/images/RareMobs/raremobs.png";
+import ImageGallery from "react-image-gallery";
 
 const RareMobs = () => {
 

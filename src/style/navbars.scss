@@ -1,0 +1,58 @@
+.navbar{
+  display: none;
+  font-family: "BebasNeue";
+  background-image: url("../assets/images/sky-night-shader.jpg");
+  background-position: top center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  border-bottom: 1px solid $light-grey;
+  z-index: 999;
+  & p{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
+.subnavbar{
+  font-family: "MinecraftRegular";
+  grid-area: subnavbar;
+  background-color: $white-color;
+  padding: 2px 0 0 0;
+  background-color: rgba($black-color, 0.85);
+  & a{
+    background-color: $light-grey;
+    text-decoration: none;
+    display: grid;
+    font-size: 18px;
+    color: #3b3b3b;
+    border-top: solid 2px $dark-grey;
+    border-left: solid 2px $dark-grey;
+    border-bottom: solid 2px $dark-grey;
+    padding: 15px 0 15px 30px;
+    margin: -2px 0 0 0;
+    transition: 0.8s;
+  }
+  & a:hover, .active{
+    background-color: $black-color;
+    color: $light-grey;
+    padding-left: 20%;
+  }
+}
+
+.intro{
+  color: $sky-blue !important;
+}
+
+//############ RESPONSIVE ##############
+@media only screen and (max-width: 1200px){
+  .subnavbar{
+    & a{
+      font-size: 15px;
+      padding: 5px 0 5px 10px;
+      margin: -2px 0 0 0;
+      transition: 0;
+    }
+  }
+}

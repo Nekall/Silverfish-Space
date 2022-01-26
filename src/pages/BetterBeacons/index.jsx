@@ -1,10 +1,9 @@
-import SubNavbar from 'components/SubNavbar';
-import baseBlocks from '../../assets/images/BetterBeacons/base-blocks-for-range.png';
-import link from '../../assets/images/link.svg';
-import beacons from '../../assets/images/BetterBeacons/beacons.png';
+import SubNavbar from "components/SubNavbar";
+import baseBlocks from "../../assets/images/BetterBeacons/base-blocks-for-range.png";
+import link from "../../assets/images/link.svg";
+import beacons from "../../assets/images/BetterBeacons/beacons.png";
 
-const BetterBeacons = () => {
-return (
+const BetterBeacons = () => (
   <div className="container">
     <SubNavbar />
     <div className="content">
@@ -19,6 +18,5 @@ return (
       <img src={baseBlocks} alt="base blocks for range" />
     </div>
   </div>
-  )
-};
+);
 export default BetterBeacons;

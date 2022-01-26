@@ -78,3 +78,28 @@
     text-align: left;
   }
 }
+
+.top-advancements{
+  & .playername{
+    font-family: "MinecraftRegular";
+    font-size: 20px;
+    color: $sky-blue;
+  }
+  & h2{
+    margin-top: 50px;
+  }
+  .card-player{
+    padding: 5px 0;
+  }
+  & .unlocked-advancements{
+    color: $light-grey;
+  }
+}
+
+//############ RESPONSIVE ##############
+@media only screen and (max-width: 1200px){
+  .food-tabs{
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}

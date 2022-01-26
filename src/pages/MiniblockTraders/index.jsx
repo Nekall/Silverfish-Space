@@ -1,9 +1,8 @@
-import SubNavbar from 'components/SubNavbar';
-import link from '../../assets/images/link.svg';
-import miniblocks from '../../assets/images/MiniBlocksTraders/miniblocks.png';
+import SubNavbar from "components/SubNavbar";
+import link from "../../assets/images/link.svg";
+import miniblocks from "../../assets/images/MiniBlocksTraders/miniblocks.png";
 
-const MiniblockTraders = () => {
-return (
+const MiniblockTraders = () => (
   <div className="container">
     <SubNavbar />
     <div className="content">
@@ -123,6 +122,5 @@ return (
       </div>
     </div>
   </div>
-  )
-};
+  );
 export default MiniblockTraders;

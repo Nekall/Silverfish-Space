@@ -1,26 +1,26 @@
 import React from "react";
-import ReactDOM from 'react-dom';
-import './style/main.scss';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Datapacks from 'pages/Datapacks';
-import TopAdvancements from 'pages/TopAdvancements';
-import IronFurnaces from 'pages/IronFurnaces';
-import BetterBeacons from 'pages/BetterBeacons';
-import BetterElytra from 'pages/BetterElytra';
-import BlazeAndCavesAdvancements from 'pages/BlazeAndCavesAdvancements';
-import BonsaiPots from 'pages/BonsaiPots';
-import InvisibleFrames from 'pages/InvisibleFrames';
-import JoshsMoreFoods from 'pages/JoshsMoreFoods';
-import MiniblockTraders from 'pages/MiniblockTraders';
-import MissingVanillaRecipes from 'pages/MissingVanillaRecipes';
-import NetheriteBow from 'pages/NetheriteBow';
-import QuarryVanilla from 'pages/QuarryVanilla';
-import RareMobs from 'pages/RareMobs';
-import Error from 'pages/Error';
-import VanillaTweaks from 'pages/VanillaTweaks';
-import HomeBanner from 'components/HomeBanner';
-import Banner from 'components/Banner';
-import download from 'assets/images/download.svg';
+import ReactDOM from "react-dom";
+import "./style/main.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Datapacks from "pages/Datapacks";
+import TopAdvancements from "pages/TopAdvancements";
+import IronFurnaces from "pages/IronFurnaces";
+import BetterBeacons from "pages/BetterBeacons";
+import BetterElytra from "pages/BetterElytra";
+import BlazeAndCavesAdvancements from "pages/BlazeAndCavesAdvancements";
+import BonsaiPots from "pages/BonsaiPots";
+import InvisibleFrames from "pages/InvisibleFrames";
+import JoshsMoreFoods from "pages/JoshsMoreFoods";
+import MiniblockTraders from "pages/MiniblockTraders";
+import MissingVanillaRecipes from "pages/MissingVanillaRecipes";
+import NetheriteBow from "pages/NetheriteBow";
+import QuarryVanilla from "pages/QuarryVanilla";
+import RareMobs from "pages/RareMobs";
+import Error from "pages/Error";
+import VanillaTweaks from "pages/VanillaTweaks";
+import HomeBanner from "components/HomeBanner";
+import Banner from "components/Banner";
+import download from "assets/images/download.svg";
 
 const App = () => {
   console.log(`

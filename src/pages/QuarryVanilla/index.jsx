@@ -1,16 +1,15 @@
-import SubNavbar from 'components/SubNavbar';
-import quarryBuilderCraft from '../../assets/images/QuarryVanilla/quarry-builder-craft.png';
-import quarryBuilderInside from '../../assets/images/QuarryVanilla/quarry-builder-inside.png';
-import upgrade5x5 from '../../assets/images/QuarryVanilla/upgrade-5x5.png';
-import upgrade7x7 from '../../assets/images/QuarryVanilla/upgrade-7x7.png';
-import upgrade9x9 from '../../assets/images/QuarryVanilla/upgrade-9x9.png';
-import upgrade11x11 from '../../assets/images/QuarryVanilla/upgrade-11x11.png';
-import wrench from '../../assets/images/QuarryVanilla/wrench.png';
-import quarry from '../../assets/images/QuarryVanilla/quarry.gif';
-import link from '../../assets/images/link.svg';
+import SubNavbar from "components/SubNavbar";
+import quarryBuilderCraft from "../../assets/images/QuarryVanilla/quarry-builder-craft.png";
+import quarryBuilderInside from "../../assets/images/QuarryVanilla/quarry-builder-inside.png";
+import upgrade5x5 from "../../assets/images/QuarryVanilla/upgrade-5x5.png";
+import upgrade7x7 from "../../assets/images/QuarryVanilla/upgrade-7x7.png";
+import upgrade9x9 from "../../assets/images/QuarryVanilla/upgrade-9x9.png";
+import upgrade11x11 from "../../assets/images/QuarryVanilla/upgrade-11x11.png";
+import wrench from "../../assets/images/QuarryVanilla/wrench.png";
+import quarry from "../../assets/images/QuarryVanilla/quarry.gif";
+import link from "../../assets/images/link.svg";
 
-const QuarryVanilla = () => {
-return (
+const QuarryVanilla = () => (
   <div className="container">
     <SubNavbar />
     <div className="content">
@@ -33,6 +32,5 @@ return (
       <p>(5x5)―(7x7)―(9x9)―(11x11)</p>
     </div>
   </div>
-  )
-};
+  );
 export default QuarryVanilla;

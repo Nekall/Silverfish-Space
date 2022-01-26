@@ -1,11 +1,10 @@
-import SubNavbar from 'components/SubNavbar';
-import diamondElytra from '../../assets/images/BetterElytra/diamond-elytra.png';
-import netheriteElytra from '../../assets/images/BetterElytra/netherite-elytra.png';
-import fly from '../../assets/images/BetterElytra/fly.png';
-import link from '../../assets/images/link.svg';
+import SubNavbar from "components/SubNavbar";
+import diamondElytra from "../../assets/images/BetterElytra/diamond-elytra.png";
+import netheriteElytra from "../../assets/images/BetterElytra/netherite-elytra.png";
+import fly from "../../assets/images/BetterElytra/fly.png";
+import link from "../../assets/images/link.svg";
 
-const BetterElytra = () => {
-return (
+const BetterElytra = () => (
   <div className="container">
     <SubNavbar />
     <div className="content">
@@ -29,6 +28,5 @@ return (
       <img className="dp-img-details" src={netheriteElytra} alt="netherite elytra" />
     </div>
   </div>
-  )
-};
+  );
 export default BetterElytra;

@@ -1,11 +1,9 @@
-import SubNavbar from 'components/SubNavbar';
-import link from '../../assets/images/link.svg';
-import advancements from '../../assets/images/BlazeandCavesAdvancements/advancements.png';
-import advancementsPanel from '../../assets/images/BlazeandCavesAdvancements/advancements-panel.png';
+import SubNavbar from "components/SubNavbar";
+import link from "../../assets/images/link.svg";
+import advancements from "../../assets/images/BlazeandCavesAdvancements/advancements.png";
+import advancementsPanel from "../../assets/images/BlazeandCavesAdvancements/advancements-panel.png";
 
-const BlazeAndCavesAdvancements = () => {
-
-return (
+const BlazeAndCavesAdvancements = () => (
   <div className="container">
     <SubNavbar />
     <div className="content">
@@ -17,6 +15,5 @@ return (
       <img className="dp-img" src={advancementsPanel} alt="panneau des hauts faits" />
     </div>
   </div>
-  )
-};
+  );
 export default BlazeAndCavesAdvancements;

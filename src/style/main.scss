@@ -1,6 +1,9 @@
 @import "colors.scss";
 @import "pages.scss";
+@import "banners.scss";
+@import "navbars.scss";
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+
 @font-face{
   font-family: "BebasNeue";
   src: url("../assets/fonts/BebasNeue-Regular.ttf");
@@ -42,106 +45,6 @@ a{
 
 img{
   margin: 10px;
-}
-
-//########### HOME BANNER #############
-.home-banner{
-  width: 100vw;
-  height: 100vh;
-}
-
-.details-btn{
-  margin: 100px;
-  font-size: 25px;
-  transition: 0.4s;
-  &:hover{
-    padding-left: 10px;
-  }
-}
-
-.book{
-  width: 35px;
-  margin-bottom: -10px;
-  pointer-events: none;
-}
-
-//########### VIDEO BANNER #############
-.fullscreen-bg{
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-}
-
-#bg-video{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1000;
-  overflow: hidden;
-}
-
-//############ BANNER #################
-.banner{
-  background-image: url("../assets/images/sky-night-shader.jpg");
-  background-position: bottom center;
-}
-
-//############ NAVBAR #################
-.navbar{
-  display: none;
-  font-family: "BebasNeue";
-  background-image: url("../assets/images/sky-night-shader.jpg");
-  background-position: top center;
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  border-bottom: 1px solid $light-grey;
-  z-index: 999;
-  & p{
-    margin: 0;
-    padding: 10px;
-    font-size: 20px;
-  }
-}
-
-.subnavbar{
-  font-family: "MinecraftRegular";
-  grid-area: subnavbar;
-  background-color: $white-color;
-  padding: 2px 0 0 0;
-  background-color: rgba($black-color, 0.85);
-  & a{
-    background-color: $light-grey;
-    text-decoration: none;
-    display: grid;
-    font-size: 18px;
-    color: #3b3b3b;
-    border-top: solid 2px $dark-grey;
-    border-left: solid 2px $dark-grey;
-    border-bottom: solid 2px $dark-grey;
-    padding: 15px 0 15px 30px;
-    margin: -2px 0 0 0;
-    transition: 0.8s;
-  }
-  & a:hover, .active{
-    background-color: $black-color;
-    color: $light-grey;
-    padding-left: 20%;
-  }
-}
-
-.intro{
-  color: $sky-blue !important;
 }
 
 //############ CONTENT #################
@@ -222,23 +125,6 @@ img{
   }
 }
 
-.top-advancements{
-  & .playername{
-    font-family: "MinecraftRegular";
-    font-size: 20px;
-    color: $sky-blue;
-  }
-  & h2{
-    margin-top: 50px;
-  }
-  .card-player{
-    padding: 5px 0;
-  }
-  & .unlocked-advancements{
-    color: $light-grey;
-  }
-}
-
 .back-btn{
   margin: 10px;
   float: left;
@@ -288,11 +174,9 @@ img{
   cursor: copy;
 }
 
-//######## COPY #########
 .copied{
   background-color: rgba(#8bff73, 0.41);
 }
-
 
 //######### Floating Effect ############
 .floating{
@@ -310,27 +194,21 @@ img{
     100%   { transform: translate(0, -0px); }
 }
 
-//############ RESPONSIVE ##############
-@media only screen and (max-width: 1200px){
-  .container{
-    display: grid;
-    grid-template-columns: 0.4fr 1.6fr;
-    grid-template-rows: 1fr;
-    gap: 0;
-    grid-template-areas: "subnavbar content" "subnavbar content" "subnavbar content";
-    min-height: 80vh;
-  }
-
-  .subnavbar{
-    & a{
-      font-size: 15px;
-      padding: 5px 0 5px 10px;
-      margin: -2px 0 0 0;
-      transition: 0;
-    }
-  }
+//######## Gallery #########
+.image-gallery-slide .image-gallery-image {
+    width: 98%;
+}
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:focus {
+    border: none;
+}
+.image-gallery-thumbnail:hover {
+    border: 4px none;
+}
+.image-gallery-icon:hover {
+  color: $light-grey;
 }
 
+//############ RESPONSIVE ##############
 @media only screen and (max-width: 1200px){
   .btn-podium{
     padding: 1px;
@@ -342,22 +220,14 @@ img{
     border-radius: 0 50% 50% 0;
     background-color: $light-grey;
     border: 1px solid $dark-grey;
-
     & .podium{
       width: 33px;
       height: 28px;
     }
   }
-
-  .food-tabs{
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
 }
 
-
 @media only screen and (max-width: 900px){
-  //Home page
   h1{
     font-size: 75px;
     padding-left: 30px;
@@ -372,14 +242,11 @@ img{
       padding-left: 0px;
     }
   }
-  //Download btn
   .btn-download{
     top: 0;
     right: 0;
     padding: 15px 10px 10px 10px;
   }
-
-  //Menu & Content
   .container{
     display: grid;
     grid-template-columns: 1fr;
@@ -387,71 +254,15 @@ img{
     grid-template-areas: "subnavbar subnavbar" "content content";
     min-height: 80vh;
   }
-
   .content{
     padding: 5px 0;
   }
-
-  .btn-podium{
-    padding: 1px;
-    position: fixed;
-    top: 65px;
-    bottom: inherit;
-    right: inherit;
-    left: -2px;
-    border-radius: 0 50% 50% 0;
-    background-color: $light-grey;
-    border: 1px solid $dark-grey;
-
-    & .podium{
-      width: 33px;
-      height: 28px;
-    }
-  }
-
   .title-news{
     animation: none;
   }
-
-  .food-tabs{
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
 }
 
 @media only screen and (max-width: 600px){
-  //Home page
-  .sub-title{
-    margin: 0 0 0 30px;
-  }
-  h1{
-    font-size: 75px;
-    padding-left: 30px;
-  }
-  .details-btn{
-    margin: 30px;
-    font-size: 25px;
-    &:hover{
-      padding-left: 0px;
-    }
-  }
-  //Download btn
-  .btn-download{
-    top: 0;
-    right: 0;
-    padding: 15px 10px 10px 10px;
-  }
-
-  //Menu & Content
-  .container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-    grid-template-areas: "subnavbar subnavbar" "content content";
-    min-height: 80vh;
-  }
-
   .subnavbar{
     & a{
       font-size: 15px;
@@ -460,45 +271,16 @@ img{
       transition: 0;
     }
   }
-
-  .content{
-    padding: 5px 0;
-  }
-
-  .btn-podium{
-    padding: 1px;
-    position: fixed;
-    top: 65px;
-    bottom: inherit;
-    right: inherit;
-    left: -2px;
-    border-radius: 0 50% 50% 0;
-    background-color: $light-grey;
-    border: 1px solid $dark-grey;
-
-    & .podium{
-      width: 33px;
-      height: 28px;
-    }
-  }
-
-  .title-news{
-    animation: none;
-  }
-
   .image-gallery{
     display: none;
   }
-
   .boat{
     top: 15% !important;
     left: 20% !important;
   }
-
 }
 
 @media only screen and (max-width: 350px){
-  //Home page
   h1{
     font-size: 50px;
     padding-left: 5px;
@@ -513,70 +295,4 @@ img{
   .sub-title{
     margin: 0 0 0 5px;
   }
-  //Download btn
-  .btn-download{
-    top: 0;
-    right: 0;
-    padding: 15px 10px 10px 10px;
-  }
-  //Menu & Content
-  .container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-    grid-template-areas: "subnavbar subnavbar" "content content";
-    min-height: 80vh;
-  }
-
-  .subnavbar{
-    & a{
-      font-size: 15px;
-      padding: 5px 0 5px 10px;
-      margin: -2px 0 0 0;
-      transition: 0;
-    }
-  }
-
-  .content{
-    padding: 5px 0;
-  }
-
-  .btn-podium{
-    padding: 1px;
-    position: fixed;
-    top: 65px;
-    bottom: inherit;
-    right: inherit;
-    left: -2px;
-    border-radius: 0 50% 50% 0;
-    background-color: $light-grey;
-    border: 1px solid $dark-grey;
-
-    & .podium{
-      width: 33px;
-      height: 28px;
-    }
-  }
-
-  .title-news{
-    animation: none;
-  }
-
-  .image-gallery{
-    display: none;
-  }
-
-}
-
-//######## Gallery #########
-.image-gallery-slide .image-gallery-image {
-    width: 98%;
-}
-
-.image-gallery-thumbnail.active, .image-gallery-thumbnail:focus {
-    border: none;
-}
-
-.image-gallery-thumbnail:hover {
-    border: 4px none;
 }

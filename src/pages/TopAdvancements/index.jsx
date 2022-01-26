@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import neka from "../../data/advancements/405f1f09-4c9e-49d0-992b-7bddb8d19e16.json";
 import jok from "../../data/advancements/92a5948f-b552-46ad-b92b-1f17c7e062c2.json";
 import oni from "../../data/advancements/e76a0df3-34e9-4a65-a2c4-68846c130d54.json";
@@ -10,69 +10,46 @@ import timestamp from "../../data/advancements/timestamp.json";
 
 const TopAdvancements = () => {
 
-  let nekaSize = Object.keys(neka).length;
-  let nekaCheckComplet = 0;
-  for(let i = 0; i < nekaSize ;i++){if(neka[Object.keys(neka)[i]].done){nekaCheckComplet++;}}
-
-  let jokSize = Object.keys(jok).length;
-  let jokCheckComplet = 0;
-  for(let i = 0; i < jokSize ;i++){if(jok[Object.keys(jok)[i]].done){jokCheckComplet++;}}
-
-  let meriSize = Object.keys(meri).length;
-  let meriCheckComplet = 0;
-  for(let i = 0; i < meriSize ;i++){if(meri[Object.keys(meri)[i]].done){meriCheckComplet++;}}
-
-  let oniSize = Object.keys(oni).length;
-  let oniCheckComplet = 0;
-  for(let i = 0; i < oniSize ;i++){if(oni[Object.keys(oni)[i]].done){oniCheckComplet++;}}
-
-  let leoneSize = Object.keys(leone).length;
-  let leoneCheckComplet = 0;
-  for(let i = 0; i < leoneSize ;i++){if(leone[Object.keys(leone)[i]].done){leoneCheckComplet++;}}
-
-  let lbSize = Object.keys(lb).length;
-  let lbCheckComplet = 0;
-  for(let i = 0; i < lbSize ;i++){if(lb[Object.keys(lb)[i]].done){lbCheckComplet++;}}
-
-  let ewiSize = Object.keys(ewi).length;
-  let ewiCheckComplet = 0;
-  for(let i = 0; i < ewiSize ;i++){if(ewi[Object.keys(ewi)[i]].done){ewiCheckComplet++;}}
+  function CountCompletedAchievements(size, achievements, check){
+    for(let i = 0; i < size ;i++){if(achievements[Object.keys(achievements)[i]].done){check++;}}
+    return check;
+  }
 
   const players = [
     {
       name : "LilNeka",
-      size : nekaSize,
-      check : nekaCheckComplet
+      size : Object.keys(neka).length,
+      check : CountCompletedAchievements(Object.keys(neka).length, neka, 0)
     },
     {
       name : "_Jok_",
-      size : jokSize,
-      check : jokCheckComplet
+      size : Object.keys(jok).length,
+      check : CountCompletedAchievements(Object.keys(jok).length, jok, 0)
     },
     {
       name : "Merionis",
-      size : meriSize,
-      check : meriCheckComplet
+      size : Object.keys(meri).length,
+      check : CountCompletedAchievements(Object.keys(meri).length, meri, 0)
     },
     {
       name : "OnisukeTheNeko",
-      size : oniSize,
-      check : oniCheckComplet
+      size : Object.keys(oni).length,
+      check : CountCompletedAchievements(Object.keys(oni).length, oni, 0)
     },
     {
       name : "Leone_e",
-      size : leoneSize,
-      check : leoneCheckComplet
+      size : Object.keys(leone).length,
+      check : CountCompletedAchievements(Object.keys(leone).length, leone, 0)
     },
     {
       name : "Los_Bedos",
-      size : lbSize,
-      check : lbCheckComplet
+      size : Object.keys(lb).length,
+      check : CountCompletedAchievements(Object.keys(lb).length, lb, 0)
     },
     {
       name : "Ewigael",
-      size : ewiSize,
-      check : ewiCheckComplet
+      size : Object.keys(ewi).length,
+      check : CountCompletedAchievements(Object.keys(ewi).length, ewi, 0)
     }
   ];
 

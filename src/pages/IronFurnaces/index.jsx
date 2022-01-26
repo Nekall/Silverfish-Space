@@ -1,13 +1,12 @@
-import SubNavbar from 'components/SubNavbar';
-import upgradeDiamondNetherite from '../../assets/images/IronFurnaces/upgrade-diamond-to-netherite.png';
-import upgradeGoldDiamond from '../../assets/images/IronFurnaces/upgrade-gold-to-diamond.png';
-import upgradeIronGold from '../../assets/images/IronFurnaces/upgrade-iron-to-gold.png';
-import upgradeStoneIron from '../../assets/images/IronFurnaces/upgrade-stone-to-iron.png';
-import link from '../../assets/images/link.svg';
-import ironfurnace from '../../assets/images/IronFurnaces/ironfurnace.png';
-//src/assets/images/IronFurnaces/ironfurnace.png
-const IronFurnaces = () => {
-return (
+import SubNavbar from "components/SubNavbar";
+import upgradeDiamondNetherite from "../../assets/images/IronFurnaces/upgrade-diamond-to-netherite.png";
+import upgradeGoldDiamond from "../../assets/images/IronFurnaces/upgrade-gold-to-diamond.png";
+import upgradeIronGold from "../../assets/images/IronFurnaces/upgrade-iron-to-gold.png";
+import upgradeStoneIron from "../../assets/images/IronFurnaces/upgrade-stone-to-iron.png";
+import link from "../../assets/images/link.svg";
+import ironfurnace from "../../assets/images/IronFurnaces/ironfurnace.png";
+
+const IronFurnaces = () => (
     <div className="container">
       <SubNavbar />
       <div className="content">
@@ -31,6 +30,5 @@ return (
         <p>Four en Netherite: 1 item en 0.5 secondes.</p>
       </div>
     </div>
-  )
-};
+  );
 export default IronFurnaces;

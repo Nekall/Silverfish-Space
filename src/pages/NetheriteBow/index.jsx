@@ -1,17 +1,16 @@
-import SubNavbar from 'components/SubNavbar';
-import diamondBow from '../../assets/images/NetheriteBow/diamond-bow.png';
-import diamondStick from '../../assets/images/NetheriteBow/diamond-stick.png';
-import goldenString from '../../assets/images/NetheriteBow/golden-string.png';
-import netheriteBow from '../../assets/images/NetheriteBow/netherite-bow.png';
-import obsidianForge from '../../assets/images/NetheriteBow/obsidian-forge.png';
-import soulStealerUpgrade from '../../assets/images/NetheriteBow/soul-stealer-upgrade.png';
-import telekinesisUpgrade from '../../assets/images/NetheriteBow/telekinesis-upgrade.png';
-import teleportUpgrade from '../../assets/images/NetheriteBow/teleport-upgrade.png';
-import thunderUpgrade from '../../assets/images/NetheriteBow/thunder-upgrade.png';
-import link from '../../assets/images/link.svg';
+import SubNavbar from "components/SubNavbar";
+import diamondBow from "../../assets/images/NetheriteBow/diamond-bow.png";
+import diamondStick from "../../assets/images/NetheriteBow/diamond-stick.png";
+import goldenString from "../../assets/images/NetheriteBow/golden-string.png";
+import netheriteBow from "../../assets/images/NetheriteBow/netherite-bow.png";
+import obsidianForge from "../../assets/images/NetheriteBow/obsidian-forge.png";
+import soulStealerUpgrade from "../../assets/images/NetheriteBow/soul-stealer-upgrade.png";
+import telekinesisUpgrade from "../../assets/images/NetheriteBow/telekinesis-upgrade.png";
+import teleportUpgrade from "../../assets/images/NetheriteBow/teleport-upgrade.png";
+import thunderUpgrade from "../../assets/images/NetheriteBow/thunder-upgrade.png";
+import link from "../../assets/images/link.svg";
 
-const NetheriteBow = () => {
-return (
+const NetheriteBow = () => (
   <div className="container">
     <SubNavbar />
     <div className="content listing">
@@ -35,8 +34,6 @@ return (
       <img src={telekinesisUpgrade} alt="telekinesis Upgrade" />
       <img src={teleportUpgrade} alt="teleport Upgrade" />
       <img src={thunderUpgrade} alt="thunder Upgrade" />
-
-
       <p>Capacités</p>
     <table>
       <tbody>
@@ -57,7 +54,6 @@ return (
         </tr>
       </tbody>
     </table>
-
     <p>Capacités à débloquer</p>
     <table>
       <tbody>
@@ -75,7 +71,6 @@ return (
         </tr>
       </tbody>
     </table>
-
 		<p>Sélectionner une aptitude</p>
 		<p>
 		Placez d'abord l'arc Netherite dans votre main gauche. Une interface graphique apparaît au-dessus de votre barre de raccourcis. Faites défiler votre barre de raccourcis pour sélectionner une capacité et appuyez sur votre touche pour vous accroupir pour confirmer votre choix.
@@ -114,6 +109,5 @@ return (
     </table>
     </div>
   </div>
-  )
-};
+  );
 export default NetheriteBow;

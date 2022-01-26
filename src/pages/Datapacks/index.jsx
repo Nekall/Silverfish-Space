@@ -1,7 +1,6 @@
-import SubNavbar from 'components/SubNavbar';
+import SubNavbar from "components/SubNavbar";
 
-const Datapacks = () => {
-  return (
+const Datapacks = () => (
   <div className="container">
     <SubNavbar />
     <div className="content">
@@ -22,6 +21,5 @@ const Datapacks = () => {
       <p>Redémarrage et sauvegarde chaque jour à 4h du matin.</p>
     </div>
   </div>
-  )
-};
+  );
 export default Datapacks;

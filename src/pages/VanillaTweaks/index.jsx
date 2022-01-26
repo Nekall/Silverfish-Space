@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
-import SubNavbar from 'components/SubNavbar';
-import link from '../../assets/images/link.svg';
-import copy from '../../assets/images/copy.svg';
-import hudposition from '../../assets/images/VanillaTweaks/hudposition.png';
-import rotationWrench from '../../assets/images/VanillaTweaks/rotation-wrench.png';
+import React, { useState } from "react";
+import SubNavbar from "components/SubNavbar";
+import link from "../../assets/images/link.svg";
+import copy from "../../assets/images/copy.svg";
+import hudposition from "../../assets/images/VanillaTweaks/hudposition.png";
+import rotationWrench from "../../assets/images/VanillaTweaks/rotation-wrench.png";
 
 const VanillaTweaks = () => {
 
   let [x, setX] = useState(1000);
   let [y, setY] = useState(85);
   let [z, setZ] = useState(500);
-  let [direction, setDirection] = useState("N")
-  let hours = "06:45";
+  let [direction, setDirection] = useState("N");
+  let date = new Date();
+  let time = ((date.getHours().toString()).length > 1? date.getHours() : "0" + date.getHours()) +":"+ ((date.getMinutes().toString()).length > 1? date.getMinutes() : "0" + date.getMinutes());
 
   let handleMousemove = (event) => {
   setX(event.x);
@@ -35,7 +36,7 @@ const VanillaTweaks = () => {
           setInterval(function(){ confirm.classList.remove("copied"); }, 1700);
       })
     }
-  }
+  };
 
 return (
   <div className="container">
@@ -46,7 +47,7 @@ return (
       <p className="bold">Coordinates HUD</p>
       <p>Ce petit datapack vous permet d'avoir toujours les coordonnées, la direction et l'heure du jeu toujours à porté de mains.</p>
       <div>
-        <p className="hudposition">XYZ: <span className="x">{x}</span>  <span className="y">{y}</span>  <span className="z">{z}</span>       <span className="dir">{direction}</span>                      <span className="hours">{hours}</span></p>
+        <p className="hudposition">XYZ: <span className="x">{x}</span> <span className="y">{y}</span> <span className="z">{z}</span> <span className="dir">{direction}</span> <span className="hours">{time}</span></p>
         <img className="dp-img hudpos-img" src={hudposition} alt="hudposition" />
       </div>
       <div className="copy-hud-cmd" onClick={() => copyCmd()}>/trigger ch_toggle<img className="link" src={copy} alt="copie commande" /></div>
