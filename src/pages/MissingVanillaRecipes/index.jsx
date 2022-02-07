@@ -55,24 +55,22 @@ const MissionVanillaRecipes = () => (
       <p>Minecraft n’est pas logique, on y remédie.</p>
       <p>Plus de 50 nouvelles recettes INÉDITES logiques et comme dirait un vieux sage “ Ça devrait être dans le jeu de base ”.</p>
       <hr/>
-      <p className="title-news bold">Nouveaux crafts !</p>
-      <img src={slabToBlock} alt="slab to block" />
-      <img src={ice} alt="ice" />
-      <img src={packedIce} alt="packed ice" />
-      <img src={copperBlock} alt="copper block" />
-      <img src={rootedDirt} alt="rooted dirt" />
-      <img src={stickyPiston} alt="sticky piston" />
-      <img src={blackDye} alt="black dye" />
-      <img src={redDye} alt="red dye" />
-      <img src={yellowDye} alt="yellow dye" />
-      <img src={lead} alt="lead" />
+      {/* <p className="title-news bold">Nouveaux crafts !</p> */}
       <p>Cuissons :</p>
       <img src={leather} alt="leather" />
       <img src={rawIron} alt="raw Iron" />
       <img src={rawCopper} alt="raw Copper" />
       <img src={rawGold} alt="raw Gold" /> <br />
       <p>Crafts simplifiés :</p>
+      <img src={blackDye} alt="black dye" />
+      <img src={slabToBlock} alt="slab to block" />
+      <img src={copperBlock} alt="copper block" />
+      <img src={rootedDirt} alt="rooted dirt" />
+      <img src={stickyPiston} alt="sticky piston" />
       <img src={simpleDispenser} alt="simpleDispenser" />
+      <img src={redDye} alt="red dye" />
+      <img src={yellowDye} alt="yellow dye" />
+      <img src={lead} alt="lead" />
       <img src={simpleRepeater} alt="simpleRepeater" />
       <img src={logChest} alt="log Chest" />
       <img src={logStick} alt="log Stick" />
@@ -94,6 +92,8 @@ const MissionVanillaRecipes = () => (
       <img src={mushroomStemBrown} alt="mushroom Stem Brown" />
       <img src={redMushroomBlock} alt="red Mushroom Block" />
       <p>Déconstructions de blocs :</p>
+      <img src={ice} alt="ice" />
+      <img src={packedIce} alt="packed ice" />
       <img src={redSandstone} alt="red Sandstone" />
       <img src={amethyst} alt="amethyst" />
       <img src={brick} alt="brick" />
