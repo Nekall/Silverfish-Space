@@ -2,7 +2,6 @@
 @import "pages.scss";
 @import "banners.scss";
 @import "navbars.scss";
-@import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 @font-face{
   font-family: "BebasNeue";
@@ -192,20 +191,6 @@ img{
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }
-}
-
-//######## Gallery #########
-.image-gallery-slide .image-gallery-image {
-    width: 98%;
-}
-.image-gallery-thumbnail.active, .image-gallery-thumbnail:focus {
-    border: none;
-}
-.image-gallery-thumbnail:hover {
-    border: 4px none;
-}
-.image-gallery-icon:hover {
-  color: $light-grey;
 }
 
 //############ RESPONSIVE ##############

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import neka from "../../data/advancements/405f1f09-4c9e-49d0-992b-7bddb8d19e16.json";
 import jok from "../../data/advancements/92a5948f-b552-46ad-b92b-1f17c7e062c2.json";
-import oni from "../../data/advancements/e76a0df3-34e9-4a65-a2c4-68846c130d54.json";
+//import oni from "../../data/advancements/e76a0df3-34e9-4a65-a2c4-68846c130d54.json";
 import meri from "../../data/advancements/bbd3df60-4062-46fe-8837-8ab02402971a.json";
 import leone from "../../data/advancements/9d60c4d3-b472-4420-8215-60621cabdfc1.json";
 import lb from "../../data/advancements/0da1efca-9577-4cd3-95db-bab5f4b2fdb8.json";
@@ -30,11 +30,6 @@ const TopAdvancements = () => {
       name : "Merionis",
       size : Object.keys(meri).length,
       check : CountCompletedAchievements(Object.keys(meri).length, meri, 0)
-    },
-    {
-      name : "OnisukeTheNeko",
-      size : Object.keys(oni).length,
-      check : CountCompletedAchievements(Object.keys(oni).length, oni, 0)
     },
     {
       name : "Leone_e",

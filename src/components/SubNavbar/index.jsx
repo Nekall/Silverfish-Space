@@ -8,7 +8,6 @@ const SubNavbar = () => (
     </div>
     <div className="subnavbar" >
       <NavLink activeClassName="active" className="intro" to="/datapacks">Introduction</NavLink>
-      <NavLink activeClassName="active" to="/datapacks/better-beacons">Better Beacons</NavLink>
       <NavLink activeClassName="active" to="/datapacks/better-elytra">Better Elytra</NavLink>
       <NavLink activeClassName="active" to="/datapacks/blaze-and-caves-advancements">BlazeAndCaves Advancements</NavLink>
       <NavLink activeClassName="active" to="/datapacks/bonsai-pots">Bonsai Pots</NavLink>
@@ -19,7 +18,6 @@ const SubNavbar = () => (
       <NavLink activeClassName="active" to="/datapacks/missing-vanilla-recipes">Missing Vanilla Recipes</NavLink>
       <NavLink activeClassName="active" to="/datapacks/netherite-bow">Netherite Bow</NavLink>
       <NavLink activeClassName="active" to="/datapacks/quarry-vanilla">Quarry Vanilla</NavLink>
-      <NavLink activeClassName="active" to="/datapacks/rare-mobs">Rare Mobs</NavLink>
       <NavLink activeClassName="active" to="/datapacks/vanilla-tweaks">Vanilla Tweaks</NavLink>
     </div>
   </>
