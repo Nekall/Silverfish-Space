@@ -11,5 +11,3 @@ https://silverfish.infesting.space/
 
  - ReactJS
  - Sass
- - [react-image-gallery](https://github.com/xiaolin/react-image-gallery)
-
