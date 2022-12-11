@@ -2,7 +2,7 @@
 
 # Silverfish Infesting Space
 
-Serveur Minecraft 1.18.1 vanilla - Edition DataPack (Uniquement des datapacks, aucun mods)
+Serveur Minecraft vanilla
 
 Site du serveur français communautaire Silverfish Infesting Space (Serveur privé).
 https://silverfish.infesting.space/
