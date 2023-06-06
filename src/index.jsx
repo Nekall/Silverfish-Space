@@ -2,10 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Components
-import HomeBanner from "components/HomeBanner";
-
 // Pages
+import Home from "pages/Home";
 import Error from "pages/Error";
 
 // Styles
@@ -34,7 +32,7 @@ YMMMUP^
     <main>
       <Router>
         <Routes>
-          <Route path="/" element={<HomeBanner />} />
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

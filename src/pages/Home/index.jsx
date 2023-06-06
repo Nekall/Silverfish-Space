@@ -1,7 +1,13 @@
+// Components
+import Background from "components/Background";
+import Dashboard from "components/Dashboard";
+
 const Home = () => (
-    <>
-      <p>Site pour le serveur Silverdish Infesting Space !</p>
-      <p>Edition Datapacks</p>
-    </>
+    <main>
+      <Background>
+        <Dashboard/>
+      </Background>
+    </main>
   );
+  
 export default Home;
