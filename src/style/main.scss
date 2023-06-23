@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: "Minecraft";
+    src: local("Minecraft"),
+        url("../assets/fonts/minecraft/MinecraftRegular.otf") format("opentype");
+}
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -9,16 +13,117 @@ main {
     background-color: #000;
     min-height: 100vh;
     min-width: 100vw;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.__update_date {
+    font-family: "Minecraft";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.__container {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
+    .__logo {
+        padding-left: 5%;
+    }
+
+    .__achievements {
+        font-family: "Minecraft";
+        font-size: 18px;
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.377);
+        position: absolute;
+        left: 40%;
+        top: 40%;
+
+        .__player {
+            border: solid 2px rgba(255, 255, 255, 0.233);
+            vertical-align: middle;
+
+            &.__win {
+                background-color: #fdfb5c;
+                color: black;
+
+                .__achievement_nb {
+                    color: black;
+                }
+            }
+
+            .__nickname {
+                text-align: start;
+                padding-right: 15px;
+            }
+
+            .__achievement_nb {
+                color: #fdfb5c;
+                text-align: end;
+            }
+
+        }
+    }
+}
+
+.__actuation_lock {
+    width: 400px;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph;
+    filter: fliph;
+    position: absolute;
+    bottom: 0;
+    left: -65px;
+
+    .__lever {
+        cursor: pointer;
+        position: relative;
+        z-index: 666;
+        width: 200px;
+        height: 200px;
+    }
+
+    .__iron_block {
+        position: relative;
+        top: -45px;
+        left: -115px;
+        z-index: 1;
+        width: 200px;
+        height: 200px;
+    }
+
+    .__lamp_block {
+        position: relative;
+        top: -358px;
+        left: 85px;
+        z-index: 1;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.__error{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.maintenance{
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
+@media only screen and (max-width: 800px) {
+    .__actuation_lock {
+        display: none;
+    }
 
-    p{
-        text-align: center;
+    .__container {
+        .__achievements {
+            left: 8%;
+            top: 50%;
+        }
     }
 }
