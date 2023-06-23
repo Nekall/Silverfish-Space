@@ -49,10 +49,10 @@ table {
 
             &.__win {
                 background-color: #fdfb5c;
-                color: black;
+                color: #000000;
 
                 .__achievement_nb {
-                    color: black;
+                    color: #000000;
                 }
             }
 
@@ -110,9 +110,23 @@ table {
 }
 
 .__error{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: grid;
+	place-items: center;
+    color: #ffffff;
+    text-align: center;
+    height: 100vh;
+
+    .__container{
+        margin: auto;
+
+        .__e404{
+            font-size: 20px;
+        }
+
+        .__link>a{
+            color: #ffffff;
+        }
+    }
 }
 
 @media only screen and (max-width: 800px) {
