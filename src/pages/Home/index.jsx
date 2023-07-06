@@ -17,6 +17,7 @@ import leone from "../../data/advancements/9d60c4d3-b472-4420-8215-60621cabdfc1.
 import lola from "../../data/advancements/7ad20bd8-b89c-44d0-9418-e36f5514086f.json";
 import fenox from "../../data/advancements/9e967186-cf49-403d-8ccf-ef1d1e8097a1.json";
 import baka from "../../data/advancements/d0c9e959-bbae-45e9-9ccb-62931f4b218d.json";
+import zukku from "../../data/advancements/cef4d159-40af-45bd-a594-ab839094ad2f.json";
 import timestamp from "../../data/advancements/timestamp.json";
 
 const Home = () => {
@@ -68,6 +69,11 @@ const Home = () => {
       name: "Bak_HatamHa",
       size: Object.keys(baka).length,
       check: CountCompletedAchievements(Object.keys(baka).length, baka, 0)
+    },
+    {
+      name: "Zukku_tv",
+      size: Object.keys(zukku).length,
+      check: CountCompletedAchievements(Object.keys(zukku).length, zukku, 0)
     }
   ];
 
