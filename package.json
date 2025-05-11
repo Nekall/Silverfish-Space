@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "kill $(lsof -t -i:3000) && next dev --turbopack",
+    "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "kill $(lsof -t -i:3000) && HOST=0.0.0.0 PORT=3000 next start",
+    "start": "HOST=0.0.0.0 PORT=3000 next start",
     "lint": "next lint"
   },
   "dependencies": {
