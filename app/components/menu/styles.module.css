@@ -12,6 +12,18 @@
   margin-top: -100px;
 }
 
+.menu .yellow_word {
+  color: yellow;
+  font-family: var(--font-minecraft);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  rotate: -25deg;
+  position: relative;
+  top: -190px;
+  right: -220px;
+  animation: heartbeat 0.55s infinite;
+}
+
 .menu .btns {
   display: grid;
   justify-content: center;
@@ -56,4 +68,16 @@
 .menu .small_btn {
   width: 195px;
   height: 40px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

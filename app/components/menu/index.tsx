@@ -1,11 +1,27 @@
 "use client";
-import { useRef } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 // Styles
 import styles from "./styles.module.css";
 
 const Menu = () => {
+  const yellowWords = [
+    "Mékéskisspacici ?!!",
+    "Cactus",
+    "C Roblox ?",
+    "Carré",
+    "Minecraft",
+  ];
+
+  const [randomYellowWord, setRandomYellowWord] = useState<string | null>(null);
+
+  useEffect(() => {
+    setRandomYellowWord(
+      yellowWords[Math.floor(Math.random() * yellowWords.length)]
+    );
+  }, [yellowWords]);
+
   const play = () => {
     const audio = new Audio("/sounds/minecraft_click.mp3");
     audio.play().catch((error) => {
@@ -15,13 +31,17 @@ const Menu = () => {
 
   return (
     <div className={styles.menu}>
-      <Image
-        src="/images/sis_mc_style.png"
-        alt="Silverfish Infesting Space Minecraft version"
-        width={600}
-        height={400}
-        priority
-      />
+      <div className={styles.screentitle}>
+        <Image
+          src="/images/sis_mc_style.png"
+          alt="Silverfish Infesting Space Minecraft version"
+          width={600}
+          height={400}
+          priority
+        />
+
+        <p className={styles.yellow_word}>{randomYellowWord}</p>
+      </div>
 
       <div className={styles.btns}>
         <div className={styles.big_btns}>
