@@ -1,17 +1,35 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
-export default function Home() {
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+
+// Components
+import RotatingCamera from "./components/rotatingCamera";
+import Skybox from "./components/skybox";
+
+const Home = () => {
   return (
-    <div className={styles.page}>
-      <Image
-        className={styles.logo}
-        src="/sis-logo.webp"
-        alt="Logo Silverfish Infesting Space"
-        width={150}
-        height={150}
-        priority
-      />
+    <div style={{ width: "100vw", height: "100vh" }}>
+      <Canvas
+        gl={{
+          antialias: true,
+          preserveDrawingBuffer: true,
+          powerPreference: "high-performance",
+        }}
+        camera={{
+          fov: 70,
+          near: 45,
+          far: 30000,
+          position: [0, 0, 0],
+        }}
+      >
+        <Suspense fallback={null}>
+          <RotatingCamera />
+          <Skybox />
+        </Suspense>
+      </Canvas>
     </div>
   );
-}
+};
+
+export default Home;
