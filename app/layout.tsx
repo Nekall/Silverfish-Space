@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 // Components
-import Menu from "./components/menu";
+import Background from "@/components/background";
 
 // Styles
 import "./globals.css";
@@ -27,8 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${minecraft.variable}`}>
-        <Menu />
         {children}
+        <Background />
       </body>
     </html>
   );

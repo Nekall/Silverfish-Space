@@ -1,0 +1,15 @@
+.players {
+  position: absolute;
+  z-index: 999;
+  background: transparent;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.players h1 {
+  font-family: var(--font-minecraft);
+  font-size: 30px;
+  color: yellow;
+}

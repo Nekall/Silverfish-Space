@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // Styles
 import styles from "./styles.module.css";
@@ -45,26 +46,39 @@ const Menu = () => {
 
       <div className={styles.btns}>
         <div className={styles.big_btns}>
-          <button onMouseDown={play} className={styles.big_btn}>
-            Players
-          </button>
-          <button onMouseDown={play} className={styles.big_btn}>
-            Achievements
-          </button>
-          <button onMouseDown={play} className={styles.big_btn}>
-            Statistics
-          </button>
-          <button onMouseDown={play} className={styles.big_btn}>
-            Informations
-          </button>
+          <Link href="/players">
+            <button onMouseDown={play} className={styles.big_btn}>
+              Players
+            </button>
+          </Link>
+          <Link href="/achievements">
+            <button onMouseDown={play} className={styles.big_btn}>
+              Achievements
+            </button>
+          </Link>
+          <Link href="/statistics">
+            <button onMouseDown={play} className={styles.big_btn}>
+              Statistics
+            </button>
+          </Link>
+          <Link href="/informations">
+            <button onMouseDown={play} className={styles.big_btn}>
+              Informations
+            </button>
+          </Link>
         </div>
         <div className={styles.small_btns}>
-          <button onMouseDown={play} className={styles.small_btn}>
-            Options...
-          </button>
-          <button onMouseDown={play} className={styles.small_btn}>
-            Quit Game
-          </button>
+          <Link href="/options">
+            <button onMouseDown={play} className={styles.small_btn}>
+              Options...
+            </button>
+          </Link>
+
+          <Link href="/quit">
+            <button onMouseDown={play} className={styles.small_btn}>
+              Quit Game
+            </button>
+          </Link>
         </div>
       </div>
     </div>
