@@ -4,12 +4,72 @@
   background: transparent;
   height: 100vh;
   width: 100vw;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  font-family: var(--font-minecraft);
 }
 
-.players h1 {
+.players .title {
+  width: 100vw;
+  height: 5vh;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.5);
+  text-align: center;
+  display: grid;
+  align-items: end;
+}
+
+.players .title h1 {
   font-family: var(--font-minecraft);
-  font-size: 30px;
-  color: yellow;
+  font-size: 20px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+
+.players .main {
+  width: 100vw;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  overflow: hidden;
+}
+
+.players .main .scrollable_section {
+  width: 550px;
+  height: 80vh;
+  margin: 0 auto;
+  overflow: auto;
+  padding-top: 5px;
+}
+
+.players .main .scrollable_section .player_card {
+  display: grid;
+  grid-template-columns: 0.7fr 1.8fr 0.5fr;
+  height: 80px;
+  background: transparent;
+  border: solid 2px transparent;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.players .main .scrollable_section .player_card:hover {
+  border: solid 2px #fff;
+}
+
+.player_card {
+  padding: 10px;
+}
+
+.players .main .scrollable_section ul li {
+  display: grid;
+}
+
+.players .menu {
+  width: 100vw;
+  height: 15vh;
+  border-top: 2px solid rgba(153, 153, 153, 0.5);
+  display: grid;
+  justify-content: center;
+  padding: 20px;
 }

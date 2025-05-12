@@ -1,7 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+
+// Components
+import Button from "@/components/button";
 
 // Styles
 import styles from "./styles.module.css";
@@ -46,39 +48,14 @@ const Menu = () => {
 
       <div className={styles.btns}>
         <div className={styles.big_btns}>
-          <Link href="/players">
-            <button onMouseDown={play} className={styles.big_btn}>
-              Players
-            </button>
-          </Link>
-          <Link href="/achievements">
-            <button onMouseDown={play} className={styles.big_btn}>
-              Achievements
-            </button>
-          </Link>
-          <Link href="/statistics">
-            <button onMouseDown={play} className={styles.big_btn}>
-              Statistics
-            </button>
-          </Link>
-          <Link href="/informations">
-            <button onMouseDown={play} className={styles.big_btn}>
-              Informations
-            </button>
-          </Link>
+          <Button path={"/players"} text={"Players"} size="large" />
+          <Button path={"/achievements"} text={"Achievements"} size="large" />
+          <Button path={"/statistics"} text={"Statistics"} size="large" />
+          <Button path={"/informations"} text={"Informations"} size="large" />
         </div>
         <div className={styles.small_btns}>
-          <Link href="/options">
-            <button onMouseDown={play} className={styles.small_btn}>
-              Options...
-            </button>
-          </Link>
-
-          <Link href="/quit">
-            <button onMouseDown={play} className={styles.small_btn}>
-              Quit Game
-            </button>
-          </Link>
+          <Button path={"/options"} text={"Options..."} size="small" />
+          <Button path={"/quit"} text={"Quit Game"} size="small" />
         </div>
       </div>
     </div>
