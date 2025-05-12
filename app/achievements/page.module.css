@@ -1,9 +1,52 @@
 .achievements {
   position: absolute;
   z-index: 999;
-  background: transparent;
   height: 100vh;
   width: 100vw;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  font-family: var(--font-minecraft);
+}
+
+.achievements .title {
+  width: 100vw;
+  height: 5vh;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.5);
+  text-align: center;
+  display: grid;
+  align-items: end;
+}
+
+.achievements .title h1 {
+  font-family: var(--font-minecraft);
+  font-size: 20px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+
+.achievements .main {
+  width: 100vw;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  overflow: hidden;
+}
+
+.achievements .main .scrollable_section {
+  width: 550px;
+  height: 80vh;
+  margin: 0 auto;
+  overflow: auto;
+  padding-top: 5px;
+}
+
+.achievements .menu {
+  width: 100vw;
+  height: 15vh;
+  border-top: 2px solid rgba(153, 153, 153, 0.5);
+  display: grid;
+  justify-content: center;
+  padding: 20px;
 }

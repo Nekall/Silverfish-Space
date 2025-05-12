@@ -1,7 +1,6 @@
 .players {
   position: absolute;
   z-index: 999;
-  background: transparent;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.3);
@@ -45,7 +44,7 @@
 
 .players .main .scrollable_section .player_card {
   display: grid;
-  grid-template-columns: 0.7fr 1.8fr 0.5fr;
+  grid-template-columns: 0.4fr 2.3fr 0.3fr;
   height: 80px;
   background: transparent;
   border: solid 2px transparent;

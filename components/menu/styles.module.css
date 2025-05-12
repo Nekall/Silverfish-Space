@@ -29,34 +29,9 @@
   justify-content: center;
 }
 
-.menu .btns button {
-  display: block;
-  font-family: var(--font-minecraft);
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-  background: #999 url("/images/bg_btn.png") center / cover;
-  image-rendering: pixelated;
-  border: 2px solid #000;
-  font-size: 20px;
-  overflow: hidden;
-  white-space: nowrap;
-  user-select: none;
-  cursor: pointer;
-  box-shadow: inset -2px -4px #0004, inset 2px 2px #fff5;
-}
-
 .menu .big_btns {
   display: grid;
   gap: 10px;
-}
-
-.menu .big_btn:hover,
-.menu .small_btn:hover {
-  border: solid 2px #fff;
-}
-
-.menu .big_btn {
-  width: 400px;
-  height: 40px;
 }
 
 .menu .small_btns {
@@ -65,9 +40,15 @@
   margin-top: 40px;
 }
 
-.menu .small_btn {
-  width: 195px;
-  height: 40px;
+.menu .signatures {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-minecraft);
+  padding: 2px;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
 }
 
 @keyframes heartbeat {

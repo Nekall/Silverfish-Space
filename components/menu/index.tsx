@@ -25,13 +25,6 @@ const Menu = () => {
     );
   }, [yellowWords]);
 
-  const play = () => {
-    const audio = new Audio("/sounds/minecraft_click.mp3");
-    audio.play().catch((error) => {
-      console.error("Error playing sound: ", error);
-    });
-  };
-
   return (
     <div className={styles.menu}>
       <div className={styles.screentitle}>
@@ -57,6 +50,13 @@ const Menu = () => {
           <Button path={"/options"} text={"Options..."} size="small" />
           <Button path={"/quit"} text={"Quit Game"} size="small" />
         </div>
+      </div>
+
+      <div className={styles.signatures}>
+        <p className={styles.version}>Minecraft 1.21.5</p>
+        <p className={styles.name}>
+          Silverfish Investing Space - Private Server
+        </p>
       </div>
     </div>
   );

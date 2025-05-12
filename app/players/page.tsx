@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+// Data
+import players from "../../data/whitelist.json";
+
 // Components
 import Button from "@/components/button";
 
@@ -7,23 +10,7 @@ import Button from "@/components/button";
 import styles from "./page.module.css";
 
 const Players = () => {
-  const players = [
-    {
-      username: "LilNeka",
-    },
-    {
-      username: "Merionis",
-    },
-    {
-      username: "_Jok_",
-    },
-    {
-      username: "Steve",
-    },
-    {
-      username: "OnisukeTheNeko",
-    },
-  ];
+  console.log(players);
 
   return (
     <div className={styles.players}>
@@ -33,24 +20,24 @@ const Players = () => {
       <div className={styles.main}>
         <div className={styles.scrollable_section}>
           <ul>
-            {players.map(({ username }, index) => {
+            {players.map(({ name, uuid }, index) => {
               return (
-                <li key={`${username}-card`} className={styles.player_card}>
+                <li key={`${name}-card`} className={styles.player_card}>
                   <div className={styles.player_head}>
                     <Image
-                      src={`https://mc-heads.net/avatar/${username}`}
-                      alt={`Minecraft head of ${username}`}
+                      src={`https://mc-heads.net/avatar/${name}`}
+                      alt={`Minecraft head of ${name}`}
                       width={50}
                       height={50}
                       priority
                     />
                   </div>
                   <div>
-                    <div>{username}</div>
-                    <div>data....</div>
+                    <div>{name}</div>
+                    <div>{uuid}</div>
                   </div>
                   <div>
-                    <p>{index}/20</p>
+                    <p>{index + 1}</p>
                   </div>
                 </li>
               );
