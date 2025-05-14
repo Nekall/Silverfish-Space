@@ -10,8 +10,6 @@ import Button from "@/components/button";
 import styles from "./page.module.css";
 
 const Players = () => {
-  console.log(players);
-
   return (
     <div className={styles.players}>
       <div className={styles.title}>
