@@ -44,15 +44,18 @@
 
 .informations .main .scrollable_section h2 {
   margin: 50px 0 10px 0;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .informations .main .scrollable_section p {
   margin-bottom: 5px;
+  color: #aaaaaa;
 }
 
 .informations .main .scrollable_section ul {
   list-style: none;
-  margin-left: 10px;
+  margin-left: 8px;
+  color: #aaaaaa;
 }
 
 .informations .menu {

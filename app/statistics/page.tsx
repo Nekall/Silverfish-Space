@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 // Components
@@ -33,7 +33,7 @@ const Statistics = () => {
     Bak_HatamHa: Bak_HatamHa as unknown as Record<string, Stats>,
   };
 
-  const [selectedPlayer, setSelectedPlayer] = useState();
+  const [selectedPlayer, setSelectedPlayer] = useState("_Jok_");
   const [selectedStats, setSelectedStats] = useState();
   const [error, setError] = useState(false);
 
@@ -47,6 +47,10 @@ const Statistics = () => {
       setError(true);
     }
   };
+
+  useEffect(() => {
+    setSelectedStats(parseMinecraftStats(dataPlayers[selectedPlayer]));
+  }, []);
 
   return (
     <div className={styles.statistics}>

@@ -16,7 +16,7 @@ const Informations = () => {
           <p>Minecraft Edition: Java Edition</p>
           <p>Server Version: 1.21.5</p>
           <p>Server Type: Vanilla (no mods, no plugins)</p>
-          <p>WWhitelist: Enabled – invitation only</p>
+          <p>Whitelist: Enabled – invitation only</p>
           <p>Location: France</p>
           <h2>Access & Rules</h2>
           <p>This is a private server reserved for invited players only.</p>
