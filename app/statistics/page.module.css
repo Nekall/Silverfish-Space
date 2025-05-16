@@ -122,13 +122,29 @@
 
 .statistics .main .scrollable_sections .player_card {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.6fr 2.4fr;
   height: 80px;
   width: 100%;
   background: transparent;
   border: solid 2px transparent;
   overflow: hidden;
   list-style-type: none;
+}
+
+.statistics .main .scrollable_sections .player_card p {
+  color: #aaaaaa;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.statistics .main .scrollable_sections .player_card:active,
+.statistics .main .scrollable_sections .player_card:hover {
+  background-color: #000;
+}
+
+.statistics .main .scrollable_sections .player_card .active {
+  background-color: #000;
 }
 
 .statistics .main .scrollable_sections .player_card .player_head {
