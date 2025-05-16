@@ -34,27 +34,108 @@
   overflow: hidden;
 }
 
-.statistics .main .scrollable_section {
-  width: 100vw;
-  height: 80vh;
-  margin: 0 auto;
-  overflow: auto;
-  padding-top: 5px;
+.statistics .main .scrollable_sections {
+  width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 0.5fr 2.5fr;
+  grid-template-columns: 0.8fr 2.2fr;
+  gap: 0 20px;
 }
 
-.statistics .main .scrollable_section .player_card {
+.statistics .main .scrollable_sections .players {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.scrollable_sections .stats_section .selected_player {
+  height: 100px;
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.statistics .main .scrollable_sections .stats_section {
+}
+
+.scrollable_sections .stats_section .selected_player .username {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  color: #aaaaaa;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.statistics .main .scrollable_sections .stats_section .stats {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(153, 153, 153, 0.5);
+  height: 675px;
+  padding: 10px;
+  overflow: auto;
+}
+.statistics .main .scrollable_sections .stats_section .stats table {
+  min-width: 350px;
+}
+
+.statistics .main .scrollable_sections .stats_section .stats table .total {
+  margin-bottom: 10px;
+}
+
+.statistics
+  .main
+  .scrollable_sections
+  .stats_section
+  .stats
+  table
+  tbody
+  tr:nth-child(odd) {
+  color: #aaaaaa;
+}
+
+.statistics .main .scrollable_sections .stats_section .stats table tbody tr th {
+  text-align: left;
+}
+
+.statistics .main .scrollable_sections .stats_section .stats table tbody tr td {
+  text-align: right;
+}
+
+.statistics
+  .main
+  .scrollable_sections
+  .stats_section
+  .stats
+  table
+  tbody
+  tr:hover {
+  color: #fcfc00;
+}
+
+.statistics .main .scrollable_sections .stats_section .stats h2 {
+  padding: 10px 0 5px 0;
+}
+
+.statistics .main .scrollable_sections .stats_section .stats ul {
+  list-style: none;
+}
+.statistics .main .scrollable_sections .stats_section .stats ul li {
+  padding-left: 10px;
+}
+
+.statistics .main .scrollable_sections .player_card {
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 80px;
+  width: 100%;
   background: transparent;
   border: solid 2px transparent;
   overflow: hidden;
   list-style-type: none;
 }
 
-.statistics .main .scrollable_section .player_card:hover {
+.statistics .main .scrollable_sections .player_card .player_head {
+  margin: auto;
+}
+
+.statistics .main .scrollable_sections .player_card:hover {
   border: solid 2px #fff;
 }
 

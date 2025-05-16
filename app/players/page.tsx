@@ -60,7 +60,7 @@ const Players = () => {
                 <li
                   key={`${name}-card`}
                   className={styles.player_card}
-                  title={`${uuid}`}
+                  title={uuid}
                 >
                   <div className={styles.player_head}>
                     <Image

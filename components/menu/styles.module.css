@@ -13,7 +13,7 @@
 }
 
 .menu .yellow_word {
-  color: yellow;
+  color: #fcfc00;
   font-family: var(--font-minecraft);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   font-size: 25px;
