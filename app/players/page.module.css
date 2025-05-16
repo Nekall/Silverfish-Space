@@ -7,6 +7,7 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   font-family: var(--font-minecraft);
+  cursor: default;
 }
 
 .players .title {
@@ -44,7 +45,7 @@
 
 .players .main .scrollable_section .player_card {
   display: grid;
-  grid-template-columns: 0.4fr 2.3fr 0.3fr;
+  grid-template-columns: 0.4fr 1.6fr 0.4fr;
   height: 80px;
   background: transparent;
   border: solid 2px transparent;
@@ -54,10 +55,33 @@
 
 .players .main .scrollable_section .player_card:hover {
   border: solid 2px #fff;
+  background-color: #000;
+}
+
+.scrollable_section .player_card .player_head {
+  margin: auto;
+}
+
+.scrollable_section .player_card .player_data {
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.scrollable_section .player_card .player_data .username {
+  color: #aaaaaa;
+  font-size: 20px;
+  padding: 2px;
+  text-align: left;
+}
+
+.player_card .player_deaths {
+  color: #aaaaaa;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: end;
 }
 
 .player_card {
-  padding: 10px;
+  padding: 2px;
 }
 
 .players .main .scrollable_section ul li {

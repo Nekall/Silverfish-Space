@@ -11,6 +11,9 @@ export const parseMinecraftStats = (rawData) => {
   const playTimeInTicks = customStats["minecraft:play_time"] || 0;
   const playTimeInHours = Math.round((playTimeInTicks / 20 / 3600) * 10) / 10;
 
+  const timeSinceDeathTicks = customStats["minecraft:time_since_death"] || 0;
+  const timeSinceRestTicks = customStats["minecraft:time_since_rest"] || 0;
+
   const mainStats = {
     playTime: {
       ticks: playTimeInTicks,
@@ -20,8 +23,21 @@ export const parseMinecraftStats = (rawData) => {
     },
     deaths: customStats["minecraft:deaths"] || 0,
     jumps: customStats["minecraft:jump"] || 0,
-    timeSinceDeath: customStats["minecraft:time_since_death"] || 0,
-    timeSinceRest: customStats["minecraft:time_since_rest"] || 0,
+
+    timeSinceDeath: {
+      ticks: timeSinceDeathTicks,
+      seconds: Math.round(timeSinceDeathTicks / 20),
+      minutes: Math.round(timeSinceDeathTicks / (20 * 60)),
+      hours: Math.round((timeSinceDeathTicks / 20 / 3600) * 10) / 10,
+    },
+
+    timeSinceRest: {
+      ticks: timeSinceRestTicks,
+      seconds: Math.round(timeSinceRestTicks / 20),
+      minutes: Math.round(timeSinceRestTicks / (20 * 60)),
+      hours: Math.round((timeSinceRestTicks / 20 / 3600) * 10) / 10,
+    },
+
     sleepInBed: customStats["minecraft:sleep_in_bed"] || 0,
 
     distance: {

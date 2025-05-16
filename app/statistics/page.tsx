@@ -33,12 +33,13 @@ const Statistics = () => {
     Bak_HatamHa: Bak_HatamHa as unknown as Record<string, Stats>,
   };
 
+  const [selectedPlayer, setSelectedPlayer] = useState();
   const [selectedStats, setSelectedStats] = useState();
   const [error, setError] = useState(false);
 
   const selectPlayer = (username: any) => {
+    setSelectedPlayer(username);
     console.info("selectPlayer");
-    // todo select data via username
     if (dataPlayers[username]) {
       setSelectedStats(parseMinecraftStats(dataPlayers[username]));
       setError(false);
@@ -84,8 +85,43 @@ const Statistics = () => {
                 <div>Data not found</div>
               ) : (
                 <div>
-                  LilNeka : {selectedStats && ~~selectedStats?.playTime.hours}h
-                  playTime | {selectedStats?.deaths} deaths
+                  {selectedPlayer} :{" "}
+                  <div>
+                    <Image
+                      src="/images/clock.webp"
+                      alt="Clock"
+                      width={18}
+                      height={18}
+                    />{" "}
+                    {selectedStats && ~~selectedStats?.playTime.hours}h |{" "}
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/skull.webp"
+                      alt="Skull"
+                      width={20}
+                      height={20}
+                    />{" "}
+                    {selectedStats?.deaths} deaths
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/skull.webp"
+                      alt="Skull"
+                      width={20}
+                      height={20}
+                    />{" "}
+                    Time since death: {selectedStats?.timeSinceDeath.hours} h
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/bed.webp"
+                      alt="Bed"
+                      width={20}
+                      height={20}
+                    />{" "}
+                    Time since rest: {selectedStats?.timeSinceRest.hours} h
+                  </div>
                 </div>
               ))}
           </div>
