@@ -11,7 +11,9 @@ const Options = () => {
         <h1>Options</h1>
       </div>
       <div className={styles.main}>
-        <div className={styles.scrollable_section}></div>
+        <div className={styles.scrollable_section}>
+          <p>In Progress...</p>
+        </div>
       </div>
       <div className={styles.menu}>
         <Button path={"/"} text={"Done"} size="medium" />

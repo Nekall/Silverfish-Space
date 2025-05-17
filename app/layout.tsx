@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 // Components
 import Background from "@/components/background";
 import Help from "@/components/help";
+import Conditional from "@/components/conditional";
 
 // Styles
 import "./globals.css";
@@ -30,7 +31,9 @@ export default function RootLayout({
       <body className={`${minecraft.variable}`}>
         <Help />
         {children}
-        <Background />
+        <Conditional>
+          <Background />
+        </Conditional>
       </body>
     </html>
   );

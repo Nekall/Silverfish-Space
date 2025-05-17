@@ -12,6 +12,7 @@ interface ButtonProps {
 
 const play = () => {
   const audio = new Audio("/sounds/minecraft_click.mp3");
+  audio.volume = 0.2;
   audio.play().catch((error) => {
     console.error("Error playing sound: ", error);
   });
