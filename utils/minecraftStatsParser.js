@@ -132,7 +132,6 @@ export const parseMinecraftStats = (rawData) => {
     topPickedUp: getTopItems(stats["minecraft:picked_up"], 5),
   };
 
-  console.log("Stats :", mainStats);
   return mainStats;
 };
 

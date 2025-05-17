@@ -8,7 +8,7 @@ import Image from "next/image";
 type CategoryStats = {
   total: number;
   completed: number;
-  percentage: string;
+  percentage?: number;
   name: string;
   description: string;
   advancements: Record<string, AdvancementItem>;
@@ -25,7 +25,7 @@ type ParsedAdvancement = {
   summary: {
     activeCategories: number;
     completedAdvancements: number;
-    percentage: string;
+    percentage?: number;
     totalAdvancements: number;
   };
   categories: Record<string, CategoryStats>;
@@ -230,8 +230,6 @@ const Advancements = () => {
                             const advId = adv.id
                               .split(":")[1]
                               .replace("/", "-");
-                            console.log(advId);
-                            console.log(adv);
                             return (
                               <tr key={adv.id}>
                                 <td className={styles.status_icon}>

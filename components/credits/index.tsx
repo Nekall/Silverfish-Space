@@ -9,8 +9,8 @@ import { useRouter } from "next/navigation";
 import styles from "./styles.module.css";
 
 const Credits = () => {
-  const router = useRouter(); // Initialisation du router
-  const scrollContainerRef = useRef(null);
+  const router = useRouter();
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const [isSpacePressed, setIsSpacePressed] = useState(false);
 
   const credits = [
@@ -210,9 +210,9 @@ const Credits = () => {
   }, [router]);
 
   useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
-    let animationFrameId;
-    let lastTime = null;
+    const scrollContainer: any = scrollContainerRef.current;
+    let animationFrameId: any;
+    let lastTime: any = null;
     const normalScrollSpeed = 1;
     const fastScrollSpeed = 3;
 
@@ -232,7 +232,7 @@ const Credits = () => {
       return false;
     };
 
-    const scroll = (timestamp) => {
+    const scroll = (timestamp: any) => {
       if (lastTime === null) {
         lastTime = timestamp;
       }

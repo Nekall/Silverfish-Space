@@ -52,7 +52,6 @@ const Players = () => {
                       minutes: 0,
                     },
                   };
-              console.log("dataPlayer", dataPlayer);
 
               return (
                 <li
