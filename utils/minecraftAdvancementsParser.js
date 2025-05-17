@@ -49,7 +49,6 @@ export const parseMinecraftAdvancements = (advancementsData) => {
     },
   };
 
-  // Process each advancement
   for (const [key, value] of Object.entries(advancementsData)) {
     if (
       key === "DataVersion" ||
