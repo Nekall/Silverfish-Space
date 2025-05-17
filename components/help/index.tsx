@@ -1,19 +1,42 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // styles
 import styles from "./styles.module.css";
 
 const Help = () => {
-  const [close, setClose] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  if (close) return;
+  useEffect(() => {
+    const shouldShow = () => {
+      const lastClosedDate = localStorage.getItem("[NEKA]helpLastClosed");
 
-  //Save choise in localstorage
-  // Add animation
-  // -- perso
-  // -- buble
+      if (!lastClosedDate) {
+        return true;
+      }
+
+      const lastDate = new Date(lastClosedDate);
+      const currentDate = new Date();
+
+      const monthDiff =
+        (currentDate.getFullYear() - lastDate.getFullYear()) * 12 +
+        (currentDate.getMonth() - lastDate.getMonth());
+
+      return monthDiff >= 1;
+    };
+
+    if (typeof window !== "undefined") {
+      setIsVisible(shouldShow());
+    }
+  }, []);
+
+  const handleClose = () => {
+    localStorage.setItem("[NEKA]helpLastClosed", new Date().toISOString());
+    setIsVisible(false);
+  };
+
+  if (!isVisible) return null;
 
   return (
     <div className={styles.help}>
@@ -23,7 +46,7 @@ const Help = () => {
         width={400}
         height={400}
       />
-      <button className={styles.close} onClick={() => setClose(true)}>
+      <button className={styles.close} onClick={handleClose}>
         X
       </button>
       <p>
