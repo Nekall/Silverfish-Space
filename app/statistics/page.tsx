@@ -24,7 +24,7 @@ import players from "../../data/whitelist.json";
 type Stats = {};
 
 const Statistics = () => {
-  const dataPlayers = {
+  const dataPlayers: any = {
     _Jok_: _Jok_ as unknown as Record<string, Stats>,
     LilNeka: LilNeka as unknown as Record<string, Stats>,
     Leone_e: Leone_e as unknown as Record<string, Stats>,
@@ -34,7 +34,8 @@ const Statistics = () => {
   };
 
   const [selectedPlayer, setSelectedPlayer] = useState("_Jok_");
-  const [selectedStats, setSelectedStats] = useState();
+  const [selectedStats, setSelectedStats] = useState<any>(null);
+
   const [error, setError] = useState(false);
 
   const selectPlayer = (username: any) => {
@@ -65,7 +66,9 @@ const Statistics = () => {
                 return (
                   <li
                     key={`${name}-card`}
-                    className={styles.player_card}
+                    className={`${styles.player_card} ${
+                      selectedPlayer === name && styles.active
+                    }`}
                     onClick={() => selectPlayer(name)}
                     title={uuid}
                   >

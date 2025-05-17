@@ -42,7 +42,7 @@ const Menu = () => {
       <div className={styles.btns}>
         <div className={styles.big_btns}>
           <Button path={"/players"} text={"Players"} size="large" />
-          <Button path={"/achievements"} text={"Achievements"} size="large" />
+          <Button path={"/advancements"} text={"Advancements"} size="large" />
           <Button path={"/statistics"} text={"Statistics"} size="large" />
           <Button path={"/informations"} text={"Informations"} size="large" />
         </div>

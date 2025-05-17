@@ -1,0 +1,190 @@
+.advancements {
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--font-minecraft);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.advancements .title {
+  display: grid;
+  align-items: end;
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.5);
+}
+
+.advancements .title h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.advancements .main {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.scrollable_sections {
+  display: grid;
+  grid-template-columns: 0.8fr 2.2fr;
+  height: 100%;
+  width: 100%;
+  gap: 0 20px;
+}
+
+.players {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.player_card {
+  display: grid;
+  grid-template-columns: 0.6fr 2.4fr;
+  height: 80px;
+  width: 100%;
+  list-style: none;
+  background: transparent;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.player_card p {
+  padding: 20px 0 0 20px;
+  font-size: 20px;
+  color: #aaa;
+}
+
+.player_card .player_head {
+  margin: auto;
+}
+
+.player_card:hover,
+.player_card:active {
+  background-color: #000;
+  border-color: #fff;
+}
+
+.player_card.active {
+  background-color: #000 !important;
+  border-color: #fff;
+}
+
+.selected_player {
+  display: flex;
+  height: 100px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.selected_player .username {
+  padding: 10px;
+  font-size: 20px;
+  color: #aaa;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu_advancements {
+  position: absolute;
+  top: 140px;
+  right: 10px;
+  z-index: 999;
+}
+
+.cat_btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("/icons/Advancement-plain-raw.png");
+  position: relative;
+}
+
+.cat_btn.cat_active {
+  background-image: url("/icons/Advancement-plain-worn.png");
+}
+
+.cat_btn::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cat_btn:nth-child(1)::after {
+  background-image: url("/icons/Invicon_Empty_Map.png");
+}
+.cat_btn:nth-child(2)::after {
+  background-image: url("/icons/Invicon_Hay_Bale.png");
+}
+.cat_btn:nth-child(3)::after {
+  background-image: url("/icons/Invicon_Grass_Block.png");
+}
+.cat_btn:nth-child(4)::after {
+  background-image: url("/icons/Invicon_Red_Nether_Bricks.png");
+}
+.cat_btn:nth-child(5)::after {
+  background-image: url("/icons/Invicon_End_Stone.png");
+}
+
+.stats {
+  height: 675px;
+  padding: 10px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(153, 153, 153, 0.5);
+}
+
+.stats table th {
+  text-align: left;
+}
+
+.stats table tr span {
+  width: 50px;
+  height: 50px;
+}
+
+.stats .lock,
+.stats .unlock {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.stats .lock {
+  background-image: url("/icons/Advancement-plain-raw.png");
+}
+
+.stats .unlock {
+  background-image: url("/icons/Advancement-plain-worn.png");
+}
+
+.menu {
+  width: 100%;
+  height: 15vh;
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  border-top: 2px solid rgba(153, 153, 153, 0.5);
+}

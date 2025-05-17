@@ -21,7 +21,7 @@ import Bak_HatamHa from "../../data/stats/d0c9e959-bbae-45e9-9ccb-62931f4b218d.j
 import players from "../../data/whitelist.json";
 
 const Players = () => {
-  const dataPlayers = {
+  const dataPlayers: any = {
     _Jok_: _Jok_ as unknown as Record<string, Stats>,
     LilNeka: LilNeka as unknown as Record<string, Stats>,
     Leone_e: Leone_e as unknown as Record<string, Stats>,
@@ -29,8 +29,6 @@ const Players = () => {
     Zukku_tv: Zukku_tv as unknown as Record<string, Stats>,
     Bak_HatamHa: Bak_HatamHa as unknown as Record<string, Stats>,
   };
-
-  console.log(dataPlayers);
 
   return (
     <div className={styles.players}>

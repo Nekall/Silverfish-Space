@@ -1,165 +1,156 @@
 .statistics {
   position: absolute;
   z-index: 999;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
+  font-family: var(--font-minecraft);
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  font-family: var(--font-minecraft);
 }
 
 .statistics .title {
-  width: 100vw;
   height: 5vh;
-  border-bottom: 2px solid rgba(153, 153, 153, 0.5);
-  text-align: center;
+  width: 100vw;
+
   display: grid;
   align-items: end;
+  text-align: center;
+
+  border-bottom: 2px solid rgba(153, 153, 153, 0.5);
 }
 
 .statistics .title h1 {
-  font-family: var(--font-minecraft);
-  font-size: 20px;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   margin-bottom: 5px;
+  font-size: 20px;
+  font-family: var(--font-minecraft);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .statistics .main {
   width: 100vw;
   height: 80vh;
+
   background-color: rgba(0, 0, 0, 0.25);
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+
   overflow: hidden;
 }
 
-.statistics .main .scrollable_sections {
-  width: 100%;
-  height: 100%;
+.scrollable_sections {
   display: grid;
   grid-template-columns: 0.8fr 2.2fr;
+  height: 100%;
+  width: 100%;
   gap: 0 20px;
 }
 
-.statistics .main .scrollable_sections .players {
+.scrollable_sections .players {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
 
-.scrollable_sections .stats_section .selected_player {
-  height: 100px;
-  display: flex;
-  padding-top: 20px;
-  margin-bottom: 20px;
-}
-
-.statistics .main .scrollable_sections .stats_section {
-}
-
-.scrollable_sections .stats_section .selected_player .username {
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-  color: #aaaaaa;
-  font-size: 20px;
-  padding: 10px;
-}
-
-.statistics .main .scrollable_sections .stats_section .stats {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-top: 2px solid rgba(153, 153, 153, 0.5);
-  height: 675px;
-  padding: 10px;
-  overflow: auto;
-}
-.statistics .main .scrollable_sections .stats_section .stats table {
-  min-width: 350px;
-}
-
-.statistics .main .scrollable_sections .stats_section .stats table .total {
-  margin-bottom: 10px;
-}
-
-.statistics
-  .main
-  .scrollable_sections
-  .stats_section
-  .stats
-  table
-  tbody
-  tr:nth-child(odd) {
-  color: #aaaaaa;
-}
-
-.statistics .main .scrollable_sections .stats_section .stats table tbody tr th {
-  text-align: left;
-}
-
-.statistics .main .scrollable_sections .stats_section .stats table tbody tr td {
-  text-align: right;
-}
-
-.statistics
-  .main
-  .scrollable_sections
-  .stats_section
-  .stats
-  table
-  tbody
-  tr:hover {
-  color: #fcfc00;
-}
-
-.statistics .main .scrollable_sections .stats_section .stats h2 {
-  padding: 10px 0 5px 0;
-}
-
-.statistics .main .scrollable_sections .stats_section .stats ul {
-  list-style: none;
-}
-.statistics .main .scrollable_sections .stats_section .stats ul li {
-  padding-left: 10px;
-}
-
-.statistics .main .scrollable_sections .player_card {
+.player_card {
   display: grid;
   grid-template-columns: 0.6fr 2.4fr;
   height: 80px;
   width: 100%;
-  background: transparent;
-  border: solid 2px transparent;
+  padding: 0;
   overflow: hidden;
-  list-style-type: none;
+
+  list-style: none;
+  background: transparent;
+  border: 2px solid transparent;
 }
 
-.statistics .main .scrollable_sections .player_card p {
-  color: #aaaaaa;
-  font-size: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
-.statistics .main .scrollable_sections .player_card:active,
-.statistics .main .scrollable_sections .player_card:hover {
+.player_card:hover,
+.player_card:active {
   background-color: #000;
+  border-color: #fff;
 }
 
-.statistics .main .scrollable_sections .player_card .active {
-  background-color: #000;
-}
-
-.statistics .main .scrollable_sections .player_card .player_head {
+.player_card .player_head {
   margin: auto;
 }
 
-.statistics .main .scrollable_sections .player_card:hover {
-  border: solid 2px #fff;
+.player_card p {
+  color: #aaa;
+  font-size: 20px;
+  padding: 20px 0 0 20px;
+}
+
+.player_card.active {
+  background-color: #000 !important;
+  border-color: #fff !important;
+}
+
+.stats_section .selected_player {
+  display: flex;
+  height: 100px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.selected_player .username {
+  font-size: 20px;
+  color: #aaa;
+  padding: 10px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.stats_section .stats {
+  height: 675px;
+  padding: 10px;
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(153, 153, 153, 0.5);
+}
+
+.stats h2 {
+  padding: 10px 0 5px;
+}
+
+.stats ul {
+  list-style: none;
+}
+
+.stats ul li {
+  padding-left: 10px;
+}
+
+.stats table {
+  min-width: 350px;
+}
+
+.stats table .total {
+  margin-bottom: 10px;
+}
+
+.stats table tbody tr:nth-child(odd) {
+  color: #aaa;
+}
+
+.stats table tbody tr:hover {
+  color: #fcfc00;
+}
+
+.stats table tbody tr th {
+  text-align: left;
+}
+
+.stats table tbody tr td {
+  text-align: right;
 }
 
 .statistics .menu {
   width: 100vw;
   height: 15vh;
-  border-top: 2px solid rgba(153, 153, 153, 0.5);
+
   display: grid;
   justify-content: center;
   padding: 20px;
+
+  border-top: 2px solid rgba(153, 153, 153, 0.5);
 }
