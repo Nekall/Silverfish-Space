@@ -45,6 +45,7 @@ const Help = () => {
         alt={`Neka help`}
         width={400}
         height={400}
+        quality={100}
       />
       <button className={styles.close} onClick={handleClose}>
         X

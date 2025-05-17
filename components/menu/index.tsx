@@ -35,6 +35,7 @@ const Menu = () => {
           width={600}
           height={400}
           priority
+          quality={100}
         />
 
         <p className={styles.yellow_word}>{randomYellowWord}</p>

@@ -66,6 +66,7 @@ const Players = () => {
                       width={65}
                       height={65}
                       priority
+                      quality={100}
                     />
                   </div>
                   <div className={styles.player_data}>

@@ -305,6 +305,7 @@ const Credits = () => {
             width={600}
             height={400}
             priority
+            quality={100}
           />
           {credits.map((section, index) => (
             <div key={index} className={styles.credits_section}>

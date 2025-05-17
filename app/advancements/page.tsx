@@ -132,6 +132,7 @@ const Advancements = () => {
                       width={65}
                       height={65}
                       priority
+                      quality={100}
                     />
                   </div>
                   <p>{name}</p>
@@ -151,6 +152,7 @@ const Advancements = () => {
                       width={75}
                       height={75}
                       priority
+                      quality={100}
                     />
                   </div>
                   <div className={styles.username}>
