@@ -3,10 +3,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // Types
-type Achievement = {
-  done: boolean;
-};
-
 type CategoryStats = {
   total: number;
   completed: number;
@@ -36,11 +32,6 @@ type ParsedAdvancement = {
     formattedDate: string;
     category: string;
   }[];
-};
-
-type Player = {
-  name: string;
-  uuid: string;
 };
 
 // Utils
@@ -103,7 +94,7 @@ const Advancements = () => {
     } else {
       setError(true);
     }
-  }, []);
+  }, [selectedPlayer]);
 
   const categories = [
     { id: "adventure", title: "Adventure" },
@@ -182,15 +173,14 @@ const Advancements = () => {
 
                   {selectedCat ? (
                     <div className={styles.display_stats}>
-                      <h2>
-                        {selectedAdvancements.categories[selectedCat].name}
-                      </h2>
-                      <p>
-                        {
+                      <h2
+                        title={
                           selectedAdvancements.categories[selectedCat]
                             .description
                         }
-                      </p>
+                      >
+                        {selectedAdvancements.categories[selectedCat].name}
+                      </h2>
 
                       <table className={styles.stats_table}>
                         <tbody>
@@ -234,6 +224,12 @@ const Advancements = () => {
                             const adv =
                               selectedAdvancements.categories[selectedCat]
                                 .advancements[advKey];
+
+                            const advId = adv.id
+                              .split(":")[1]
+                              .replace("/", "-");
+                            console.log(advId);
+                            console.log(adv);
                             return (
                               <tr key={adv.id}>
                                 <td className={styles.status_icon}>
@@ -241,12 +237,28 @@ const Advancements = () => {
                                     <span
                                       className={styles.unlock}
                                       aria-label="Unlocked"
-                                    ></span>
+                                    >
+                                      <Image
+                                        src={`/icons/invicons/${advId}.png`}
+                                        alt={advId}
+                                        width={35}
+                                        height={35}
+                                        quality={100}
+                                      />
+                                    </span>
                                   ) : (
                                     <span
                                       className={styles.lock}
                                       aria-label="Locked"
-                                    ></span>
+                                    >
+                                      <Image
+                                        src={`/icons/invicons/${advId}.png`}
+                                        alt={advId}
+                                        width={35}
+                                        height={35}
+                                        quality={100}
+                                      />
+                                    </span>
                                   )}
                                 </td>
                                 <th>{adv.name}</th>
@@ -292,19 +304,12 @@ const Advancements = () => {
 
                       <h3>Recent Advancements</h3>
                       <table className={styles.recent_table}>
-                        <thead>
-                          <tr>
-                            <th>Name</th>
-                            <th>Category</th>
-                            <th>Date</th>
-                          </tr>
-                        </thead>
                         <tbody>
                           {selectedAdvancements.recentAdvancements.map(
                             ({ name, formattedDate, category }) => (
                               <tr key={`${name}-${formattedDate}`}>
                                 <td>{name}</td>
-                                <td>{category}</td>
+                                <td>({category})</td>
                                 <td>{formattedDate}</td>
                               </tr>
                             )

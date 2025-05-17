@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 
 // Utils
 import { parseMinecraftStats } from "@/utils/minecraftStatsParser";
@@ -38,7 +37,7 @@ const Players = () => {
       <div className={styles.main}>
         <div className={styles.scrollable_section}>
           <ul>
-            {players.map(({ name, uuid }, index) => {
+            {players.map(({ name, uuid }) => {
               const dataPlayer = dataPlayers[name]
                 ? parseMinecraftStats(dataPlayers[name])
                 : {

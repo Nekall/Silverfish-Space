@@ -151,6 +151,19 @@
   border-top: 2px solid rgba(153, 153, 153, 0.5);
 }
 
+.stats h2 {
+  margin-bottom: 20px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.stats table {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.stats table tbody tr:hover {
+  color: #fcfc00;
+}
 .stats table th {
   text-align: left;
 }
@@ -158,6 +171,13 @@
 .stats table tr span {
   width: 50px;
   height: 50px;
+  padding-top: 7px;
+}
+
+.stats table tr span img {
+  margin: auto;
+  display: block;
+  text-align: center;
 }
 
 .stats .lock,

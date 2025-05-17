@@ -17,7 +17,7 @@ const minecraft = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Silverfish Infesting Space",
+  title: "SIS.exe",
   description: "Private Minecraft Server",
 };
 
