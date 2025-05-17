@@ -1,13 +1,16 @@
 .credits_container {
   width: 100%;
   height: 100vh;
-  background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   font-family: var(--font-minecraft);
+  background-image: url("/images/credits-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .credits_scroller {
