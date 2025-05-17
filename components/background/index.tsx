@@ -18,17 +18,31 @@ const Background = () => {
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
       <Canvas
-        key={"skybox-mc-bg-launcher"}
         gl={{
           antialias: true,
-          preserveDrawingBuffer: true,
           powerPreference: "high-performance",
         }}
-        camera={{
-          fov: 70,
-          near: 45,
-          far: 30000,
-          position: [0, 0, 0],
+        camera={{ fov: 70, near: 45, far: 30000, position: [0, 0, 0] }}
+        onCreated={({ gl }) => {
+          const canvas = gl.domElement;
+
+          const handleLost = (e: Event) => {
+            const webglEvent = e as WebGLContextEvent;
+            webglEvent.preventDefault();
+            console.warn("WebGL context lost", e);
+          };
+
+          const handleRestore = (e: Event) => {
+            console.info("WebGL context restored", e);
+          };
+
+          canvas.addEventListener("webglcontextlost", handleLost, false);
+          canvas.addEventListener("webglcontextrestored", handleRestore, false);
+
+          return () => {
+            canvas.removeEventListener("webglcontextlost", handleLost);
+            canvas.removeEventListener("webglcontextrestored", handleRestore);
+          };
         }}
       >
         <Suspense fallback={null}>
