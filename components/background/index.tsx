@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 
 // Components
@@ -8,9 +8,13 @@ import RotatingCamera from "@/components/rotatingCamera";
 import Skybox from "@/components/skybox";
 
 const Background = () => {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
-    console.log("Canvas mounted");
+    setIsClient(true);
   }, []);
+
+  if (!isClient) return null;
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
       <Canvas
