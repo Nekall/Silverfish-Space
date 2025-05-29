@@ -13,7 +13,6 @@ import "./globals.css";
 const minecraft = localFont({
   src: "../public/fonts/Minecraft-Seven_v2.ttf",
   variable: "--font-minecraft",
-  display: "swap",
 });
 
 export const metadata: Metadata = {
