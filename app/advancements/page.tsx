@@ -246,7 +246,6 @@ const Advancements = () => {
                                         width={35}
                                         height={35}
                                         quality={100}
-                                        unoptimized
                                       />
                                     </span>
                                   ) : (
@@ -260,7 +259,6 @@ const Advancements = () => {
                                         width={35}
                                         height={35}
                                         quality={100}
-                                        unoptimized
                                       />
                                     </span>
                                   )}
