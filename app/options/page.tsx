@@ -1,3 +1,9 @@
+/* eslint-disable */
+
+"use client";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
 // Components
 import Button from "@/components/button";
 
@@ -5,6 +11,20 @@ import Button from "@/components/button";
 import styles from "./page.module.css";
 
 const Options = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.code === "Escape" || e.code === "Enter") {
+        router.push("/");
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
   return (
     <div className={styles.options}>
       <div className={styles.title}>

@@ -3,6 +3,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 // Components
 import Button from "@/components/button";
@@ -26,6 +27,7 @@ import players from "../../data/whitelist.json";
 type Stats = {};
 
 const Statistics = () => {
+  const router = useRouter();
   const dataPlayers: any = {
     _Jok_: _Jok_ as unknown as Record<string, Stats>,
     LilNeka: LilNeka as unknown as Record<string, Stats>,
@@ -49,6 +51,19 @@ const Statistics = () => {
       setError(true);
     }
   };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.code === "Escape" || e.code === "Enter") {
+        router.push("/");
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   useEffect(() => {
     setSelectedStats(parseMinecraftStats(dataPlayers[selectedPlayer]));

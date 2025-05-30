@@ -3,6 +3,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 // Types
 type CategoryStats = {
@@ -65,6 +66,7 @@ const PLAYER_DATA: any = {
 };
 
 const Advancements = () => {
+  const router = useRouter();
   const [selectedPlayer, setSelectedPlayer] = useState("_Jok_");
   const [selectedAdvancements, setSelectedAdvancements] =
     useState<ParsedAdvancement | null>(null);
@@ -105,6 +107,19 @@ const Advancements = () => {
       console.error("Error playing sound: ", error);
     });
   };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.code === "Escape" || e.code === "Enter") {
+        router.push("/");
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   const categories = [
     { id: "adventure", title: "Adventure" },

@@ -2,6 +2,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 // Utils
 import { parseMinecraftStats } from "@/utils/minecraftStatsParser";
@@ -22,6 +23,8 @@ import Bak_HatamHa from "../../data/stats/d0c9e959-bbae-45e9-9ccb-62931f4b218d.j
 import players from "../../data/whitelist.json";
 
 const Players = () => {
+  const router = useRouter();
+  const [selectedPlayer, setSelectedPlayer] = useState("_Jok_");
   const dataPlayers: any = {
     _Jok_: _Jok_ as unknown as Record<string, Stats>,
     LilNeka: LilNeka as unknown as Record<string, Stats>,
@@ -31,7 +34,18 @@ const Players = () => {
     Bak_HatamHa: Bak_HatamHa as unknown as Record<string, Stats>,
   };
 
-  const [selectedPlayer, setSelectedPlayer] = useState("_Jok_");
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.code === "Escape" || e.code === "Enter") {
+        router.push("/");
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   return (
     <div className={styles.players}>
