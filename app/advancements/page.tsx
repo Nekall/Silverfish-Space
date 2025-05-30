@@ -110,7 +110,7 @@ const Advancements = () => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.code === "Escape" || e.code === "Enter") {
+      if (e.code === "Escape") {
         router.push("/");
       }
     };
@@ -146,7 +146,7 @@ const Advancements = () => {
                   title={uuid}
                 >
                   <button
-                    onMouseDown={() => handlePlayerSelect(name)}
+                    onClick={() => handlePlayerSelect(name)}
                     className={`${styles.player_card} ${
                       selectedPlayer === name ? styles.active : ""
                     }`}
@@ -196,8 +196,10 @@ const Advancements = () => {
                           selectedCat === category.id ? styles.cat_active : ""
                         }`}
                         title={category.title}
-                        onMouseDown={() => {
+                        onClick={() => {
                           setSelectedCat(category.id);
+                        }}
+                        onMouseDown={() => {
                           play();
                         }}
                         aria-label={`Select ${category.title} category`}

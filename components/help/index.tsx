@@ -56,7 +56,7 @@ const Help = () => {
         height={400}
         quality={100}
       />
-      <button className={styles.close} onMouseDown={handleClose}>
+      <button className={styles.close} onClick={handleClose}>
         X
       </button>
       <p>

@@ -54,7 +54,7 @@ const Statistics = () => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.code === "Escape" || e.code === "Enter") {
+      if (e.code === "Escape") {
         router.push("/");
       }
     };

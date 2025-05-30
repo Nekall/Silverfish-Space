@@ -36,7 +36,7 @@ const Players = () => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.code === "Escape" || e.code === "Enter") {
+      if (e.code === "Escape") {
         router.push("/");
       }
     };
@@ -80,7 +80,7 @@ const Players = () => {
                     className={`${styles.player_card} ${
                       selectedPlayer === name && styles.active
                     }`}
-                    onMouseDown={() => setSelectedPlayer(name)}
+                    onClick={() => setSelectedPlayer(name)}
                   >
                     <div className={styles.player_head}>
                       <Image
