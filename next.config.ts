@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "mc-heads.net",
+        hostname: "mineskin.eu",
         pathname: "**",
       },
     ],

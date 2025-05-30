@@ -93,7 +93,7 @@ const Statistics = () => {
                     >
                       <div className={styles.player_head}>
                         <Image
-                          src={`https://mc-heads.net/avatar/${name}`}
+                          src={`https://mineskin.eu/helm/${name}/100.png`}
                           alt={`Minecraft head of ${name}`}
                           width={65}
                           height={65}
@@ -114,7 +114,7 @@ const Statistics = () => {
                 <div className={styles.selected_player}>
                   <div>
                     <Image
-                      src={`https://mc-heads.net/avatar/${selectedPlayer}`}
+                      src={`https://mineskin.eu/helm/${selectedPlayer}/100.png`}
                       alt={`Minecraft head of ${selectedPlayer}`}
                       width={75}
                       height={75}
