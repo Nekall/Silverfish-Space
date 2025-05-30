@@ -183,7 +183,7 @@ const Credits = () => {
   ];
 
   useEffect(() => {
-    const handleKeyDown = (e: any) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (e.code === "Space") {
         e.preventDefault();
         setIsSpacePressed(true);
@@ -194,27 +194,39 @@ const Credits = () => {
       }
     };
 
-    const handleKeyUp = (e: any) => {
+    const handleKeyUp = (e: KeyboardEvent) => {
       if (e.code === "Space") {
         setIsSpacePressed(false);
       }
     };
 
+    const handleTouchStart = () => {
+      setIsSpacePressed(true);
+    };
+
+    const handleTouchEnd = () => {
+      setIsSpacePressed(false);
+    };
+
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [router]);
+  }, []);
 
   useEffect(() => {
     const scrollContainer: any = scrollContainerRef.current;
     let animationFrameId: any;
     let lastTime: any = null;
-    const normalScrollSpeed = 1;
-    const fastScrollSpeed = 3;
+    const normalScrollSpeed = 2; // initial 1
+    const fastScrollSpeed = 6; // initial 3
 
     const checkEndOfScroll = () => {
       if (!scrollContainer) return false;
@@ -244,7 +256,7 @@ const Credits = () => {
         const currentSpeed = isSpacePressed
           ? fastScrollSpeed
           : normalScrollSpeed;
-        scrollContainer.scrollTop += currentSpeed * (deltaTime / 16);
+        scrollContainer.scrollBy(0, currentSpeed * (deltaTime / 16));
 
         const isEnd = checkEndOfScroll();
         if (isEnd) {
@@ -279,9 +291,13 @@ const Credits = () => {
       scrollContainer.addEventListener("touchmove", preventScroll, {
         passive: false,
       });
-      scrollContainer.addEventListener("scroll", preventScroll, {
+      {
+        /*
+        scrollContainer.addEventListener("scroll", preventScroll, {
         passive: false,
       });
+      */
+      }
     }
 
     return () => {

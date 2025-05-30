@@ -3,6 +3,13 @@
   z-index: 99999;
   bottom: 0;
   right: 0;
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .help {
+    display: block;
+  }
 }
 
 .help img {
@@ -16,7 +23,6 @@
 
 .help .close {
   display: block;
-
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   background: #999 url("/images/bg_btn.png") center / cover;
   image-rendering: pixelated;

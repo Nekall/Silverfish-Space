@@ -47,13 +47,15 @@
   overflow-y: auto;
 }
 
+.player_list {
+  list-style: none;
+}
+
 .scrollable_section .player_card {
   display: grid;
   grid-template-columns: 0.4fr 1.6fr 0.4fr;
   height: 80px;
   padding: 2px;
-  list-style: none;
-
   background: transparent;
   border: 2px solid transparent;
   overflow: hidden;
@@ -62,6 +64,11 @@
 .player_card:hover {
   background-color: #000;
   border: 2px solid #fff;
+}
+
+.player_card.active {
+  background-color: #000 !important;
+  border-color: #fff !important;
 }
 
 .player_card .player_head {

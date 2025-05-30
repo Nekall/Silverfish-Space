@@ -32,8 +32,17 @@ const Help = () => {
   }, []);
 
   const handleClose = () => {
+    play();
     localStorage.setItem("[NEKA]helpLastClosed", new Date().toISOString());
     setIsVisible(false);
+  };
+
+  const play = () => {
+    const audio = new Audio("/sounds/minecraft_click.mp3");
+    audio.volume = 0.2;
+    audio.play().catch((error) => {
+      console.error("Error playing sound: ", error);
+    });
   };
 
   if (!isVisible) return null;
@@ -47,7 +56,7 @@ const Help = () => {
         height={400}
         quality={100}
       />
-      <button className={styles.close} onClick={handleClose}>
+      <button className={styles.close} onMouseDown={handleClose}>
         X
       </button>
       <p>

@@ -42,7 +42,6 @@ const Statistics = () => {
 
   const selectPlayer = (username: any) => {
     setSelectedPlayer(username);
-    console.info("selectPlayer");
     if (dataPlayers[username]) {
       setSelectedStats(parseMinecraftStats(dataPlayers[username]));
       setError(false);
@@ -68,23 +67,27 @@ const Statistics = () => {
                 return (
                   <li
                     key={`${name}-card`}
-                    className={`${styles.player_card} ${
-                      selectedPlayer === name && styles.active
-                    }`}
-                    onClick={() => selectPlayer(name)}
+                    className={styles.player_list}
+                    onMouseDown={() => selectPlayer(name)}
                     title={uuid}
                   >
-                    <div className={styles.player_head}>
-                      <Image
-                        src={`https://mc-heads.net/avatar/${name}`}
-                        alt={`Minecraft head of ${name}`}
-                        width={65}
-                        height={65}
-                        priority
-                        quality={100}
-                      />
-                    </div>
-                    <p>{name}</p>
+                    <button
+                      className={`${styles.player_card} ${
+                        selectedPlayer === name && styles.active
+                      }`}
+                    >
+                      <div className={styles.player_head}>
+                        <Image
+                          src={`https://mc-heads.net/avatar/${name}`}
+                          alt={`Minecraft head of ${name}`}
+                          width={65}
+                          height={65}
+                          priority
+                          quality={100}
+                        />
+                      </div>
+                      <p>{name}</p>
+                    </button>
                   </li>
                 );
               })}

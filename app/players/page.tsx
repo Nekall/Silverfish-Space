@@ -1,5 +1,6 @@
 /* eslint-disable */
 "use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 // Utils
@@ -30,6 +31,8 @@ const Players = () => {
     Bak_HatamHa: Bak_HatamHa as unknown as Record<string, Stats>,
   };
 
+  const [selectedPlayer, setSelectedPlayer] = useState("_Jok_");
+
   return (
     <div className={styles.players}>
       <div className={styles.title}>
@@ -56,33 +59,40 @@ const Players = () => {
               return (
                 <li
                   key={`${name}-card`}
-                  className={styles.player_card}
+                  className={styles.player_list}
                   title={uuid}
                 >
-                  <div className={styles.player_head}>
-                    <Image
-                      src={`https://mc-heads.net/avatar/${name}`}
-                      alt={`Minecraft head of ${name}`}
-                      width={65}
-                      height={65}
-                      priority
-                      quality={100}
-                    />
-                  </div>
-                  <div className={styles.player_data}>
-                    <div className={styles.username}>{name}</div>
-                    <div>
+                  <button
+                    className={`${styles.player_card} ${
+                      selectedPlayer === name && styles.active
+                    }`}
+                    onMouseDown={() => setSelectedPlayer(name)}
+                  >
+                    <div className={styles.player_head}>
+                      <Image
+                        src={`https://mc-heads.net/avatar/${name}`}
+                        alt={`Minecraft head of ${name}`}
+                        width={65}
+                        height={65}
+                        priority
+                        quality={100}
+                      />
+                    </div>
+                    <div className={styles.player_data}>
+                      <div className={styles.username}>{name}</div>
                       <div>
-                        Time since death: {dataPlayer?.timeSinceDeath.hours} h
-                      </div>
-                      <div>
-                        Time since rest: {dataPlayer?.timeSinceRest.hours} h
+                        <div>
+                          Time since death: {dataPlayer?.timeSinceDeath.hours} h
+                        </div>
+                        <div>
+                          Time since rest: {dataPlayer?.timeSinceRest.hours} h
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className={styles.player_deaths}>
-                    {dataPlayer?.deaths} DEATHS
-                  </div>
+                    <div className={styles.player_deaths}>
+                      {dataPlayer?.deaths} DEATHS
+                    </div>
+                  </button>
                 </li>
               );
             })}

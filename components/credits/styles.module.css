@@ -6,7 +6,6 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-
   background-image: url("/images/credits-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
@@ -25,6 +24,9 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  touch-action: pan-y;
+  overscroll-behavior: none;
+  will-change: scroll-position;
 }
 
 .credits_scroller::-webkit-scrollbar {

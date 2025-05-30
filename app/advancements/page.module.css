@@ -46,16 +46,21 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.player_list {
+  list-style: none;
+}
+
 .player_card {
   display: grid;
   grid-template-columns: 0.6fr 2.4fr;
   height: 80px;
   width: 100%;
-  list-style: none;
   background: transparent;
   overflow: hidden;
   border: 2px solid transparent;
   transition: border-color 0.2s, background-color 0.2s;
+  background-color: transparent;
+  width: 100%;
 }
 
 .player_card p {
@@ -159,6 +164,12 @@
 }
 .cat_btn:nth-child(5)::after {
   background-image: url("/icons/Invicon_End_Stone.png");
+}
+
+.stats_section {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
 }
 
 .stats {

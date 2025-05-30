@@ -98,6 +98,14 @@ const Advancements = () => {
     }
   }, [selectedPlayer]);
 
+  const play = () => {
+    const audio = new Audio("/sounds/minecraft_click.mp3");
+    audio.volume = 0.2;
+    audio.play().catch((error) => {
+      console.error("Error playing sound: ", error);
+    });
+  };
+
   const categories = [
     { id: "adventure", title: "Adventure" },
     { id: "husbandry", title: "Husbandry" },
@@ -119,23 +127,27 @@ const Advancements = () => {
               {players.map(({ name, uuid }) => (
                 <li
                   key={`${name}-card`}
-                  className={`${styles.player_card} ${
-                    selectedPlayer === name ? styles.active : ""
-                  }`}
-                  onClick={() => handlePlayerSelect(name)}
+                  className={styles.player_list}
                   title={uuid}
                 >
-                  <div className={styles.player_head}>
-                    <Image
-                      src={`https://mc-heads.net/avatar/${name}`}
-                      alt={`Minecraft head of ${name}`}
-                      width={65}
-                      height={65}
-                      priority
-                      quality={100}
-                    />
-                  </div>
-                  <p>{name}</p>
+                  <button
+                    onMouseDown={() => handlePlayerSelect(name)}
+                    className={`${styles.player_card} ${
+                      selectedPlayer === name ? styles.active : ""
+                    }`}
+                  >
+                    <div className={styles.player_head}>
+                      <Image
+                        src={`https://mc-heads.net/avatar/${name}`}
+                        alt={`Minecraft head of ${name}`}
+                        width={65}
+                        height={65}
+                        priority
+                        quality={100}
+                      />
+                    </div>
+                    <p>{name}</p>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -169,7 +181,10 @@ const Advancements = () => {
                           selectedCat === category.id ? styles.cat_active : ""
                         }`}
                         title={category.title}
-                        onClick={() => setSelectedCat(category.id)}
+                        onMouseDown={() => {
+                          setSelectedCat(category.id);
+                          play();
+                        }}
                         aria-label={`Select ${category.title} category`}
                       />
                     ))}
