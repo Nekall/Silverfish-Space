@@ -3,7 +3,7 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  font-family: var(--font-minecraft);
+
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -18,7 +18,6 @@
 }
 
 .options .title h1 {
-  font-family: var(--font-minecraft);
   font-size: 20px;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   margin-bottom: 5px;

@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  font-family: var(--font-minecraft);
+
   text-align: center;
   animation-name: damage;
   animation-duration: 0.4s;

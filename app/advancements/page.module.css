@@ -3,7 +3,7 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  font-family: var(--font-minecraft);
+
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -68,6 +68,15 @@
   margin: auto;
 }
 
+.player_card .player_head img {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
 .player_card:hover,
 .player_card:active {
   background-color: #000;
@@ -84,6 +93,15 @@
   height: 100px;
   padding-top: 20px;
   margin-bottom: 20px;
+}
+
+.selected_player .avatar img {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .selected_player .username {
@@ -144,7 +162,7 @@
 }
 
 .stats {
-  height: 675px;
+  height: 70vh;
   padding: 10px;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
@@ -190,6 +208,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.stats .lock img,
+.stats .unlock img {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .stats .lock {
