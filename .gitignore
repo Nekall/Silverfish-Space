@@ -42,3 +42,11 @@ next-env.d.ts
 
 # macos
 .DS_Store
+
+# data
+./data
+data
+./advancements
+advancements
+./stats
+stats
