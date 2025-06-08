@@ -182,3 +182,80 @@
 
   border-top: 2px solid rgba(153, 153, 153, 0.5);
 }
+
+/* Podium */
+/*
+.gold_effect:hover {
+  animation: goldGlow 2s infinite alternate;
+  text-shadow: 0 0 5px gold;
+  color: gold;
+  font-weight: bold;
+}
+
+.silver_effect:hover {
+  animation: silverGlow 2s infinite alternate;
+  text-shadow: 0 0 5px silver;
+  color: silver;
+  font-weight: bold;
+}
+
+.bronze_effect:hover {
+  animation: bronzeGlow 2s infinite alternate;
+  text-shadow: 0 0 5px #cd7f32;
+  color: #cd7f32;
+  font-weight: bold;
+}
+
+.legendary_effect:hover {
+  position: relative;
+  color: #ff00ff;
+  font-weight: bold;
+  text-shadow: 0 0 4px #ff00ff, 0 0 8px #ff00ff, 0 0 12px #c800ff,
+    0 0 16px #7000aa;
+  animation: enchant-glow 1.8s infinite linear;
+  font-family: "Minecraft", monospace;
+  image-rendering: pixelated;
+}
+
+@keyframes enchant-glow {
+  0% {
+    text-shadow: 0 0 4px #ff00ff, 0 -1px 8px #ff00ff, 0 -2px 12px #c800ff,
+      0 -3px 16px #7000aa;
+  }
+  50% {
+    text-shadow: 0 0 6px #ff66ff, 0 -1px 12px #ff00ff, 0 -2px 16px #c800ff,
+      0 -3px 20px #7000aa;
+  }
+  100% {
+    text-shadow: 0 0 4px #ff00ff, 0 -1px 8px #ff00ff, 0 -2px 12px #c800ff,
+      0 -3px 16px #7000aa;
+  }
+}
+
+@keyframes goldGlow {
+  from {
+    text-shadow: 0 0 5px gold;
+  }
+  to {
+    text-shadow: 0 0 20px gold, 0 0 10px gold;
+  }
+}
+
+@keyframes silverGlow {
+  from {
+    text-shadow: 0 0 5px silver;
+  }
+  to {
+    text-shadow: 0 0 20px silver, 0 0 10px silver;
+  }
+}
+
+@keyframes bronzeGlow {
+  from {
+    text-shadow: 0 0 5px #cd7f32;
+  }
+  to {
+    text-shadow: 0 0 20px #cd7f32, 0 0 10px #cd7f32;
+  }
+}
+*/

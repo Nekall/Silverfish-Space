@@ -69,6 +69,55 @@ const Statistics = () => {
     setSelectedStats(parseMinecraftStats(dataPlayers[selectedPlayer]));
   }, []);
 
+  // --- Début désactivation de la logique podium ---
+  /*
+  const STATS_THRESHOLDS = {
+    jumps: [500000, 300000, 150000, 50000],
+    mobKills: [100000, 50000, 20000, 5000],
+    damageBlockedByShield: [50000, 25000, 10000, 5000],
+    damageDealt: [1500000, 750000, 300000, 100000],
+    damageTaken: [750000, 300000, 100000, 50000],
+    distance: {
+      total: [1500000, 750000, 300000, 100000],
+      walked: [750000, 300000, 100000, 50000],
+      flown: [500000, 250000, 100000, 50000],
+      boated: [50000, 25000, 10000, 5000],
+      climbed: [50000, 25000, 10000, 5000],
+      fallen: [50000, 25000, 10000, 5000],
+      horse: [50000, 25000, 10000, 5000],
+      sprinted: [500000, 250000, 100000, 50000],
+      swum: [50000, 25000, 10000, 5000],
+      walkOnWater: [10000, 5000, 2500, 1000],
+      walkUnderWater: [10000, 5000, 2500, 1000],
+    },
+    interactions: {
+      animalsBred: [500, 250, 100, 50],
+      fishCaught: [500, 250, 100, 50],
+      tradedWithVillager: [500, 250, 100, 50],
+    },
+    playTime: {
+      hours: [1500, 750, 300, 100],
+    },
+    totals: {
+      blocksMined: [150000, 75000, 30000, 10000],
+      itemsCrafted: [10000, 5000, 2000, 1000],
+      itemsUsed: [10000, 5000, 2000, 1000],
+    },
+  };
+
+  const getPodiumTextEffect = (
+    value: number,
+    thresholds: [number, number, number, number]
+  ) => {
+    if (value >= thresholds[0]) return styles.legendary_effect;
+    if (value >= thresholds[1]) return styles.gold_effect;
+    if (value >= thresholds[2]) return styles.silver_effect;
+    if (value >= thresholds[3]) return styles.bronze_effect;
+    return "";
+  };
+  */
+  // --- Fin désactivation de la logique podium ---
+
   return (
     <div className={styles.statistics}>
       <div className={styles.title}>
@@ -138,11 +187,23 @@ const Statistics = () => {
                             <tbody>
                               <tr>
                                 <th>Jumps</th>
-                                <td>{selectedStats?.jumps}</td>
+                                <td>
+                                  <span
+                                  // className={getPodiumTextEffect(
+                                  //   selectedStats?.jumps,
+                                  //   STATS_THRESHOLDS.jumps
+                                  // )}
+                                  // title="✨ 2M | 🥇 1M | 🥈 650K | 🥉 325K"
+                                  >
+                                    {selectedStats?.jumps}
+                                  </span>
+                                </td>
                               </tr>
                               <tr>
                                 <th>Mob Kills</th>
-                                <td>{selectedStats?.mobKills}</td>
+                                <td>
+                                  <span>{selectedStats?.mobKills}</span>
+                                </td>
                               </tr>
                             </tbody>
                           </table>
@@ -153,15 +214,23 @@ const Statistics = () => {
                             <tbody>
                               <tr>
                                 <th>Damage Blocked By Shield</th>
-                                <td>{selectedStats?.damageBlockedByShield}</td>
+                                <td>
+                                  <span>
+                                    {selectedStats?.damageBlockedByShield}
+                                  </span>
+                                </td>
                               </tr>
                               <tr>
                                 <th>Damage Dealt</th>
-                                <td>{selectedStats?.damageDealt}</td>
+                                <td>
+                                  <span>{selectedStats?.damageDealt}</span>
+                                </td>
                               </tr>
                               <tr>
                                 <th>Damage Taken</th>
-                                <td>{selectedStats?.damageTaken}</td>
+                                <td>
+                                  <span>{selectedStats?.damageTaken}</span>
+                                </td>
                               </tr>
                             </tbody>
                           </table>
@@ -235,7 +304,9 @@ const Statistics = () => {
                               <tr>
                                 <th>Animals Bred</th>
                                 <td>
-                                  {selectedStats?.interactions.animalsBred}
+                                  <span>
+                                    {selectedStats?.interactions.animalsBred}
+                                  </span>
                                 </td>
                               </tr>
                               <tr>
